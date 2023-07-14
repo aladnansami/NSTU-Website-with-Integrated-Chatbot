@@ -1,0 +1,84 @@
+
+{% include 'admin/includes/header.html' %}
+
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">ChatBot</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<section class="content">
+  <div class="container">
+    <h2 class="text-center py-2 my-0">ChatBot Responses</h2>
+    <div class="row py-3">
+      <div class="col-4" id="edit_feedback_box" style="display: none;">
+        <form action="/admin/add_query" id="" class="border p-3" method="POST">
+          <input type="hidden" name="query_id">
+          <div class="form-group">
+            <label for="">Tag</label>
+            <input type="text" class="form-control" name="tag" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="">Patterns</label>
+            <input type="text" class="form-control" name="patterns" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="">Responses</label>
+            <input type="text" class="form-control" name="responses" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="">Context</label>
+            <input type="text" class="form-control" name="context" placeholder="">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-8 mx-auto">
+        <div class="table-responsive feed_back_container">
+          <table class="table">
+            <thead>
+                <th scope="col">User Text</th>
+                <th scope="col">Chatbot Response</th>
+                <th scope="col">Feedback</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in feedback_data %}
+              <tr>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[3] }}</td>
+                <td>{{ item[1] }}</td>
+                <td class="d-flex">
+                  <button type="submit" class="edit_btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <form action="/delete_feedback" method="post">
+                    <input type="hidden" name="feed_back_id" value="{{ item[0] }}">
+                    <button type="submit" class="delete_btn"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                  </form>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  {% include 'admin/includes/footer.html' %}

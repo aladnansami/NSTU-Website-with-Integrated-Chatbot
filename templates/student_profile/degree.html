@@ -1,0 +1,75 @@
+{% include 'student_profile/includes/header.html' %}
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Add Degree</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6">
+          <form action="/student_profile/add_degree" method="post">
+        <h1>Educational Qualifications</h1>
+        <div class="mt-4">
+          <label for="degree" class="form-label">Degree Name</label>
+          <input type="text" name="degree" id="degree" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_name" class="form-label">University Name</label>
+          <input type="text" name="university_name" id="university_name" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_passing_year" class="form-label">Passing Year</label>
+          <input type="number" name="university_passing_year" id="university_passing_year" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_description" class="form-label">Description</label>
+          <textarea name="university_description" id="university_description" style="display: block;resize: vertical;width: 100%;outline: none;border: 1px solid #ced4da;height: 100px;" ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary my-4" >Add</button>
+      </form>
+        </div>
+        <div class="col-6">
+          <div class="container-fluid">
+            <div class="row">
+                  {% if degree_list %}
+                    {% for item in degree_list %}
+                    <div class="col-12 my-4 card p-4">
+                      {% if item[0] and item[1] and item[2] and item[3] %}
+                      <h4><span style="float: left;width: 90%;">{{ item[0] }} </span>
+                        <form action="/student_profile/delete_student_degree" method="POST" style="float: right;" >
+                          <input type="hidden" name="degree_id" value="{{ loop.index }}" >
+                          <button type="submit" style="border: none; outline: none; background: transparent;" ><i class="fa-solid fa-trash" style=" color: red;"></i></button>
+                        </form>
+                      </h4>
+                        <h5>{{ item[1] }}</h5>
+                        <p>{{ item[3] }}</p>
+                        <p>{{ item[2] }}</p>
+                      {% endif%}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% include 'student_profile/includes/footer.html' %}

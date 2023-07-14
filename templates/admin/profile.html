@@ -1,0 +1,61 @@
+{% include 'admin/includes/header.html' %}
+
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Profile</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% if admin_info %}
+<section class="content">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-6">
+        <div class="mt-4">
+          <form action="{{ url_for('change_admin_password') }}" method="POST">
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" value="{{ admin_info[2] }}" id="emailInput" name="email" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" value="{{ admin_info[1] }}" id="nameInput" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="passwordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordInput" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Change</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="mt-4">
+          <form style="text-align: center;" action="/admin/change_admin_picture" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <img src="{{ url_for('static',filename='images/add_image.png') }}" alt="" style="width: 25%; background: #dedede;padding: 13px; border-radius: 50%;" id="uploadImage" onclick="document.getElementById('fileInput').click()" />
+              <input type="file" class="form-control d-none" id="fileInput" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary">Change Profile Picture</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+  {% include 'admin/includes/footer.html' %}

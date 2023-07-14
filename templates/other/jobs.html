@@ -1,0 +1,31 @@
+{% include 'includes/header.html' %}
+
+<div class="container" style="min-height: 80vh;">
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Serial</th>
+            <th>Job Title</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in data %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[3] }}</td>
+            <td><a href="{{ url_for('static', filename='job/' + item[2]) }}" download="">Download</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>        
+      </table>
+    </div>
+  </div>
+</div>
+
+{% include 'chatbot.html' %}
+{% include 'includes/footer.html' %}

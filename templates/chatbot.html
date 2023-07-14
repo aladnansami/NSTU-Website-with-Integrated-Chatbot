@@ -1,0 +1,118 @@
+  <!-- =================== CHATBOT BOX =================== -->
+  <div class="boxed">
+    <p style="text-align: right;margin: 0px 15px -15px 0;"><i class="close-icon fa fa-times"></i></p>
+    <p class="title"> Share your Doubts with me to get a solution! </p>
+      <div class="botTextContainer">
+        <p class="botText"><span><i class="fas fa-robot"></i>&nbsp;I'm NSTU ChatBot for your help!</span></p>
+        <!-- <button type="button" data-toggle="modal" data-target="#exampleModal" id="compare">&nbsp; Compare Courses? &nbsp;</button> -->
+      </div>
+
+        <div id="chatbox">
+
+          <!-- =================== DISPLAYING LOGIN REGISTRATION LINK BASED ON USER LOGGED IN OR NOT =================== -->
+          {% with user_id=session.get("user_id"), teacher_id=session.get("teacher_id"), student_id=session.get("student_id"), admin_id=session.get("admin_id")  %}
+            {% if user_id==None and teacher_id==None and student_id==None and admin_id==None %}
+              <a href="./registration" class="mt-3 btn btn-secondary">Registration</a>
+              <a href="./login" class="mt-3 btn btn-secondary">Log In</a>
+            {% endif %}
+          {% endwith %}
+        </div>
+
+        <!-- =================== DISPLAYING USER INPUT BOX BASED ON USER LOGGED IN OR NOT =================== -->
+        {% with user_id=session.get("user_id"), teacher_id=session.get("teacher_id"), student_id=session.get("student_id"), admin_id=session.get("admin_id")  %}
+        {% if user_id!=None or teacher_id!=None or student_id!=None or admin_id!=None %}
+          <section class="msger">
+            <!-- <header class="msger-header">
+              <div class="msger-header-title">
+                <i class="fas fa-bug"></i> Chatbot <i class="fas fa-bug"></i>
+              </div>
+            </header> -->
+        
+            <main class="msger-chat">
+              <div class="msg left-msg">
+                <div class="msg-img">
+                </div>
+        
+                <div class="msg-bubble">
+                  <div class="msg-info">
+                    <div class="msg-info-name">Student Information Chatbot</div>
+                    <div class="msg-info-time">12.45</div>
+                  </div>
+        
+                  <div class="msg-text">
+                    Hi, welcome to ChatBot! Go ahead and send me a message. 😄
+                  </div>
+                </div>
+              </div>
+        
+            </main>
+        
+            <!-- =================== DISPLAYING USER INPUT BOX BASED ON USER LOGGED IN OR NOT =================== -->
+            <form>
+              <button id="mic_button" type="button"><i id="microphone_icon" class="fas fa-microphone"></i></button>
+            </form>
+            <form class="msger-inputarea">
+              <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+              <button type="submit" id="msger-send-btn">Send</button>
+            </form>
+          </section>
+        
+          {% endif %}
+        {% endwith %}
+
+
+  </div>
+
+  <!-- =================== FEEDBACK =================== -->
+  <div class="modal fade" id="NegfeedBackBox" tabindex="-1" role="dialog" aria-labelledby="feedBackLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title mx-auto">Your feedback will help us improve</h4>
+          <button  type="button" class="close close_feedback_box" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/user_feedback" id="feed_back_box" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="feed_back_msg" placeholder="Enter Your Feedback">
+              <input type="hidden" name="feed_back_type" value="false" >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close_feedback_box" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PosfeedBackBox" tabindex="-1" role="dialog" aria-labelledby="feedBackLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title mx-auto">Your feedback will help us improve</h4>
+          <button  type="button" class="close close_feedback_box" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/user_feedback" id="feed_back_box" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="feed_back_msg" placeholder="Enter Your Feedback">
+              <input type="hidden" name="feed_back_type" value="true" >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close_feedback_box" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== MESSAGE BOT ICON =================== -->
+  <i id="message-bot" class="fa-regular fa-comments"></i>

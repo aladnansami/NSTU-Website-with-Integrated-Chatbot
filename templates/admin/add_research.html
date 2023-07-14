@@ -1,0 +1,52 @@
+{% include 'admin/includes/header.html' %}
+
+<div class="content-wrapper" style="min-height: 92vh;">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+            <li class="breadcrumb-item active">Add Research</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form action="/admin/upload_research" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" name="title" id="title" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="author" class="form-label">Author</label>
+              <input type="text" name="author" id="author" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="journal_url" class="form-label">Journal Link</label>
+              <input type="url" name="journal_url" id="journal_url" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="publication_date" class="form-label">Publication Date</label>
+              <input type="date" name="publication_date" id="publication_date" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" id="description" style="display: block;resize: vertical;outline: none;width: 100%;border: 1px solid #ced4da;height: 100px;" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload Research</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% include 'admin/includes/footer.html' %}

@@ -1,0 +1,33 @@
+{% include '/includes/header.html' %}
+<div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% if info %}
+            {% for item in info %}
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card shadow h-100 d-flex align-items-center">
+                <img src="{{ url_for('static',filename='images/student/'+ item[3]) }}" style="height: 230px; width: 230px;" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mt-4">{{ item[0] }}</h5>
+                  <p class="card-text">Session: {{ item[1] }}</p>
+                  {% if item[2]=="graduate" %}
+                  <p class="card-text">Graduate</p>
+                  {% elif item[2]=="postgraduate" %}
+                  <p class="card-text">Post Graduate</p>
+                  {% elif item[2]=="undergraduate" %}
+                  <p class="card-text">Under Graduate</p>
+                  {% else %}
+                  <p class="card-text">item[2]</p>
+                  {% endif %}
+                </div>
+                <div class="p-3">
+                    <a href="/student/{{ item[4] }}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% endif %}
+      </div>
+    </div>
+
+    {% include 'chatbot.html' %}
+    {% include '/includes/footer.html' %}

@@ -1,0 +1,115 @@
+/* =================== UNIVERSAL =================== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+
+/* =================== HEADER =================== */
+.header-box{
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.header-box>a{
+  position: absolute;
+  left: 0px;
+}
+.header-box>div.header-title{
+  position: absolute;
+  left: 100px;
+}
+.header-box>div.header-contact{
+  position: absolute;
+  right: 0;
+}
+.header-box>div>h3{
+  margin: 2px 0;
+}
+.header-box>a>img{
+  width: 70px;
+}
+header{
+  width: 90%;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .header-box>a>img{
+    width: 60px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 705px) {
+  .header-box>a{
+    left: -10px;
+  }
+  .header-box>div.header-title{
+    left: 60px;
+  }
+  .header-box>div>h3{
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .header-box>div.header-contact{
+    right: -10px;
+  }
+}
+@media screen and (max-width: 705px) and (min-width: 550px) {
+  .header-box>div>h3{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .header-box>a{
+    left: -15px;
+  }
+  .header-box>div.header-title{
+    left: 50px;
+  }
+  .header-box>div.header-contact{
+    right: -25px;
+  }
+  .header-box>div.header-contact>b{
+    font-size: 10px;
+  }
+}
+
+/* =================== NAVIGATION =================== */
+@media screen and (min-width: 992px) {
+  .navbar-nav{
+    margin-left: 100px;
+  }
+}
+.navbar-nav>li>a:hover{
+  color: gray!important;
+}
+
+
+
+.hover-list-container{
+  position: relative;
+  cursor: pointer;
+}
+.hover-list-item{
+  min-width: 125px;
+  width: max-content;
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: white;
+  z-index: 500;
+  border: 1px solid #343a40;
+  border-radius: 3px;
+  padding: 7px 10px;
+}
+.hover-list-container>.hover-list-item>.hover-list-container>.hover-list-item{
+  left: 115px;
+  top: -10px;
+}
+.hover-list-container>.hover-list-item>.hover-list-container:last-of-type>.hover-list-item{
+  top: -36px;
+}
+.hover-list-container:hover>.hover-list-item{
+  display: block!important;
+}

@@ -1,0 +1,208 @@
+{% include 'admin/includes/header.html' %}
+
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Add Student</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<section class="content">
+  <div class="container my-5">
+    <form action="{{ url_for('admin_add_student') }}" method="POST" enctype="multipart/form-data">
+    <div class="row align-items-start">
+      <div class="col-6">
+        <h1>About Information</h1>
+        <div class="mt-4">
+          <label for="name" class="form-label">Student Name</label>
+          <input type="text" name="name" id="name" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="studentid" class="form-label">Student ID</label>
+          <input type="text" name="studentid" id="studentid" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="designation" class="form-label">Designation</label>
+          <select class="form-select" name="designation" id="designation" aria-label="Default select example">
+            <option selected>Select Designation</option>
+            <option value="graduate">Graduate</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label for="department" class="form-label">Department</label>
+          <select class="form-select" name="department" aria-label="Select Department">
+            <option selected>Select Department</option>
+            <option value="iit">IIT</option>
+            <option value="iis">IIS</option>
+            <option value="ice">ICE</option>
+            <option value="cste">CSTE</option>
+            <option value="acce">ACCE</option>
+            <option value="eee">EEE</option>
+            <option value="fims">FIMS</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="mbg">Microbiology</option>
+            <option value="applied_math">Applied Math</option>
+            <option value="ftns">FTNS</option>
+            <option value="esdm">ESDM</option>
+            <option value="bge">BGE</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="stat">STAT</option>
+            <option value="oceanography">Oceanography</option>
+            <option value="bmb">BMB</option>
+            <option value="zoology">Zoology</option>
+            <option value="soil_water_environment">Soil Water Environment</option>
+            <option value="chemistry">chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="english">English</option>
+            <option value="economics">Economics</option>
+            <option value="bms">BMS</option>
+            <option value="sociology">Sociology</option>
+            <option value="bangla">Bangla</option>
+            <option value="social_work">Social Work</option>
+            <option value="dba">DBA</option>
+            <option value="mis">MIS</option>
+            <option value="thm">THM</option>
+             <option value="education">Education</option>
+            <option value="education_administration">Education Administration</option>
+            <option value="law">LAW</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label for="session" class="form-label">Session</label>
+          <select class="form-select" name="session" aria-label="Select Session">
+            <option selected>Select Session</option>
+            <option value="2023-2022">2023-2022</option>
+            <option value="2022-2021">2022-2021</option>
+            <option value="2021-2020">2021-2020</option>
+            <option value="2020-2019">2020-209</option>
+            <option value="2019-2018">2019-2018</option>
+            <option value="2018-2017">2018-2017</option>
+            <option value="2017-2016">2017-2016</option>
+            <option value="2016-2015">2016-2015</option>
+            <option value="2015-2014">2015-2014</option>
+            <option value="2014-2013">2014-2013</option>
+            <option value="2013-2012">2013-2012</option>
+            <option value="2012-2011">2012-2011</option>
+            <option value="2011-2010">2011-2010</option>
+            <option value="2010-2009">2010-2009</option>
+            <option value="2009-2008">2009-2008</option>
+            <option value="2008-2007">2008-2007</option>
+            <option value="2007-2006">2007-2006</option>
+            <option value="2006-2005">2006-2005</option>
+            <option value="2005-2004">2005-2004</option>
+            <option value="2004-2003">2004-2003</option>
+            <option value="2003-2002">2003-2002</option>
+            <option value="2002-2001">2002-2001</option>
+            <option value="2001-2000">2001-2000</option>
+            <option value="2000-1999">2000-1999</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <input type="button" value="Select Image" class="btn btn-outline-secondary" id="uploadImage" onclick="document.getElementById('fileInput').click()" />
+          <input type="file" class="form-control d-none" id="fileInput" name="file">
+        </div>
+        <div class="mt-4">
+          <label for="" class="form-label">About</label>
+          <textarea name="about" id="" style="display: block;resize: vertical;width: 100%;outline: none;border: 1px solid #ced4da;height: 100px;" ></textarea>
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Contact Information</h1>
+        <div class="mt-4">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="number" name="phone" id="phone" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="linkedin" class="form-label">Linkedin</label>
+          <input type="url" name="linkedin" id="linkedin" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="facebook" class="form-label">Facebook</label>
+          <input type="url" name="facebook" id="facebook" class="form-control">
+        </div>
+        <div class="mt-4">
+          <label for="twitter" class="form-label">Twitter</label>
+          <input type="url" name="twitter" id="twitter" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Educational Qualifications</h1>
+        <div class="mt-4">
+          <label for="degree" class="form-label">Degree Name</label>
+          <input type="text" name="degree" id="degree" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_name" class="form-label">University Name</label>
+          <input type="text" name="university_name" id="university_name" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_passing_year" class="form-label">Passing Year</label>
+          <input type="number" name="university_passing_year" id="university_passing_year" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="university_description" class="form-label">Description</label>
+          <textarea name="university_description" id="university_description" style="display: block;resize: vertical;width: 100%;outline: none;border: 1px solid #ced4da;height: 100px;" ></textarea>
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Journal Publications</h1>
+        <div class="mt-4">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" name="title" id="title" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="author" class="form-label">Author</label>
+          <input type="text" name="author" id="author" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="journal_name" class="form-label">Journal Name</label>
+          <input type="text" name="journal_name" id="journal_name" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="url" class="form-label">Journal URL</label>
+          <input type="url" name="url" id="url" class="form-control" />
+        </div>
+        <div class="mt-4">
+          <label for="date" class="form-label">Publication Date</label>
+          <input type="date" name="date" id="date" class="form-control" />
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Research Interest</h1>
+        <div class="mt-4">
+          <label for="research_topic" class="form-label">Research Topic</label>
+          <input type="text" name="research_topic" id="research_topic" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Set Password</h1>
+        <div class="mt-4">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" id="password" class="form-control">
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary my-3" >Add Student</button>
+    </form>
+  </div>
+</section>
+
+  {% include 'admin/includes/footer.html' %}

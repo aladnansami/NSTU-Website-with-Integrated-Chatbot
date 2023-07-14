@@ -1,0 +1,38 @@
+{% include '/includes/header.html' %}
+<div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% if info %}
+            {% for item in info %}
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card shadow h-100 d-flex align-items-center">
+                <img src="{{ url_for('static',filename='images/teacher/'+ item[3]) }}" style="height: 230px; width: 230px;" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mt-4">{{ item[1] }}</h5>
+                  {% if item[2]=="professor" %}
+              <p class="card-text">Professor</p>
+              {% elif item[2]=="assistantprofessor" %}
+              <p class="card-text">Assistant Professor</p>
+              {% elif item[2]=="professor_director" %}
+               <p class="card-text">Professor And Director</p>
+              {% elif item[2]=="professor_chairman" %}
+              <p class="card-text">Professor & Chairman</p>
+              {% elif item[2]=="associateprofessor" %}
+              <p class="card-text">Associate Proffessor</p>
+              {% elif item[2]=="lecturer" %}
+               <p class="card-text">Lecturer</p>
+              {% else %}
+               <p class="card-text">{{ item[2] }}</p>
+              {% endif %}
+                </div>
+                <div class="p-3">
+                    <a href="/faculty/{{ item[0] }}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% endif %}
+      </div>
+    </div>
+
+    {% include 'chatbot.html' %}
+    {% include '/includes/footer.html' %}

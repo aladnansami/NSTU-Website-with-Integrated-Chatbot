@@ -1,0 +1,21 @@
+{% include 'includes/header.html' %}
+<main>
+   <div class="container">
+      <div class="d-flex justify-content-around align-items-center my-5">
+         <div class="logo_container">
+            <img alt="NSTU LOGO" src="{{ url_for('static',filename='images/nstu_logo.png') }}">
+         </div>
+         <div class="name_container">
+            <p class="text-center"><strong>{{ data[1] }}</strong></p>
+            <p class="text-center mb-0">Hon'ble President</p>
+            <p class="text-center mt-0">People's Republic of Bangladesh</p>
+         </div>
+         <div class="image_container">
+            <img src="{{ url_for('static',filename='images/chancellor/'+data[3] ) }}" alt="Chancellor Image" width="245" >
+         </div>
+      </div>
+      <p class="p-3 border border-primary rounded text-justify">{{ data[2] }}</p>
+   </div>
+</main>
+  {% include 'chatbot.html' %}
+      {% include 'includes/footer.html' %}

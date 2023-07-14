@@ -1,0 +1,93 @@
+{% include 'teacher/includes/header.html' %}
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Change About</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container my-5">
+      <form action="/teacher/change_about" method="post" enctype="multipart/form-data">
+        <h1>About Information</h1>
+        <div class="mt-4">
+          <label for="name" class="form-label">Teacher Name</label>
+          <input type="text" name="name" id="name" class="form-control" value="{{ info[0] }}" required>
+        </div>
+        <div class="mt-4">
+          <label for="designation" class="form-label">Designation</label>
+          <select class="form-select" name="designation" id="designation" aria-label="Default select example" value="{{ info[1] }}" required>
+          <option selected>Select Designation</option>
+            <option value="professor">Professor</option>
+            <option value="professor_director">Professor & Director</option>
+            <option value="professor_chairman">Professor & Chairman</option>
+            <option value="assistantprofessor">Assistant Professor</option>
+            <option value="associateprofessor">Associate Professor</option>
+            <option value="lecturer">Lecturer</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label for="department" class="form-label">Department</label>
+          <select class="form-select" name="department" aria-label="Select Department" value="{{ info[2] }}" required>
+            <option selected>Select Department</option>
+            <option value="iit">IIT</option>
+            <option value="iis">IIS</option>
+            <option value="ice">ICE</option>
+            <option value="cste">CSTE</option>
+            <option value="acce">ACCE</option>
+            <option value="eee">EEE</option>
+            <option value="fims">FIMS</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="mbg">Microbiology</option>
+            <option value="applied_math">Applied Math</option>
+            <option value="ftns">FTNS</option>
+            <option value="esdm">ESDM</option>
+            <option value="bge">BGE</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="stat">STAT</option>
+            <option value="oceanography">Oceanography</option>
+            <option value="bmb">BMB</option>
+            <option value="zoology">Zoology</option>
+            <option value="soil_water_environment">Soil Water Environment</option>
+            <option value="chemistry">chemistry</option>
+            <option value="physics">Physics</option>
+            <option value="english">English</option>
+            <option value="economics">Economics</option>
+            <option value="bms">BMS</option>
+            <option value="sociology">Sociology</option>
+            <option value="bangla">Bangla</option>
+            <option value="social_work">Social Work</option>
+            <option value="dba">DBA</option>
+            <option value="mis">MIS</option>
+            <option value="thm">THM</option>
+             <option value="education">Education</option>
+            <option value="education_administration">Education Administration</option>
+            <option value="law">LAW</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <input type="button" value="Select Image" class="btn btn-outline-secondary" id="uploadImage" onclick="document.getElementById('fileInput').click()" />
+          <input type="file" class="form-control d-none" id="fileInput" name="file" value="{{ info[3] }}" required>
+        </div>
+        <div class="mt-4">
+          <label for="" class="form-label">About</label>
+          <textarea name="about" id="" style="display: block;resize: vertical;width: 100%;outline: none;border: 1px solid #ced4da;height: 100px;" required >{{ info[4] }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary my-4" >Change</button>
+      </form>
+    </div>
+  </section>
+
+
+{% include 'teacher/includes/footer.html' %}

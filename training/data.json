@@ -1,0 +1,5298 @@
+{
+  "intents": [
+    {
+      "tag": "স্বাগতম",
+      "patterns": [
+        "হেলো","হেলো কেমন আছো?","হেলো কি খবর?"," হেলো ভালো আছো?","হেলো এই তো","কেমন আছো?",
+        "হাই","হাই কেমন আছো?","হাই কি খবর?"," হাই ভালো আছো?","হাই এই তো",
+        " ওহে","ওহে কেমন আছো?","ওহে কি খবর?"," ওহে ভালো আছো?","ওহে এই তো",
+        "হেই","হেই কেমন আছো?","হেই কি খবর?"," হেই ভালো আছো?","হেই এই তো"
+      ],
+      "responses": [
+        "আমাদের চ্যাটবটে আপনাকে স্বাগতম।আমি কিভাবে সাহায্য করতে পারি আপনাকে?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "বিদায়",
+      "patterns": [
+        "বাই","বাই এখনের মতো","বাই এখন","বাই বন্ধু","বাই কেমন?",
+        " বিদায় এখনের মতো","বিদায় য়াজকের মতো","বিদায় এখন","বিদায় বন্ধু","বিদায় কেমন?",
+        "বিদায়",
+        "আপনার সাথে চ্যাট করে ভালো লাগলো","ভালো লাগ্লো কথা বলে","ভালো লাগ্লো চ্যাট করে "
+      ],
+      "responses": [
+        "আবারো দেখা হবে,ভালো থাকবেন।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ধন্যবাদ",
+      "patterns": [
+        "ধন্যবাদ"," ধন্যবাদ তোমাকে","ধন্যবাদ ভালো থেকো","ধন্যবাদ চ্যাটবট","ধন্যবাদ তোমায়","ধন্যবাদ আমাকে সাহায্য করার জন্যে",
+        "অসাধারণ","অসাধারণ তোমার আলাপ","অসাধারণ তুমি","তুমি অসাধারণ","অসাধারণ তোমার কাজ",
+        "ব্রিলিয়ান্ট","ব্রিলিয়ান্ট তোমার আলাপ","ব্রিলিয়ান্ট তুমি","তুমি ব্রিলিয়ান্ট","ব্রিলিয়ান্ট তোমার কাজ",
+        "এক্সিলেন্ট","এক্সিলেন্ট তোমার আলাপ","এক্সিলেন্ট তুমি","তুমি এক্সিলেন্ট","এক্সিলেন্ট তোমার কাজ"
+      ],
+      "responses": [
+        "আপনাকে সাহায্য করতে পেরে আমি ধন্য।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "আইআইটি",
+      "patterns": [
+        "আইআইটি এর পূর্ণরূপ কি?",
+        " আইআইটি র পুরো নাম কি?",
+        "আইআইটি র মানে কি?",
+        "আইআইটি দিয়ে কি বুঝায়",
+        "আইআইটি র অর্থ কি?",
+        "আইআইটি কি?",
+        "আইআইটি র পূর্ণরূপ",
+        "আইআইটি",
+        "আইআইটি মানে",
+        "আইআইটি অর্থ",
+        "আইআইটির মিনিং কি?",
+        "আইআইটির পুরা মিনিং বলো",
+        "আইআইটির ফুলফর্ম বলো",
+        "আইআইটি ফুলফর্ম"
+      ],
+      "responses": [
+        "আইআইটি এর পূর্ণরূপ হচ্ছে ইন্সটিটিউট অব ইনফরমেশন টেকনোলজি।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ম",
+      "patterns": [
+        "সিএসটিই এর পূর্ণরূপ কি?",
+        " সিএসটিই র পুরো নাম কি?",
+        "সিএসটিই র মানে কি?",
+        "সিএসটিই দিয়ে কি বুঝায়",
+        "সিএসটিই র অর্থ কি?",
+        "সিএসটিই কি?",
+        "সিএসটিই র পূর্ণরূপ",
+        "সিএসটিই",
+        "সিএসটিই মানে",
+        "সিএসটিই অর্থ",
+        "সিএসটিইর মিনিং কি?",
+        "সিএসটিইর পুরা মিনিং বলো",
+        "সিএসটিইর ফুলফর্ম বলো",
+        "সিএসটিই ফুলফর্ম"
+      ],
+      "responses": [
+        "সিএসটিই এর পূর্ণরূপ হচ্ছে কম্পিউটার সায়েন্স এন্ড টেলিকমিউনিকেশন ইঞ্জিনিয়ারিং।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এসিসিই",
+      "patterns": [
+        "এসিসিই এর পূর্ণরূপ কি?",
+        " এসিসিই র পুরো নাম কি?",
+        "এসিসিই র মানে কি?",
+        "এসিসিই দিয়ে কি বুঝায়",
+        "এসিসিই র অর্থ কি?",
+        "এসিসিই কি?",
+        "এসিসিই র পূর্ণরূপ",
+        "এসিসিই",
+        "এসিসিই মানে",
+        "এসিসিই অর্থ",
+        "এসিসিইর মিনিং কি?",
+        "এসিসিইর পুরা মিনিং বলো",
+        "এসিসিইর ফুলফর্ম বলো",
+        "এসিসিই ফুলফর্ম"
+      ],
+      "responses": [
+        "এসিসিই এর পূর্ণরূপ হচ্ছে এপ্লাইড কেমিস্ট্রি এন্ড কেমিক্যাল ইঞ্জিনিয়ারিং।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "আইসিই",
+      "patterns": [
+        "আইসিই এর পূর্ণরূপ কি?",
+        " আইসিই র পুরো নাম কি?",
+        "আইসিই র মানে কি?",
+        "আইসিই দিয়ে কি বুঝায়",
+        "আইসিই র অর্থ কি?",
+        "আইসিই কি?",
+        "আইসিই র পূর্ণরূপ",
+        "আইসিই",
+        "আইসিই মানে",
+        "আইসিই অর্থ",
+        "আইসিইর মিনিং কি?",
+        "আইসিইর পুরা মিনিং বলো",
+        "আইসিইর ফুলফর্ম বলো",
+        "আইসিই ফুলফর্ম"
+      ],
+      "responses": [
+        "আইসিই এর পূর্ণরূপ হচ্ছে ইনফরমেশন এন্ড কমিউনিকেশন ইঞ্জিনিয়ারিং।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ইইই",
+      "patterns": [
+        "ইইই এর পূর্ণরূপ কি?",
+        " ইইই র পুরো নাম কি?",
+        "ইইই র মানে কি?",
+        "ইইই দিয়ে কি বুঝায়",
+        "ইইই র অর্থ কি?",
+        "ইইই কি?",
+        "ইইই র পূর্ণরূপ",
+        "ইইই",
+        "ইইই মানে",
+        "ইইই অর্থ",
+        "ইইইর মিনিং কি?",
+        "ইইইর পুরা মিনিং বলো",
+        "ইইইর ফুলফর্ম বলো",
+        "ইইই ফুলফর্ম"
+      ],
+      "responses": [
+        "ইইই এর পূর্ণরূপ হচ্ছে ইলেক্ট্রিক্যাল এন্ড ইলেক্ট্রনিক ইঞ্জিনিয়ারিং।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ফিমস",
+      "patterns": [
+        "ফিমস এর পূর্ণরূপ কি?",
+        " ফিমস র পুরো নাম কি?",
+        "ফিমস র মানে কি?",
+        "ফিমস দিয়ে কি বুঝায়",
+        "ফিমস র অর্থ কি?",
+        "ফিমস কি?",
+        "ফিমস র পূর্ণরূপ",
+        "ফিমস",
+        "ফিমস মানে",
+        "ফিমস অর্থ",
+        "ফিমসর মিনিং কি?",
+        "ফিমসর পুরা মিনিং বলো",
+        "ফিমসর ফুলফর্ম বলো",
+        "ফিমস ফুলফর্ম"
+      ],
+      "responses": [
+        "ফিমস এর পূর্ণরূপ হচ্ছে ফিশারিজ এন্ড মেরিন সায়েন্স।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এমবিজি",
+      "patterns": [
+        "এমবিজি এর পূর্ণরূপ কি?",
+        " এমবিজি র পুরো নাম কি?",
+        "এমবিজি র মানে কি?",
+        "এমবিজি দিয়ে কি বুঝায়",
+        "এমবিজি র অর্থ কি?",
+        "এমবিজি কি?",
+        "এমবিজি র পূর্ণরূপ",
+        "এমবিজি",
+        "এমবিজি মানে",
+        "এমবিজি অর্থ",
+        "এমবিজির মিনিং কি?",
+        "এমবিজির পুরা মিনিং বলো",
+        "এমবিজির ফুলফর্ম বলো",
+        "এমবিজি ফুলফর্ম"
+      ],
+      "responses": [
+        "এমবিজি এর পূর্ণরূপ হচ্ছে মাইক্রোবায়োলজি।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এফটিএনএস",
+      "patterns": [
+        "এফটিএনএস এর পূর্ণরূপ কি?",
+        " এফটিএনএস র পুরো নাম কি?",
+        "এফটিএনএস র মানে কি?",
+        "এফটিএনএস দিয়ে কি বুঝায়",
+        "এফটিএনএস র অর্থ কি?",
+        "এফটিএনএস কি?",
+        "এফটিএনএস র পূর্ণরূপ",
+        "এফটিএনএস",
+        "এফটিএনএস মানে",
+        "এফটিএনএস অর্থ",
+        "এফটিএনএসর মিনিং কি?",
+        "এফটিএনএসর পুরা মিনিং বলো",
+        "এফটিএনএসর ফুলফর্ম বলো",
+        "এফটিএনএস ফুলফর্ম"
+      ],
+      "responses": [
+        "এফটিএনএস এর পূর্ণরূপ হচ্ছে ফুড টেকনোলজি এন্ড নিউট্রিশন সায়েন্স।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ইএসডিএম",
+      "patterns": [
+        "ইএসডিএম এর পূর্ণরূপ কি?",
+        " ইএসডিএম র পুরো নাম কি?",
+        "ইএসডিএম র মানে কি?",
+        "ইএসডিএম দিয়ে কি বুঝায়",
+        "ইএসডিএম র অর্থ কি?",
+        "ইএসডিএম কি?",
+        "ইএসডিএম র পূর্ণরূপ",
+        "ইএসডিএম",
+        "ইএসডিএম মানে",
+        "ইএসডিএম অর্থ",
+        "ইএসডিএমর মিনিং কি?",
+        "ইএসডিএমর পুরা মিনিং বলো",
+        "ইএসডিএমর ফুলফর্ম বলো",
+        "ইএসডিএম ফুলফর্ম"
+      ],
+      "responses": [
+        "ইএসডিএম এর পূর্ণরূপ হচ্ছে এনভায়রনমেন্টাল সায়েন্স এন্ড ডিজেস্টার ম্যানেজমেন্ট।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "বিজিই",
+      "patterns": [
+        "বিজিই এর পূর্ণরূপ কি?",
+        " বিজিই র পুরো নাম কি?",
+        "বিজিই র মানে কি?",
+        "বিজিই দিয়ে কি বুঝায়",
+        "বিজিই র অর্থ কি?",
+        "বিজিই কি?",
+        "বিজিই র পূর্ণরূপ",
+        "বিজিই",
+        "বিজিই মানে",
+        "বিজিই অর্থ",
+        "বিজিইর মিনিং কি?",
+        "বিজিইর পুরা মিনিং বলো",
+        "বিজিইর ফুলফর্ম বলো",
+        "বিজিই ফুলফর্ম"
+      ],
+      "responses": [
+        "বিজিই এর পূর্ণরূপ হচ্ছে বায়োটেকনোলজি এন্ড জেনেটিক ইঞ্জিনিয়ারিং।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এগ্রি",
+      "patterns": [
+        "এগ্রি এর পূর্ণরূপ কি?",
+        " এগ্রি র পুরো নাম কি?",
+        "এগ্রি র মানে কি?",
+        "এগ্রি দিয়ে কি বুঝায়",
+        "এগ্রি র অর্থ কি?",
+        "এগ্রি কি?",
+        "এগ্রি র পূর্ণরূপ",
+        "এগ্রি",
+        "এগ্রি মানে",
+        "এগ্রি অর্থ",
+        "এগ্রির মিনিং কি?",
+        "এগ্রির পুরা মিনিং বলো",
+        "এগ্রির ফুলফর্ম বলো",
+        "এগ্রি ফুলফর্ম"
+      ],
+      "responses": [
+        "এগ্রি এর পূর্ণরূপ হচ্ছে এগ্রিকালচার।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "স্ট্যাট",
+      "patterns": [
+        "স্ট্যাট এর পূর্ণরূপ কি?",
+        " স্ট্যাট র পুরো নাম কি?",
+        "স্ট্যাট র মানে কি?",
+        "স্ট্যাট দিয়ে কি বুঝায়",
+        "স্ট্যাট র অর্থ কি?",
+        "স্ট্যাট কি?",
+        "স্ট্যাট র পূর্ণরূপ",
+        "স্ট্যাট",
+        "স্ট্যাট মানে",
+        "স্ট্যাট অর্থ",
+        "স্ট্যাটর মিনিং কি?",
+        "স্ট্যাটর পুরা মিনিং বলো",
+        "স্ট্যাটর ফুলফর্ম বলো",
+        "স্ট্যাট ফুলফর্ম"
+      ],
+      "responses": [
+        "স্ট্যাট এর পূর্ণরূপ হচ্ছে স্ট্যাটিস্টিক্স।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "বিএমবি",
+      "patterns": [
+        "বিএমবি এর পূর্ণরূপ কি?",
+        " বিএমবি র পুরো নাম কি?",
+        "বিএমবি র মানে কি?",
+        "বিএমবি দিয়ে কি বুঝায়",
+        "বিএমবি র অর্থ কি?",
+        "বিএমবি কি?",
+        "বিএমবি র পূর্ণরূপ",
+        "বিএমবি",
+        "বিএমবি মানে",
+        "বিএমবি অর্থ",
+        "বিএমবির মিনিং কি?",
+        "বিএমবির পুরা মিনিং বলো",
+        "বিএমবির ফুলফর্ম বলো",
+        "বিএমবি ফুলফর্ম"
+      ],
+      "responses": [
+        "বিএমবি এর পূর্ণরূপ হচ্ছে বায়োকেমিস্ট্রি এন্ড মলিকিউলার বায়োলজি।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "বিএমএস",
+      "patterns": [
+        "বিএমএস এর পূর্ণরূপ কি?",
+        " বিএমএস র পুরো নাম কি?",
+        "বিএমএস র মানে কি?",
+        "বিএমএস দিয়ে কি বুঝায়",
+        "বিএমএস র অর্থ কি?",
+        "বিএমএস কি?",
+        "বিএমএস র পূর্ণরূপ",
+        "বিএমএস",
+        "বিএমএস মানে",
+        "বিএমএস অর্থ",
+        "বিএমএসর মিনিং কি?",
+        "বিএমএসর পুরা মিনিং বলো",
+        "বিএমএসর ফুলফর্ম বলো",
+        "বিএমএস ফুলফর্ম"
+      ],
+      "responses": [
+        "বিএমএস এর পূর্ণরূপ হচ্ছে বাংলাদেশ এন্ড মুক্তিযুদ্ধ স্টাডিজ।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ইকো",
+      "patterns": [
+        "ইকো এর পূর্ণরূপ কি?",
+        " ইকো র পুরো নাম কি?",
+        "ইকো র মানে কি?",
+        "ইকো দিয়ে কি বুঝায়",
+        "ইকো র অর্থ কি?",
+        "ইকো কি?",
+        "ইকো র পূর্ণরূপ",
+        "ইকো",
+        "ইকো মানে",
+        "ইকো অর্থ",
+        "ইকোর মিনিং কি?",
+        "ইকোর পুরা মিনিং বলো",
+        "ইকোর ফুলফর্ম বলো",
+        "ইকো ফুলফর্ম"
+      ],
+      "responses": [
+        "ইকো এর পূর্ণরূপ হচ্ছে ইকোনোমিক্স।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ডিবিএ",
+      "patterns": [
+        "ডিবিএ এর পূর্ণরূপ কি?",
+        " ডিবিএ র পুরো নাম কি?",
+        "ডিবিএ র মানে কি?",
+        "ডিবিএ দিয়ে কি বুঝায়",
+        "ডিবিএ র অর্থ কি?",
+        "ডিবিএ কি?",
+        "ডিবিএ র পূর্ণরূপ",
+        "ডিবিএ",
+        "ডিবিএ মানে",
+        "ডিবিএ অর্থ",
+        "ডিবিএর মিনিং কি?",
+        "ডিবিএর পুরা মিনিং বলো",
+        "ডিবিএর ফুলফর্ম বলো",
+        "ডিবিএ ফুলফর্ম"
+      ],
+      "responses": [
+        "ডিবিএ এর পূর্ণরূপ হচ্ছে ডিপার্ট্মেন্ট অব বিজনেস এডমিনিস্ট্রেশন।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এমআইএস",
+      "patterns": [
+        "এমআইএস এর পূর্ণরূপ কি?",
+        " এমআইএস র পুরো নাম কি?",
+        "এমআইএস র মানে কি?",
+        "এমআইএস দিয়ে কি বুঝায়",
+        "এমআইএস র অর্থ কি?",
+        "এমআইএস কি?",
+        "এমআইএস র পূর্ণরূপ",
+        "এমআইএস",
+        "এমআইএস মানে",
+        "এমআইএস অর্থ",
+        "এমআইএসর মিনিং কি?",
+        "এমআইএসর পুরা মিনিং বলো",
+        "এমআইএসর ফুলফর্ম বলো",
+        "এমআইএস ফুলফর্ম"
+      ],
+      "responses": [
+        "এমআইএস এর পূর্ণরূপ হচ্ছে ম্যানেজমেন্ট ইনফরমেশন সিস্টেমস।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "টিএইচএম",
+      "patterns": [
+        "টিএইচএম এর পূর্ণরূপ কি?",
+        " টিএইচএম র পুরো নাম কি?",
+        "টিএইচএম র মানে কি?",
+        "টিএইচএম দিয়ে কি বুঝায়",
+        "টিএইচএম র অর্থ কি?",
+        "টিএইচএম কি?",
+        "টিএইচএম র পূর্ণরূপ",
+        "টিএইচএম",
+        "টিএইচএম মানে",
+        "টিএইচএম অর্থ",
+        "টিএইচএমর মিনিং কি?",
+        "টিএইচএমর পুরা মিনিং বলো",
+        "টিএইচএমর ফুলফর্ম বলো",
+        "টিএইচএম ফুলফর্ম"
+      ],
+      "responses": [
+        "টিএইচএম এর পূর্ণরূপ হচ্ছে ট্যুরিজম এন্ড হস্পিটালিটি ম্যানেজমেন্ট।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "আইআইএস",
+      "patterns": [
+        "আইআইএস এর পূর্ণরূপ কি?",
+        " আইআইএস র পুরো নাম কি?",
+        "আইআইএস র মানে কি?",
+        "আইআইএস দিয়ে কি বুঝায়",
+        "আইআইএস র অর্থ কি?",
+        "আইআইএস কি?",
+        "আইআইএস র পূর্ণরূপ",
+        "আইআইএস",
+        "আইআইএস মানে",
+        "আইআইএস অর্থ",
+        "আইআইএসর মিনিং কি?",
+        "আইআইএসর পুরা মিনিং বলো",
+        "আইআইএসর ফুলফর্ম বলো",
+        "আইআইএস ফুলফর্ম"
+      ],
+      "responses": [
+        "আইআইএস এর পূর্ণরূপ হচ্ছে ইন্সটিটিউট অব ইনফরমেশন সায়েন্স।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "এনএসটিইউ ল্যাব সুবিধা",
+      "patterns": [
+        "এনএসটিইউ তে কয়টি ল্যাব আছে?",
+        "এনএসটিইউ তে মোট কতটি ল্যাব আছে?",
+        " এনএসটিইউ তে ল্যাব কয়টা আছে?",
+        "এনএসটিইউ র ল্যাব সংখ্যা",
+        "এনএসটিইউ তে ল্যাবগুলোর সুযোগ-সুবিধা কেমন?",
+        "এনএসটিইউ তে ল্যাব ফ্যাসিলিটিস কেমন?",
+        "এনএসটিইউ র ল্যবাগুলোর অবস্থা কেমন জানতে চাই"
+      ],
+      "responses": [
+        "প্রত্যেক ডিপার্টমেন্ট এবং ইন্সটিটিউট এর নিজ নিজ ল্যাব সুবিধা রয়েছে।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "আইআইটি ল্যাব সুবিধা",
+      "patterns": [
+        "আইআইটি এ কয়টি ল্যাব আছে?",
+        "আইআইটি এ মোট কতটি ল্যাব আছে?",
+        " আইআইটি এ ল্যাব কয়টা আছে?",
+        "আইআইটি এর ল্যাব সংখ্যা কত?",
+        "আইআইটি ল্যাব",
+        "আইআইটি এ ল্যাব ফ্যাসিলিটিস কেমন?",
+        "আইআইটি এ টোটাল ল্যাব সংখ্যা"
+      ],
+      "responses": [
+        "আইআইটি তে মোট ২টি ল্যাব রয়েছে।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "সিএসটিই ল্যাব সুবিধা",
+      "patterns": [
+        "সিএসটিই এ কয়টি ল্যাব আছে?",
+        "সিএসটিই এ মোট কতটি ল্যাব আছে?",
+        " সিএসটিই এ ল্যাব কয়টা আছে?",
+        "সিএসটিই এর ল্যাব সংখ্যা কত?",
+        "সিএসটিই ল্যাব",
+        "সিএসটিই এ ল্যাব ফ্যাসিলিটিস কেমন?",
+        "সিএসটিই এ টোটাল ল্যাব সংখ্যা"
+      ],
+      "responses": [
+        "সিএসটিই তে মোট ৪টি ল্যাব রয়েছে।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "বিএমএস ল্যাব সুবিধা",
+      "patterns": [
+        "বিএমএস এ কয়টি ল্যাব আছে?",
+        "বিএমএস এ মোট কতটি ল্যাব আছে?",
+        " বিএমএস এ ল্যাব কয়টা আছে?",
+        "বিএমএস এর ল্যাব সংখ্যা কত?",
+        "বিএমএস ল্যাব",
+        "বিএমএস এ ল্যাব ফ্যাসিলিটিস কেমন?",
+        "বিএমএস এ টোটাল ল্যাব সংখ্যা"
+      ],
+      "responses": [
+        "বিএমএস ডিপার্টেমেন্টে কোনো নির্দিষ্ট ল্যাব নেই।"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "",
+      "patterns": [
+        ""
+      ],
+      "responses": [
+        "This chatbot contains NSTU based information queries,please try do to valid question,Thank you"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chatbot",
+      "patterns": [
+        "who are you?",
+        "tell me who are you?",
+        "tumi k?",
+        "what you do?",
+        "what is your work?",
+        "your work",
+        "tell me about your work"
+      ],
+      "responses": [
+        "I am Nstu Chatbot for your help.How can I help you?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there","hi,whats'up","hi chatbot","hi",
+        "hi,How are you",
+        "Is anyone there?",
+        "Hey","hey there","hey,whats'up","hey chatbot",
+        "Hola",
+        "Hello","hello there","hello,whats'up","hello chatbot",
+        "Good day",
+        "greetings"
+      ],
+      "responses": [
+        "Hello, thanks for asking, How are you",
+        "Hi there, how can I help?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye","bye bye","see you soon",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you! soon ",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "no answer",
+      "patterns": [
+        "only",
+        "related",
+        "why",
+        "how",
+        "office",
+        "teachers",
+        "students",
+        "mission",
+        "lokkho",
+        "boys",
+        "girls",
+        "boy",
+        "girl",
+        "location",
+        "vobhon",
+        "vision"
+      ],
+      "responses": [
+        "Sorry, can't understand you.Please give me more info"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "NSTU",
+      "patterns": [
+        "nstu","what about nstu","nstu niye kichu bolo","nstu niye jante chai","nstu niye kichu bolo dehki",
+        "NSTU","nstu niye ki jano","say something about nstu","what is nstu","what nstu",
+        "Nstu",
+        "tell me something about nstu","Tell me about NSTU",
+        "about nstu"
+      ],
+      "responses": [
+        "Noakhali Science and Technology University(known as NSTU) is a public university in the coastal terrain Noakhali of Bangladesh. It is the 27th public university (out of 32) and fifth science and technology university in Bangladesh. Its foundation stone was laid on 11 October 2003 and academic activities started on 22 June 2006.Noakhali University of Science and Technology stands on Sonapur, 8 kilometers southwest of Maijdee. It has a land area of 101 acres (0.41 km2) covering 93 Salla and 95 Noakhali Mouza. The goal of the university is to make it is one of the top tier universities in Bangladesh. Presently the campus consists of one 5 storied administrative building, three academic buildings (academic 1 is 5 storied and academic 2 and 3 are 10 storied), three male student halls, two female student halls, a 5 storied auditorium and TSC building, one 4 storied library building. The well furnished central library equipped with online library facilities has 10,000 printed books and 1500 printed journals apart from numerous e-books and e-journals. It has also four teacher's and officer's dormitories, one staff dormitories, vice chancellor's building and a mosque as well as a guest house. The construction of NSTU medical centre is also completed. There are two sport field and two big ponds in the campus area. It has a canteen for students called NSTU cafeteria. It has also a martyr monument like a fountain pen and a sculpture of liberation war.In terms of natural beauty, Nastu is nothing less. Here is Maynardeep for the habitat of guest birds.A park called Varsity park is also decorated for students leisure time with different kind of trees, benches and an octagonal cafeteria."
+      ],
+      "context": [
+        ""
+      ]
+    },
+        {
+      "tag": "fine",
+      "patterns": [
+        "i am fine.",
+        "i am fine and you",
+        "i am fine, how are you?",
+        "how are you?",
+        "i am good",
+        "i am very fine",
+        "i am very fine and you?",
+        "i am also fine and you?",
+        "i am well and you?",
+        "i am well"
+      ],
+      "responses": [
+        "I am also fine,how can i help you?"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Software Engineering",
+      "patterns": [
+        "what is software engineering",
+        "software engineering",
+        "tell me about software engineering",
+        "tell me somthing about software engineering",
+        "software engineering niye jante chai",
+        "software engineering niye kichu bolen",
+        "i want to know about software engineering",
+        "tell me about software engineering programme",
+        "software engineering department",
+        "software engineering programme",
+        "software engineering ki",
+        "software engineering kichu bolte parben?"
+      ],
+      "responses": [
+        "Software Engineering is a Program of under Institute of Information Technology."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "gst varsity",
+      "patterns": [
+        "Is NSTU included in GST university?",
+        "nstu ki gst university gulor under e pore?",
+        "nstu included gst",
+        "nstu gst university",
+        "is nstu gst university?"
+
+      ],
+      "responses": [
+        "Yes, NSTU is included in GST universities."
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "nstu departments",
+      "patterns": [
+        "how many departments in nstu?","total department numbers in iit","nstu te koiti department ache?","nstu te department er sonkha koto","nstu departments","departments in nstu","what are the numbers of department in nstu","nstu total departments","departments"
+
+      ],
+      "responses": [
+        "Nstu have total 31 departments."
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "nstu institues",
+      "patterns": [
+        "how many institues in nstu?","total institutes numbers in iit","nstu te koiti institutes ache?","nstu te institutes er sonkha koto","nstu institutes","institutes in nstu","what are the numbers of institutes in nstu","nstu total institutes","institutes"
+
+      ],
+      "responses": [
+        "Nstu have total 2 institues. This are 1.Institute of Information Sciences(IIS) 2.Institute of Information Technology(IIT)"
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "nstu faculties",
+      "patterns": [
+        "how many faculties in nstu?","total faculties numbers in iit","nstu te koiti faculties ache?","nstu te faculties er sonkha koto","nstu faculties","faculties in nstu","what are the numbers of faculties in nstu","nstu total faculties","faculties"
+
+      ],
+      "responses": [
+        "Nstu have total 6 faculties. These are 1.Faculty of Engineering 2.Faculty of Science 3.Faculty of Social and Humanities 4.Faculty of Business Administration 5.Faculty of law 6.Faculty of Education Science"
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+
+    {
+      "tag": "internship in IIT",
+      "patterns": [
+        "Is IIT gives internship facilities?",
+        "intern facilities in iit",
+        "tell me about internship facilities in iit",
+        "tell me about intern in iit",
+        "internship in iit",
+        "iit internship niye jante chai",
+        "iit intern niye ami jante chai",
+        "iit intern niye kichu bolen",
+        "brief me about iit intern",
+        "Is software engineering gives intern facilities",
+        "intern facilities in software engineering",
+        "tell me about intern facilities in software engineering",
+        "tell me about intern in software engineering",
+        "intern in software engineering",
+        "software engineering internship niye jante chai",
+        "software engineering intern niye ami jante chai",
+        "software engineering intern niye kichu bolen",
+        "brief me about software engineering intern",
+        "iit ki intern offer kore",
+        "software engineering ki intern offer kore?"
+      ],
+      "responses": [
+        "Yes, IIT(Software Engineering) offers internship at 7th(year-4,term-1) semister. To gain the industry experience, students of seventh semester will be assigned with a well-known\norganization of Information Technology industry. Students, upon completion of 108 credits (36\ndifferent courses), will have an acceptable theoretical knowledge. With such background, students\nwill move to industry to implement the knowledge he or she gathered and at the same time to be\naware of the industry trend and there working environment. After completion of the internship,\nstudents will be back to the institution and have to present a report on their domain of work in the\nrespective organization. Students will also be evaluated form the assigned organization."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Lab Facilities",
+      "patterns": [
+        "how many Labs are in nstu?",
+        "Number of Labs in nstu",
+        "nstu te koiti Lab ache?",
+        "Total lab Number in nstu",
+        "Total Lab Sonkha koto nstu te?",
+        "nstu te lab koita ache?",
+        "nstu te lab facilities kmn?",
+        "lab facilitites of nstu",
+        "nstu lab songkha",
+        "nstu lab",
+        "nstu labs",
+        "nstu te koita lab ache?",
+        "nstu lab facilities",
+        "lab"
+      ],
+      "responses": [
+        "Each department and institute has their own lab facilities in NSTU."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "IIT Lab facilities",
+      "patterns": [
+        "how many Labs are in iit?",
+        "Number of Labs in iit",
+        "iit te koiti Lab ache?",
+        "Total lab Number in iit",
+        "Total Lab Sonkha koto iit te?",
+        "iit te lab koita ache?",
+        "iit te lab facilities kmn?",
+        "lab facilitites of iit",
+        "iit lab songkha",
+        "iit lab",
+        "iit labs",
+        "iit te koita lab ache?",
+        "iit lab facilities"
+      ],
+      "responses": [
+        "There are 2 Labs in IIT."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "IIT Teachers",
+      "patterns": [
+        "How many teachers are in iit?",
+        "Total Teachers number of IIT",
+        "Teachers Facilities of IIT",
+        "IIT te Teachers er sonkha koto?",
+        "IIT te kotojon sir-mam achen?",
+        "iit teachers",
+        "teachers of iit",
+        "teachers in iit",
+        "IIT te kotojon teachers ache?",
+        "Teachers number in iit",
+        "only iit teachers"
+      ],
+      "responses": [
+        "Total 13 teachers are in IIT.See more in details: https://www.nstu.edu.bd/IIT.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "cste Teachers",
+      "patterns": [
+        "How many teachers are in cste?",
+        "Total Teachers number of cste",
+        "Teachers Facilities of cste",
+        "cste te Teachers er sonkha koto?",
+        "cste te kotojon sir-mam achen?",
+        "cste teachers",
+        "teachers of cste",
+        "teachers in cste",
+        "cste te kotojon teachers ache?",
+        "Teachers number in cste",
+        "only cste teachers"
+      ],
+      "responses": [
+        "Total 17 teachers are in CSTE.See more in details: https://nstu.edu.bd/cste.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "acce Teachers",
+      "patterns": [
+        "How many teachers are in acce?",
+        "Total Teachers number of acce",
+        "Teachers Facilities of acce",
+        "acce te Teachers er sonkha koto?",
+        "acce te kotojon sir-mam achen?",
+        "acce teachers",
+        "teachers of acce",
+        "teachers in acce",
+        "acce te kotojon teachers ache?",
+        "Teachers number in acce",
+        "only acce teachers"
+      ],
+      "responses": [
+        "Total 29 teachers are in ACCE.See more in details: https://nstu.edu.bd/acce.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "eee Teachers",
+      "patterns": [
+        "How many teachers are in eee?",
+        "Total Teachers number of eee",
+        "Teachers Facilities of eee",
+        "eee te Teachers er sonkha koto?",
+        "eee te kotojon sir-mam achen?",
+        "eee teachers",
+        "teachers of eee",
+        "teachers in eee",
+        "eee te kotojon teachers ache?",
+        "Teachers number in eee",
+        "only eee teachers"
+      ],
+      "responses": [
+        "Total 8 teachers are in EEE.See more in details: https://nstu.edu.bd/eee.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ice Teachers",
+      "patterns": [
+        "How many teachers are in ice?",
+        "Total Teachers number of ice",
+        "Teachers Facilities of ice",
+        "ice te Teachers er sonkha koto?",
+        "ice te kotojon sir-mam achen?",
+        "ice teachers",
+        "teachers of ice",
+        "teachers in ice",
+        "ice te kotojon teachers ache?",
+        "Teachers number in ice",
+        "only ice teachers"
+      ],
+      "responses": [
+        "Total 16 teachers are in ICE.See more in details: https://nstu.edu.bd/ice.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "fims Teachers",
+      "patterns": [
+        "How many teachers are in fims?",
+        "Total Teachers number of fims",
+        "Teachers Facilities of fims",
+        "fims te Teachers er sonkha koto?",
+        "fims te kotojon sir-mam achen?",
+        "fims teachers",
+        "teachers of fims",
+        "teachers in fims",
+        "fims te kotojon teachers ache?",
+        "Teachers number in fims",
+        "only fims teachers"
+      ],
+      "responses": [
+        "Total 25 teachers are in FIMS.See more in details: https://nstu.edu.bd/fims.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "pharmacy Teachers",
+      "patterns": [
+        "How many teachers are in pharmacy?",
+        "Total Teachers number of pharmacy",
+        "Teachers Facilities of pharmacy",
+        "pharmacy te Teachers er sonkha koto?",
+        "pharmacy te kotojon sir-mam achen?",
+        "pharmacy teachers",
+        "teachers of pharmacy",
+        "teachers in pharmacy",
+        "pharmacy te kotojon teachers ache?",
+        "Teachers number in pharmacy",
+        "only pharmacy teachers"
+      ],
+      "responses": [
+        "Total 28 teachers are in department of Pharmacy.See more in details: https://nstu.edu.bd/phar.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "applied math Teachers",
+      "patterns": [
+        "How many teachers are in applied math?",
+        "Total Teachers number of applied math",
+        "Teachers Facilities of applied math",
+        "applied math te Teachers er sonkha koto?",
+        "applied math te kotojon sir-mam achen?",
+        "applied math teachers",
+        "teachers of applied math",
+        "teachers in applied math",
+        "applied math te kotojon teachers ache?",
+        "Teachers number in applied math",
+        "only applied math teachers"
+      ],
+      "responses": [
+        "Total 17 teachers are in department of Applied Math.See more in details: https://nstu.edu.bd/amath.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ftns Teachers",
+      "patterns": [
+        "How many teachers are in ftns?",
+        "Total Teachers number of ftns",
+        "Teachers Facilities of ftns",
+        "ftns te Teachers er sonkha koto?",
+        "ftns te kotojon sir-mam achen?",
+        "ftns teachers",
+        "teachers of ftns",
+        "teachers in ftns",
+        "ftns te kotojon teachers ache?",
+        "Teachers number in ftns",
+        "only ftns teachers"
+      ],
+      "responses": [
+        "Total 20 teachers are in FTNS.See more in details: https://nstu.edu.bd/ftns.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "esdm Teachers",
+      "patterns": [
+        "How many teachers are in esdm?",
+        "Total Teachers number of esdm",
+        "Teachers Facilities of esdm",
+        "esdm te Teachers er sonkha koto?",
+        "esdm te kotojon sir-mam achen?",
+        "esdm teachers",
+        "teachers of esdm",
+        "teachers in esdm",
+        "esdm te kotojon teachers ache?",
+        "Teachers number in esdm",
+        "only esdm teachers"
+      ],
+      "responses": [
+        "Total 20 teachers are in ESDM.See more in details: https://nstu.edu.bd/esdm.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "bge Teachers",
+      "patterns": [
+        "How many teachers are in bge?",
+        "Total Teachers number of bge",
+        "Teachers Facilities of bge",
+        "bge te Teachers er sonkha koto?",
+        "bge te kotojon sir-mam achen?",
+        "bge teachers",
+        "teachers of bge",
+        "teachers in bge",
+        "bge te kotojon teachers ache?",
+        "Teachers number in bge",
+        "only bge teachers"
+      ],
+      "responses": [
+        "Total 24 teachers are in BGE.See more in details: https://nstu.edu.bd/bge.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Agriculture Teachers",
+      "patterns": [
+        "How many teachers are in Agriculture?",
+        "Total Teachers number of Agriculture",
+        "Teachers Facilities of Agriculture",
+        "Agriculture te Teachers er sonkha koto?",
+        "Agriculture te kotojon sir-mam achen?",
+        "Agriculture teachers",
+        "teachers of Agriculture",
+        "teachers in Agriculture",
+        "Agriculture te kotojon teachers ache?",
+        "Teachers number in Agriculture",
+        "only Agriculture teachers"
+      ],
+      "responses": [
+        "Total 15 teachers are in department of Agriculture.See more in details: https://nstu.edu.bd/agriculture.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Statistics Teachers",
+      "patterns": [
+        "How many teachers are in Statistics?",
+        "Total Teachers number of Statistics",
+        "Teachers Facilities of Statistics",
+        "Statistics te Teachers er sonkha koto?",
+        "Statistics te kotojon sir-mam achen?",
+        "Statistics teachers",
+        "teachers of Statistics",
+        "teachers in Statistics",
+        "Statistics te kotojon teachers ache?",
+        "Teachers number in Statistics",
+        "only Statistics teachers"
+      ],
+      "responses": [
+        "Total 10 teachers are in department of Statistics.See more in details: https://nstu.edu.bd/stat.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Oceanography Teachers",
+      "patterns": [
+        "How many teachers are in Oceanography?",
+        "Total Teachers number of Oceanography",
+        "Teachers Facilities of Oceanography",
+        "Oceanography te Teachers er sonkha koto?",
+        "Oceanography te kotojon sir-mam achen?",
+        "Oceanography teachers",
+        "teachers of Oceanography",
+        "teachers in Oceanography",
+        "Oceanography te kotojon teachers ache?",
+        "Teachers number in Oceanography",
+        "only Oceanography teachers"
+      ],
+      "responses": [
+        "Total 10 teachers are in department of Oceanography.See more in details: https://nstu.edu.bd/ocn.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "bmb Teachers",
+      "patterns": [
+        "How many teachers are in bmb?",
+        "Total Teachers number of bmb",
+        "Teachers Facilities of bmb",
+        "bmb te Teachers er sonkha koto?",
+        "bmb te kotojon sir-mam achen?",
+        "bmb teachers",
+        "teachers of bmb",
+        "teachers in bmb",
+        "bmb te kotojon teachers ache?",
+        "Teachers number in bmb",
+        "only bmb teachers"
+      ],
+      "responses": [
+        "Total 7 teachers are in BMB.See more in details: https://nstu.edu.bd/bmb.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Zoology Teachers",
+      "patterns": [
+        "How many teachers are in Zoology?",
+        "Total Teachers number of Zoology",
+        "Teachers Facilities of Zoology",
+        "Zoology te Teachers er sonkha koto?",
+        "Zoology te kotojon sir-mam achen?",
+        "Zoology teachers",
+        "teachers of Zoology",
+        "teachers in Zoology",
+        "Zoology te kotojon teachers ache?",
+        "Teachers number in Zoology",
+        "only Zoology teachers"
+      ],
+      "responses": [
+        "Total 5 teachers are in department of Zoology.See more in details: https://nstu.edu.bd/zoo.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "swe Teachers",
+      "patterns": [
+        "How many teachers are in swe?",
+        "Total Teachers number of swe",
+        "Teachers Facilities of swe",
+        "swe te Teachers er sonkha koto?",
+        "swe te kotojon sir-mam achen?",
+        "swe teachers",
+        "teachers of swe",
+        "teachers in swe",
+        "swe te kotojon teachers ache?",
+        "Teachers number in swe",
+        "only swe teachers"
+      ],
+      "responses": [
+        "Total 1 teacher is in SWE.See more in details: https://nstu.edu.bd/SWE.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chemistry Teachers",
+      "patterns": [
+        "How many teachers are in Chemistry?",
+        "Total Teachers number of Chemistry",
+        "Teachers Facilities of Chemistry",
+        "Chemistry te Teachers er sonkha koto?",
+        "Chemistry te kotojon sir-mam achen?",
+        "Chemistry teachers",
+        "teachers of Chemistry",
+        "teachers in Chemistry",
+        "Chemistry te kotojon teachers ache?",
+        "Teachers number in Chemistry",
+        "only Chemistry teachers"
+      ],
+      "responses": [
+        "Total 1 teacher is in department of Chemistry.See more in details: https://nstu.edu.bd/chemistry.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "physics Teachers",
+      "patterns": [
+        "How many teachers are in physics?",
+        "Total Teachers number of physics",
+        "Teachers Facilities of physics",
+        "physics te Teachers er sonkha koto?",
+        "physics te kotojon sir-mam achen?",
+        "physics teachers",
+        "teachers of physics",
+        "teachers in physics",
+        "physics te kotojon teachers ache?",
+        "Teachers number in physics",
+        "only physics teachers"
+      ],
+      "responses": [
+        "Total 1 teacher is in department of Physics.See more in details: https://nstu.edu.bd/physics.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "english Teachers",
+      "patterns": [
+        "How many teachers are in english?",
+        "Total Teachers number of english",
+        "Teachers Facilities of english",
+        "english te Teachers er sonkha koto?",
+        "english te kotojon sir-mam achen?",
+        "english teachers",
+        "teachers of english",
+        "teachers in english",
+        "english te kotojon teachers ache?",
+        "Teachers number in english",
+        "only english teachers"
+      ],
+      "responses": [
+        "Total 20 teachers are in department of English.See more in details: https://nstu.edu.bd/eng.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "economics Teachers",
+      "patterns": [
+        "How many teachers are in economics?",
+        "Total Teachers number of economics",
+        "Teachers Facilities of economics",
+        "economics te Teachers er sonkha koto?",
+        "economics te kotojon sir-mam achen?",
+        "economics teachers",
+        "teachers of economics",
+        "teachers in economics",
+        "economics te kotojon teachers ache?",
+        "Teachers number in economics",
+        "only economics teachers"
+      ],
+      "responses": [
+        "Total 20 teachers are in department of Economics.See more in details: https://nstu.edu.bd/economics.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "bms Teachers",
+      "patterns": [
+        "How many teachers are in bms?",
+        "Total Teachers number of bms",
+        "Teachers Facilities of bms",
+        "bms te Teachers er sonkha koto?",
+        "bms te kotojon sir-mam achen?",
+        "bms teachers",
+        "teachers of bms",
+        "teachers in bms",
+        "bms te kotojon teachers ache?",
+        "Teachers number in bms",
+        "only bms teachers"
+      ],
+      "responses": [
+        "Total 13 teachers are in BMS.See more in details: https://nstu.edu.bd/bms.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Sociology Teachers",
+      "patterns": [
+        "How many teachers are in Sociology?",
+        "Total Teachers number of Sociology",
+        "Teachers Facilities of Sociology",
+        "Sociology te Teachers er sonkha koto?",
+        "Sociology te kotojon sir-mam achen?",
+        "Sociology teachers",
+        "teachers of Sociology",
+        "teachers in Sociology",
+        "Sociology te kotojon teachers ache?",
+        "Teachers number in Sociology",
+        "only Sociology teachers"
+      ],
+      "responses": [
+        "Total 5 teachers are in department of Sociology.See more in details: https://nstu.edu.bd/soc.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "bangla Teachers",
+      "patterns": [
+        "How many teachers are in bangla?",
+        "Total Teachers number of bangla",
+        "Teachers Facilities of bangla",
+        "bangla te Teachers er sonkha koto?",
+        "bangla te kotojon sir-mam achen?",
+        "bangla teachers",
+        "teachers of bangla",
+        "teachers in bangla",
+        "bangla te kotojon teachers ache?",
+        "Teachers number in bangla",
+        "only bangla teachers"
+      ],
+      "responses": [
+        "Total 14 teachers are in department of Bangla.See more in details: https://nstu.edu.bd/bangla.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Social Work Teachers",
+      "patterns": [
+        "How many teachers are in Social Work?",
+        "Total Teachers number of Social Work",
+        "Teachers Facilities of Social Work",
+        "Social Work te Teachers er sonkha koto?",
+        "Social Work te kotojon sir-mam achen?",
+        "Social Work teachers",
+        "teachers of Social Work",
+        "teachers in Social Work",
+        "Social Work te kotojon teachers ache?",
+        "Teachers number in Social Work",
+        "only Social Work teachers"
+      ],
+      "responses": [
+        "Total 4 teachers are in department of Social Work.See more in details: https://nstu.edu.bd/sw.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "dba Teachers",
+      "patterns": [
+        "How many teachers are in dba?",
+        "Total Teachers number of dba",
+        "Teachers Facilities of dba",
+        "dba te Teachers er sonkha koto?",
+        "dba te kotojon sir-mam achen?",
+        "dba teachers",
+        "teachers of dba",
+        "teachers in dba",
+        "dba te kotojon teachers ache?",
+        "Teachers number in dba",
+        "only dba teachers"
+      ],
+      "responses": [
+        "Total 14 teachers are in DBA.See more in details: https://nstu.edu.bd/dba.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mis Teachers",
+      "patterns": [
+        "How many teachers are in mis?",
+        "Total Teachers number of mis",
+        "Teachers Facilities of mis",
+        "mis te Teachers er sonkha koto?",
+        "mis te kotojon sir-mam achen?",
+        "mis teachers",
+        "teachers of mis",
+        "teachers in mis",
+        "mis te kotojon teachers ache?",
+        "Teachers number in mis",
+        "only mis teachers"
+      ],
+      "responses": [
+        "Total 8 teachers are in MIS.See more in details: https://nstu.edu.bd/mis.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thm Teachers",
+      "patterns": [
+        "How many teachers are in thm?",
+        "Total Teachers number of thm",
+        "Teachers Facilities of thm",
+        "thm te Teachers er sonkha koto?",
+        "thm te kotojon sir-mam achen?",
+        "thm teachers",
+        "teachers of thm",
+        "teachers in thm",
+        "thm te kotojon teachers ache?",
+        "Teachers number in thm",
+        "only thm teachers"
+      ],
+      "responses": [
+        "Total 9 teachers are in THM.See more in details: https://nstu.edu.bd/thm.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "law Teachers",
+      "patterns": [
+        "How many teachers are in law?",
+        "Total Teachers number of law",
+        "Teachers Facilities of law",
+        "law te Teachers er sonkha koto?",
+        "law te kotojon sir-mam achen?",
+        "law teachers",
+        "teachers of law",
+        "teachers in law",
+        "law te kotojon teachers ache?",
+        "Teachers number in law",
+        "only law teachers"
+      ],
+      "responses": [
+        "Total 4 teachers are in department of Law.See more in details: https://nstu.edu.bd/law.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "education Teachers",
+      "patterns": [
+        "How many teachers are in education?",
+        "Total Teachers number of education",
+        "Teachers Facilities of education",
+        "education te Teachers er sonkha koto?",
+        "education te kotojon sir-mam achen?",
+        "education teachers",
+        "teachers of education",
+        "teachers in education",
+        "education te kotojon teachers ache?",
+        "Teachers number in education",
+        "only education teachers"
+      ],
+      "responses": [
+        "Total 6 teachers are in department of Education.See more in details: https://nstu.edu.bd/edu.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Educational Administration Teachers",
+      "patterns": [
+        "How many teachers are in Educational Administration?",
+        "Total Teachers number of Educational Administration",
+        "Teachers Facilities of Educational Administration",
+        "Educational Administration te Teachers er sonkha koto?",
+        "Educational Administration te kotojon sir-mam achen?",
+        "Educational Administration teachers",
+        "teachers of Educational Administration",
+        "teachers in Educational Administration",
+        "Educational Administration te kotojon teachers ache?",
+        "Teachers number in Educational Administration",
+        "only Educational Administration teachers"
+      ],
+      "responses": [
+        "Total 4 teachers are in department of Educational Administration.See more in https://nstu.edu.bd/edu_admin.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "iis Teachers",
+      "patterns": [
+        "How many teachers are in iis?",
+        "Total Teachers number of iis",
+        "Teachers Facilities of iis",
+        "iis te Teachers er sonkha koto?",
+        "iis te kotojon sir-mam achen?",
+        "iis teachers",
+        "teachers of iis",
+        "teachers in iis",
+        "iis te kotojon teachers ache?",
+        "Teachers number in iis",
+        "only iis teachers"
+      ],
+      "responses": [
+        "Total 9 teachers are in IIS.See more in https://nstu.edu.bd/IIS.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Director of IIT",
+      "patterns": [
+        "what is the name of The Director of IIT?",
+        "who is the director of IIT?",
+        "IIT er Director er nam ki?",
+        "iit director name",
+        "iit director",
+        "director name of iit",
+        "director of iit",
+        "iit r director er nam ki?",
+        "iit r director",
+        "iit te director k"
+      ],
+      "responses": [
+        "Dr. Mohammad Salim Hossain(Director & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "director of IIS",
+      "patterns": [
+        "what is the name of The director of iis?",
+        "who is the director of iis?",
+        "iis er director er nam ki?",
+        "iis director name",
+        "iis director",
+        "director name of iis",
+        "director of iis",
+        "iis r director er nam ki?",
+        "iis r director",
+        "iis te director k"
+      ],
+      "responses": [
+        "Dr. Md Anisuzzaman(Director & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "director",
+      "patterns": [
+        "director","nstu director","director of nstu","tell me about director","only director"
+      ],
+      "responses": [
+        "Each institute has its own director."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman",
+      "patterns": [
+        "chairman","nstu chairman","chairman of nstu","tell me about chairman","only chairman"
+      ],
+      "responses": [
+        "Each department has its own chairman."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Library location",
+      "patterns": [
+        "Where is the library building?",
+        "Library building ta kothay?",
+        "Library building ta khuje pacchi na",
+        "Library building",
+        "Provide me the library building location",
+        "where is NSTU Library",
+        "Location of Library building, please",
+        "nstu library location",
+        "library location",
+        "central library ta kondike",
+        "library ta kondike",
+        "library ta kothai?",
+        "library kothai"
+      ],
+      "responses": [
+        "A little further the central mosque,the library building is on the left hand side.Here is the location of Library buildiing: https://goo.gl/maps/8joc4yy4GW2bxMdbA"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Library facilities",
+      "patterns": [
+        "Nstu library",
+        "what about nstu library?",
+        "library er environment kmn?",
+        "Library r poribesh kmn",
+        "library niya jante chai",
+        "Central Library",
+        "library facilities",
+        "facilities of library",
+        "library"
+      ],
+      "responses": [
+        "NSTU library is well decorated with thousands of books.Also there are enough chairs and tables where students can sit and do their studies attentively."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "IIT Contact",
+      "patterns": [
+        "when IIT office get open and close?",
+        "IIT office kotokkhon porjonto on thake?",
+        "IIT office koitar dike off kora hoi?",
+        "Open and Close time of IIT Office",
+        "which days are off-day in IIT office?",
+        "iit office time",
+        "iit office niye jante chai",
+        "iit office khola thake kotokkhon",
+        "iit office hour"
+      ],
+      "responses": [
+        "(Office Hour: 9:00 AM to 5:00 PM, Days: Sunday to Thursday, Closed weekend day: Friday and Saturday)"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Medical center",
+      "patterns": [
+        "Is there any medical center at NSTU?",
+        "Is there any medical centre at NSTU?",
+        "where is the medical center?",
+        "where is the medical centre?",
+        "Medical center er location ta kothay?",
+        "Medical centre er location ta kothay?",
+        "NSTU te ki kono medical center ache?",
+        "NSTU te ki kono medical centre ache?",
+        "is there any hospital in NSTU?",
+        "medical centre koi?"
+      ],
+      "responses": [
+        "Here you can find the NSTU Medical center at this location: https://goo.gl/maps/w28nuzkz1gmpZXYWA"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Medical center facilities",
+      "patterns": [
+        "tell me about some facilities provided by medical center",
+        "tell me about some facilities provided by medical centre",
+        "ki ki subidha pawa jabe medical center e?",
+        "ki ki subidha pawa jabe medical centre e?",
+        "I am sick, help me",
+        "ami osustho"
+      ],
+      "responses": [
+        "The medical center of Noakhali science and technology university (NSTU) offers free experienced general practitioner and emergency medical care services to all members (students, teachers, officers, staff, also family members of the teachers, officers, staff) of the university community. The center provides service usually 8.30 am to 5.00 pm in working days but provide emergency services 24 hours. All members of the university get medicine from the medical center at free of cost .The center also has an ambulance, for 24 hours service."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "MOSQUE",
+      "patterns": [
+        "Where is the NSTU Central Mosque located?",
+        "Please tell me the Location of Central Mosque of NSTU",
+        "Nstu er central mosque ta kondike?",
+        "Nstu er mosjid ta kon jaigai ache?",
+        "nstu mosjid","nstu mosque","mosque","nstu mosque kondike",
+        "mosjid kondike",
+        "mosjid er location ta kothai",
+        "mosjid ta kondike",
+        "central mosjid",
+        "mosjid"
+      ],
+      "responses": [
+        "The central mosque of NSTU is located on the way to the library building and front of the medical center NSTU. See more details in map: https://vymaps.com/BD/Nstu-Central-Mosque-O8343189241/"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Temple",
+      "patterns": [
+        "Where is the NSTU Central Temple located?",
+        "Please tell me the Location of the Central Temple of NSTU",
+        "Nstu er central temple ta kondike?",
+        "Nstu er temple ta kon jaigai ache?",
+        "nstu mondir",
+        "mondir kondike",
+        "mondir er location ta kothai",
+        "mondir ta kondike",
+        "central mondir",
+        "mondir"
+      ],
+      "responses": [
+        "The central temple of  NSTU is located on the way to the Bibi Khadija Hall or Monoshoroni Uddyan. See more details in map:https://www.google.com/maps/place/NSTU+Central+Temple/@22.7946896,91.0980933,17z/data=!3m1!4b1!4m5!3m4!1s0x3754afd4593f5885:0x159d54d3b3a13a9e!8m2!3d22.7946958!4d91.1002815"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of esdm",
+      "patterns": [
+        "what is the mission of esdm department?",
+        "what is the mission of esdm dept?",
+        "mission of esdm?",
+        "esdm mission?",
+        "esdm lokkho?",
+        "esdm aim?",
+        "esdm er lokkho ki?",
+        "esdm er aim ki?",
+        "esdm er goal ki?",
+        "esdm er target ki?",
+        "esdm er mission ki?",
+        "esdm er mission niye bolen",
+        "esdm er aim niye bolen",
+        "esdm er lokkho niye bolen",
+        "esdm er goal niye bolen",
+        "esdm er mission niye jante chai",
+        "esdm er lokkho niye jante chai",
+        "esdm er aim niye jante chai",
+        "esdm er goal niye jante chai"
+      ],
+      "responses": [
+        "1. To create and effectively disseminate fundamental knowledge about Environment, its components and resources, and the processes by which it changes in a collaborative interdisciplinary setting.2. To provide diverse learning experiences using state-of-the-art lab facilities and diverse field site.3. To create an academic culture of mutual respect and intellectual collaboration this ensures environmental stewardship and service to humanity through expansion and dissemination of environmental science knowledge.4. To conduct priority based research on contemporary environmental issues and producing scholarly works in the field environmental science with nationally and internationally recognized research grants."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of ice",
+      "patterns": [
+        "what is the mission of ice department?",
+        "what is the mission of ice dept?",
+        "mission of ice?",
+        "ice mission?",
+        "ice lokkho?",
+        "ice aim?",
+        "ice er lokkho ki?",
+        "ice er aim ki?",
+        "ice er goal ki?",
+        "ice er target ki?",
+        "ice er mission ki?",
+        "ice er mission niye bolen",
+        "ice er aim niye bolen",
+        "ice er lokkho niye bolen",
+        "ice er goal niye bolen",
+        "ice er mission niye jante chai",
+        "ice er lokkho niye jante chai",
+        "ice er aim niye jante chai",
+        "ice er goal niye jante chai"
+      ],
+      "responses": [
+        "We provide high quality education, research and services in information and Communication Technology in a culture of creativity and innovation."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of eee",
+      "patterns": [
+        "what is the mission of eee department?",
+        "what is the mission of eee dept?",
+        "mission of eee?",
+        "eee mission?",
+        "eee lokkho?",
+        "eee aim?",
+        "eee er lokkho ki?",
+        "eee er aim ki?",
+        "eee er goal ki?",
+        "eee er target ki?",
+        "eee er mission ki?",
+        "eee er mission niye bolen",
+        "eee er aim niye bolen",
+        "eee er lokkho niye bolen",
+        "eee er goal niye bolen",
+        "eee er mission niye jante chai",
+        "eee er lokkho niye jante chai",
+        "eee er aim niye jante chai",
+        "eee er goal niye jante chai"
+      ],
+      "responses": [
+        "1.To provide outstanding facilities to the students for gaining quality education in Electrical and Electronic Engineering.2.To keep the course curricula up-to-date with the latest trends in EEE technologies on a regular basis.3.To create facilities for conducting high quality research in the field of Electrical and Electronic Engineering.4.To spread the information and knowledge picked up from the researches to the stakeholders through scholarly publications."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of cste",
+      "patterns": [
+        "what is the mission of cste department?",
+        "what is the mission of cste dept?",
+        "mission of cste?",
+        "cste mission?",
+        "cste lokkho?",
+        "cste goal",
+        "cste aim?",
+        "cste er lokkho ki?",
+        "cste er aim ki?",
+        "cste er goal ki?",
+        "cste er target ki?",
+        "cste er mission ki?",
+        "cste er mission niye bolen",
+        "cste er aim niye bolen",
+        "cste er lokkho niye bolen",
+        "cste er goal niye bolen",
+        "cste er mission niye jante chai",
+        "cste er lokkho niye jante chai",
+        "cste er aim niye jante chai",
+        "cste er goal niye jante chai",
+        "what is the vision of cste department?",
+        "what is the vision of cste dept?",
+        "vision of cste?",
+        "cste vision?",
+        "cste er vision ki?",
+        "cste er vision niye bolen",
+        "cste er vision niye jante chai"
+      ],
+      "responses": [
+        "The mission and vision of the Department of Computer Science and Engineering (CSE) is to enable innovation through research, advance educational programs in CSE and ICT fields and facilitate enrichment of CSE human resources- the students, faculty and staff, thereby establishing itself as a center of excellence at the national and international level.1. To provide quality education primarily in the undergraduate level in CSE and allied fields and train the students to effectively apply this education to solve real-world problems, thereby contributing towards the benefit of our country and the humanity.2. To conduct high quality state of the art research primarily at the postgraduate level with an aim to advance knowledge of CSE and ICT fields and cultivate human talent for the welfare of mankind and apply this knowledge to support and influence national and international agenda.3. To guide the students develop themselves as human beings with high ethical and moral values. 4. To enrich our students’ potential, make them a life-long learner and finally equip and prepare them to face the complex challenges of the 21st century and beyond."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BMB",
+      "patterns": [
+        "Full form of bmb",
+        "bmb",
+        "full meaning of bmb",
+        "bmb meaning",
+        "bmb fullform",
+        "bmb stands for",
+        "bmb er puro nam ki",
+        "bmb er mane ki",
+        "bmb diye ki bujhai",
+        "bmb r mane ki",
+        "bmb r purnorp bolo",
+        "bmb r purnorup likho",
+        "bmb means",
+        "bmb mean",
+        "bmb mane",
+        "bmb refers",
+        "bmb mane",
+        "bmb ki",
+        "what is bmb",
+        "what bmb"
+      ],
+      "responses": [
+        "BMB stands for Biochemistry of Molecular Biology."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "CSTE",
+      "patterns": [
+        "Full form of cste",
+        "cste",
+        "full meaning of cste",
+        "cste meaning",
+        "cste fullform",
+        "cste stands for",
+        "cste er puro nam ki",
+        "cste er mane ki",
+        "cste diye ki bujhai",
+        "cste r mane ki",
+        "cste r purnorp bolo",
+        "cste r purnorup likho",
+        "cste means",
+        "cste mean",
+        "cste mane",
+        "cste refers",
+        "cste mane",
+        "cste ki",
+        "what is cste",
+        "what cste"
+      ],
+      "responses": [
+        "CSTE stands for Computer Science & Telecommunication Engineering."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ACCE",
+      "patterns": [
+        "Full form of acce",
+        "acce",
+        "full meaning of acce",
+        "acce meaning",
+        "acce fullform",
+        "acce stands for",
+        "acce er puro nam ki",
+        "acce er mane ki",
+        "acce diye ki bujhai",
+        "acce r mane ki",
+        "acce r purnorp bolo",
+        "acce r purnorup likho",
+        "acce means",
+        "acce mean",
+        "acce mane",
+        "acce refers",
+        "acce mane",
+        "acce ki",
+        "what is acce",
+        "what acce"
+      ],
+      "responses": [
+        "ACCE stands for Applied Chemistry and Chemical Engineering"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ICE",
+      "patterns": [
+        "Full form of ice",
+        "ice",
+        "full meaning of ice",
+        "ice meaning",
+        "ice fullform",
+        "ice stands for",
+        "ice er puro nam ki",
+        "ice er mane ki",
+        "ice diye ki bujhai",
+        "ice r mane ki",
+        "ice r purnorp bolo",
+        "ice r purnorup likho",
+        "ice means",
+        "ice mean",
+        "ice mane",
+        "ice refers",
+        "ice mane",
+        "ice ki",
+        "what is ice",
+        "what ice"
+      ],
+      "responses": [
+        "ICE stands for Information and Communication Engineering."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "EEE",
+      "patterns": [
+        "Full form of eee",
+        "eee",
+        "full meaning of eee",
+        "eee meaning",
+        "eee fullform",
+        "eee stands for",
+        "eee er puro nam ki",
+        "eee er mane ki",
+        "eee diye ki bujhai",
+        "eee r mane ki",
+        "eee r purnorp bolo",
+        "eee r purnorup likho",
+        "eee means",
+        "eee mean",
+        "eee mane",
+        "eee refers",
+        "eee mane",
+        "eee ki",
+        "what is eee",
+        "what eee"
+      ],
+      "responses": [
+        "EEE stands for Electrical and Electronic Engineering."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "FIMS",
+      "patterns": [
+        "Full form of fims",
+        "fims",
+        "full meaning of fims",
+        "fims meaning",
+        "fims fullform",
+        "fims stands for",
+        "fims er puro nam ki",
+        "fims er mane ki",
+        "fims diye ki bujhai",
+        "fims r mane ki",
+        "fims r purnorp bolo",
+        "fims r purnorup likho",
+        "fims means",
+        "fims mean",
+        "fims mane",
+        "fims refers",
+        "fims mane",
+        "fims ki",
+        "what is fims",
+        "what fims"
+      ],
+      "responses": [
+        "FIMS stands for Department of Fisheries and Marine Science."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "MBG",
+      "patterns": [
+        "Full form of mbg",
+        "mbg",
+        "full meaning of mbg",
+        "mbg meaning",
+        "mbg fullform",
+        "mbg stands for",
+        "mbg er puro nam ki",
+        "mbg er mane ki",
+        "mbg diye ki bujhai",
+        "mbg r mane ki",
+        "mbg r purnorp bolo",
+        "mbg r purnorup likho",
+        "mbg means",
+        "mbg mean",
+        "mbg mane",
+        "mbg refers",
+        "mbg mane",
+        "mbg ki",
+        "what is mbg",
+        "what mbg"
+      ],
+      "responses": [
+        "MBG stands for DEPARTMENT OF MICROBIOLOGY."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "FTNS",
+      "patterns": [
+        "Full form of ftns",
+        "ftns",
+        "full meaning of ftns",
+        "ftns meaning",
+        "ftns fullform",
+        "ftns stands for",
+        "ftns er puro nam ki",
+        "ftns er mane ki",
+        "ftns diye ki bujhai",
+        "ftns r mane ki",
+        "ftns r purnorp bolo",
+        "ftns r purnorup likho",
+        "ftns means",
+        "ftns mean",
+        "ftns mane",
+        "ftns refers",
+        "ftns mane",
+        "ftns ki",
+        "what is ftns",
+        "what ftns"
+      ],
+      "responses": [
+        "FTNS stands for Food Technology & Nutrition Sciences."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ESDM",
+      "patterns": [
+        "Full form of esdm",
+        "esdm",
+        "full meaning of esdm",
+        "esdm meaning",
+        "esdm fullform",
+        "esdm stands for",
+        "esdm er puro nam ki",
+        "esdm er mane ki",
+        "esdm diye ki bujhai",
+        "esdm r mane ki",
+        "esdm r purnorp bolo",
+        "esdm r purnorup likho",
+        "esdm means",
+        "esdm mean",
+        "esdm mane",
+        "esdm refers",
+        "esdm mane",
+        "esdm ki",
+        "what is esdm",
+        "what esdm"
+      ],
+      "responses": [
+        "ESDM stands for Environmental Science and Disaster Management."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BGE",
+      "patterns": [
+        "Full form of bge",
+        "bge",
+        "full meaning of bge",
+        "bge meaning",
+        "bge fullform",
+        "bge stands for",
+        "bge er puro nam ki",
+        "bge er mane ki",
+        "bge diye ki bujhai",
+        "bge r mane ki",
+        "bge r purnorp bolo",
+        "bge r purnorup likho",
+        "bge means",
+        "bge mean",
+        "bge mane",
+        "bge refers",
+        "bge mane",
+        "bge ki",
+        "what is bge",
+        "what bge"
+      ],
+      "responses": [
+        "BGE stands for Department of Biotechnology and Genetic Engineering."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "IIT",
+      "patterns": [
+        "Full form of iit",
+        "iit",
+        "full meaning of iit",
+        "iit meaning",
+        "iit fullform",
+        "iit stands for",
+        "iit er puro nam ki",
+        "iit er mane ki",
+        "iit diye ki bujhai",
+        "iit r mane ki",
+        "iit r purnorp bolo",
+        "iit r purnorup likho",
+        "iit means",
+        "iit mean",
+        "iit mane",
+        "iit refers",
+        "iit mane",
+        "iit ki",
+        "what is iit",
+        "what iit"
+      ],
+      "responses": [
+        "IIT stands for Institute of Information Technology."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Islm",
+      "patterns": [
+        "Full form of islm",
+        "islm",
+        "full meaning of islm",
+        "islm meaning",
+        "islm fullform",
+        "islm stands for",
+        "islm er puro nam ki",
+        "islm er mane ki",
+        "islm diye ki bujhai",
+        "islm r mane ki",
+        "islm r purnorp bolo",
+        "islm r purnorup likho",
+        "islm means",
+        "islm mean",
+        "islm mane",
+        "islm refers",
+        "islm mane",
+        "islm ki",
+        "what is islm",
+        "what islm"
+      ],
+      "responses": [
+        "ISLM stands for Information Science and Library Management."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "SWE",
+      "patterns": [
+        "Full form of swe",
+        "swe",
+        "full meaning of swe",
+        "swe meaning",
+        "swe fullform",
+        "swe stands for",
+        "swe er puro nam ki",
+        "swe er mane ki",
+        "swe diye ki bujhai",
+        "swe r mane ki",
+        "swe r purnorp bolo",
+        "swe r purnorup likho",
+        "swe means",
+        "swe mean",
+        "swe mane",
+        "swe refers",
+        "swe mane",
+        "swe ki",
+        "what is swe",
+        "what swe"
+      ],
+      "responses": [
+        "SWE stands for Department of Soil,Water and Environment."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BMS",
+      "patterns": [
+        "Full form of bms",
+        "bms",
+        "full meaning of bms",
+        "bms meaning",
+        "bms fullform",
+        "bms stands for",
+        "bms er puro nam ki",
+        "bms er mane ki",
+        "bms diye ki bujhai",
+        "bms r mane ki",
+        "bms r purnorp bolo",
+        "bms r purnorup likho",
+        "bms means",
+        "bms mean",
+        "bms mane",
+        "bms refers",
+        "bms mane",
+        "bms ki",
+        "what is bms",
+        "what bms"
+      ],
+      "responses": [
+        "BMS stands for Bangladesh and Muktijuddho Studies."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "DBA",
+      "patterns": [
+        "Full form of dba",
+        "dba",
+        "full meaning of dba",
+        "dba meaning",
+        "dba fullform",
+        "dba stands for",
+        "dba er puro nam ki",
+        "dba er mane ki",
+        "dba diye ki bujhai",
+        "dba r mane ki",
+        "dba r purnorp bolo",
+        "dba r purnorup likho",
+        "dba means",
+        "dba mean",
+        "dba mane",
+        "dba refers",
+        "dba mane",
+        "dba ki",
+        "what is dba",
+        "what dba"
+      ],
+      "responses": [
+        "DBA stands for Department of Business Administration."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "MIS",
+      "patterns": [
+        "Full form of mis",
+        "mis",
+        "full meaning of mis",
+        "mis meaning",
+        "mis fullform",
+        "mis stands for",
+        "mis er puro nam ki",
+        "mis er mane ki",
+        "mis diye ki bujhai",
+        "mis r mane ki",
+        "mis r purnorp bolo",
+        "mis r purnorup likho",
+        "mis means",
+        "mis mean",
+        "mis mane",
+        "mis refers",
+        "mis mane",
+        "mis ki",
+        "what is mis",
+        "what mis"
+      ],
+      "responses": [
+        "MIS stands for Management Information Systems."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "THM",
+      "patterns": [
+        "Full form of thm",
+        "thm",
+        "full meaning of thm",
+        "thm meaning",
+        "thm fullform",
+        "thm stands for",
+        "thm er puro nam ki",
+        "thm er mane ki",
+        "thm diye ki bujhai",
+        "thm r mane ki",
+        "thm r purnorp bolo",
+        "thm r purnorup likho",
+        "thm means",
+        "thm mean",
+        "thm mane",
+        "thm refers",
+        "thm mane",
+        "thm ki",
+        "what is thm",
+        "what thm"
+      ],
+      "responses": [
+        "THM stands for Tourism and Hospitality Management."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "IIS",
+      "patterns": [
+        "Full form of iis",
+        "iis",
+        "full meaning of iis",
+        "iis meaning",
+        "iis fullform",
+        "iis stands for",
+        "iis er puro nam ki",
+        "iis er mane ki",
+        "iis diye ki bujhai",
+        "iis r mane ki",
+        "iis r purnorp bolo",
+        "iis r purnorup likho",
+        "iis means",
+        "iis mean",
+        "iis mane",
+        "iis refers",
+        "iis mane",
+        "iis ki",
+        "what is iis",
+        "what iis"
+      ],
+      "responses": [
+        "IIS stands for Institute of Information Sciences."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "chairman of pharmacy",
+      "patterns": [
+        "what is the name of The chairman of pharmacy?",
+        "who is the chairman of pharmacy?",
+        "pharmacy er chairman er nam ki?",
+        "pharmacy chairman name",
+        "pharmacy chairman",
+        "chairman name of pharmacy",
+        "chairman of pharmacy",
+        "pharmacy r chairman er nam ki?",
+        "pharmacy r chairman",
+        "pharmacy te chairman k"
+      ],
+      "responses": [
+        "Dr. Mohammad Safiqul Islam(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of DBA",
+      "patterns": [
+        "what is the name of The chairman of dba?",
+        "who is the chairman of dba?",
+        "dba er chairman er nam ki?",
+        "dba chairman name",
+        "dba chairman",
+        "chairman name of dba",
+        "chairman of dba",
+        "dba r chairman er nam ki?",
+        "dba r chairman",
+        "dba te chairman k"
+      ],
+      "responses": [
+        "Dr.S.M.Mahbubur Rahman(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of thm",
+      "patterns": [
+        "what is the name of The chairman of thm?",
+        "who is the chairman of thm?",
+        "thm er chairman er nam ki?",
+        "thm chairman name",
+        "thm chairman",
+        "chairman name of thm",
+        "chairman of thm",
+        "thm r chairman er nam ki?",
+        "thm r chairman",
+        "thm e chairman k"
+      ],
+      "responses": [
+        "Shohel Md. Nafi(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of cste",
+      "patterns": [
+        "what is the name of The chairman of cste?",
+        "who is the chairman of cste?",
+        "cste er chairman er nam ki?",
+        "cste chairman name",
+        "cste chairman",
+        "chairman name of cste",
+        "chairman of cste",
+        "cste r chairman er nam ki?",
+        "cste r chairman",
+        "cste e chairman k"
+      ],
+      "responses": [
+        "Dr. Ashadun Nobi(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of acce",
+      "patterns": [
+        "what is the name of The chairman of acce?",
+        "who is the chairman of acce?",
+        "acce er chairman er nam ki?",
+        "acce chairman name",
+        "acce chairman",
+        "chairman name of acce",
+        "chairman of acce",
+        "acce r chairman er nam ki?",
+        "acce r chairman",
+        "acce e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Ashraful Alam(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of ice",
+      "patterns": [
+        "what is the name of The chairman of ice?",
+        "who is the chairman of ice?",
+        "ice er chairman er nam ki?",
+        "ice chairman name",
+        "ice chairman",
+        "chairman name of ice",
+        "chairman of ice",
+        "ice r chairman er nam ki?",
+        "ice r chairman",
+        "ice e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Ashikur Rahman Khan(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of eee",
+      "patterns": [
+        "what is the name of The chairman of eee?",
+        "who is the chairman of eee?",
+        "eee er chairman er nam ki?",
+        "eee chairman name",
+        "eee chairman",
+        "chairman name of eee",
+        "chairman of eee",
+        "eee r chairman er nam ki?",
+        "eee r chairman",
+        "eee e chairman k"
+      ],
+      "responses": [
+        "Subrata Bhowmik(Chairman (Acting) & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of fims",
+      "patterns": [
+        "what is the name of The chairman of fims?",
+        "who is the chairman of fims?",
+        "fims er chairman er nam ki?",
+        "fims chairman name",
+        "fims chairman",
+        "chairman name of fims",
+        "chairman of fims",
+        "fims r chairman er nam ki?",
+        "fims r chairman",
+        "fims e chairman k"
+      ],
+      "responses": [
+        "Dr. Abdullah-Al Mamun(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of mbg",
+      "patterns": [
+        "what is the name of The chairman of mbg?",
+        "who is the chairman of mbg?",
+        "mbg er chairman er nam ki?",
+        "mbg chairman name",
+        "mbg chairman",
+        "chairman name of mbg",
+        "chairman of mbg",
+        "mbg r chairman er nam ki?",
+        "mbg r chairman",
+        "mbg e chairman k"
+      ],
+      "responses": [
+        "Dr. Firoz Ahmed(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of applied math",
+      "patterns": [
+        "what is the name of The chairman of applied math?",
+        "who is the chairman of applied math?",
+        "applied math er chairman er nam ki?",
+        "applied math chairman name",
+        "applied math chairman",
+        "chairman name of applied math",
+        "chairman of applied math",
+        "applied math r chairman er nam ki?",
+        "applied math r chairman",
+        "applied math e chairman k"
+      ],
+      "responses": [
+        "Dr. Mohammad Hanif(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of ftns",
+      "patterns": [
+        "what is the name of The chairman of ftns?",
+        "who is the chairman of ftns?",
+        "ftns er chairman er nam ki?",
+        "ftns chairman name",
+        "ftns chairman",
+        "chairman name of ftns",
+        "chairman of ftns",
+        "ftns r chairman er nam ki?",
+        "ftns r chairman",
+        "ftns e chairman k"
+      ],
+      "responses": [
+        "Syeda Saima Alam(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of esdm",
+      "patterns": [
+        "what is the name of The chairman of esdm?",
+        "who is the chairman of esdm?",
+        "esdm er chairman er nam ki?",
+        "esdm chairman name",
+        "esdm chairman",
+        "chairman name of esdm",
+        "chairman of esdm",
+        "esdm r chairman er nam ki?",
+        "esdm r chairman",
+        "esdm e chairman k"
+      ],
+      "responses": [
+        "Mohammad Mohinuzzaman(Chairman & Associate Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of bge",
+      "patterns": [
+        "what is the name of The chairman of bge?",
+        "who is the chairman of bge?",
+        "bge er chairman er nam ki?",
+        "bge chairman name",
+        "bge chairman",
+        "chairman name of bge",
+        "chairman of bge",
+        "bge r chairman er nam ki?",
+        "bge r chairman",
+        "bge e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Mafizul Islam(Chairman & Associate Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of agriculture",
+      "patterns": [
+        "what is the name of The chairman of agriculture?",
+        "who is the chairman of agriculture?",
+        "agriculture er chairman er nam ki?",
+        "agriculture chairman name",
+        "agriculture chairman",
+        "chairman name of agriculture",
+        "chairman of agriculture",
+        "agriculture r chairman er nam ki?",
+        "agriculture r chairman",
+        "agriculture e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Atiquar Rahman Bhuiyan(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of statistics",
+      "patterns": [
+        "what is the name of The chairman of statistics?",
+        "who is the chairman of statistics?",
+        "statistics er chairman er nam ki?",
+        "statistics chairman name",
+        "statistics chairman",
+        "chairman name of statistics",
+        "chairman of statistics",
+        "statistics r chairman er nam ki?",
+        "statistics r chairman",
+        "statistics e chairman k"
+      ],
+      "responses": [
+        "Mimma Tabassum(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Oceanography",
+      "patterns": [
+        "what is the name of The chairman of Oceanography?",
+        "who is the chairman of Oceanography?",
+        "Oceanography er chairman er nam ki?",
+        "Oceanography chairman name",
+        "Oceanography chairman",
+        "chairman name of Oceanography",
+        "chairman of Oceanography",
+        "Oceanography r chairman er nam ki?",
+        "Oceanography r chairman",
+        "Oceanography e chairman k"
+      ],
+      "responses": [
+        "Najmus Sakib Khan(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of bmb",
+      "patterns": [
+        "what is the name of The chairman of bmb?",
+        "who is the chairman of bmb?",
+        "bmb er chairman er nam ki?",
+        "bmb chairman name",
+        "bmb chairman",
+        "chairman name of bmb",
+        "chairman of bmb",
+        "bmb r chairman er nam ki?",
+        "bmb r chairman",
+        "bmb e chairman k"
+      ],
+      "responses": [
+        "Dr. Subodh Kumar Sarkar(Chairman & Associate Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Zoology",
+      "patterns": [
+        "what is the name of The chairman of Zoology?",
+        "who is the chairman of Zoology?",
+        "Zoology er chairman er nam ki?",
+        "Zoology chairman name",
+        "Zoology chairman",
+        "chairman name of Zoology",
+        "chairman of Zoology",
+        "Zoology r chairman er nam ki?",
+        "Zoology r chairman",
+        "Zoology e chairman k"
+      ],
+      "responses": [
+        "Professor Dr. Mohammad Abdul Baki(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of swe",
+      "patterns": [
+        "what is the name of The chairman of swe?",
+        "who is the chairman of swe?",
+        "swe er chairman er nam ki?",
+        "swe chairman name",
+        "swe chairman",
+        "chairman name of swe",
+        "chairman of swe",
+        "swe r chairman er nam ki?",
+        "swe r chairman",
+        "swe e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Ruhul Amin(Chairman)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Chemistry",
+      "patterns": [
+        "what is the name of The chairman of Chemistry?",
+        "who is the chairman of Chemistry?",
+        "Chemistry er chairman er nam ki?",
+        "Chemistry chairman name",
+        "Chemistry chairman",
+        "chairman name of Chemistry",
+        "chairman of Chemistry",
+        "Chemistry r chairman er nam ki?",
+        "Chemistry r chairman",
+        "Chemistry e chairman k"
+      ],
+      "responses": [
+        "Dr. Newaz Mohammed Bahadur(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Physics",
+      "patterns": [
+        "what is the name of The chairman of Physics?",
+        "who is the chairman of Physics?",
+        "Physics er chairman er nam ki?",
+        "Physics chairman name",
+        "Physics chairman",
+        "chairman name of Physics",
+        "chairman of Physics",
+        "Physics r chairman er nam ki?",
+        "Physics r chairman",
+        "Physics e chairman k"
+      ],
+      "responses": [
+        "Md. Saiful Alam(Chairman)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of English",
+      "patterns": [
+        "what is the name of The chairman of English?",
+        "who is the chairman of English?",
+        "English er chairman er nam ki?",
+        "English chairman name",
+        "English chairman",
+        "chairman name of English",
+        "chairman of English",
+        "English r chairman er nam ki?",
+        "English r chairman",
+        "English e chairman k"
+      ],
+      "responses": [
+        "Dr. Shirin Akter(Chairman & Associate Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Economics",
+      "patterns": [
+        "what is the name of The chairman of Economics?",
+        "who is the chairman of Economics?",
+        "Economics er chairman er nam ki?",
+        "Economics chairman name",
+        "Economics chairman",
+        "chairman name of Economics",
+        "chairman of Economics",
+        "Economics r chairman er nam ki?",
+        "Economics r chairman",
+        "Economics e chairman k"
+      ],
+      "responses": [
+        "Mohammad Iqbal Hossain(Chairman (Acting) & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of BMS",
+      "patterns": [
+        "what is the name of The chairman of BMS?",
+        "who is the chairman of BMS?",
+        "BMS er chairman er nam ki?",
+        "BMS chairman name",
+        "BMS chairman",
+        "chairman name of BMS",
+        "chairman of BMS",
+        "BMS r chairman er nam ki?",
+        "BMS r chairman",
+        "BMS e chairman k"
+      ],
+      "responses": [
+        "Dr. Dibyadyuti Sarkar(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Sociology",
+      "patterns": [
+        "what is the name of The chairman of Sociology?",
+        "who is the chairman of Sociology?",
+        "Sociology er chairman er nam ki?",
+        "Sociology chairman name",
+        "Sociology chairman",
+        "chairman name of Sociology",
+        "chairman of Sociology",
+        "Sociology r chairman er nam ki?",
+        "Sociology r chairman",
+        "Sociology e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Roknuzzaman Siddiky(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Bangla",
+      "patterns": [
+        "what is the name of The chairman of Bangla?",
+        "who is the chairman of Bangla?",
+        "Bangla er chairman er nam ki?",
+        "Bangla chairman name",
+        "Bangla chairman",
+        "chairman name of Bangla",
+        "chairman of Bangla",
+        "Bangla r chairman er nam ki?",
+        "Bangla r chairman",
+        "Bangla e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Masud Rahman(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Social Work",
+      "patterns": [
+        "what is the name of The chairman of Social Work?",
+        "who is the chairman of Social Work?",
+        "Social Work er chairman er nam ki?",
+        "Social Work chairman name",
+        "Social Work chairman",
+        "chairman name of Social Work",
+        "chairman of Social Work",
+        "Social Work r chairman er nam ki?",
+        "Social Work r chairman",
+        "Social Work e chairman k"
+      ],
+      "responses": [
+        "Chayon Sikder(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of MIS",
+      "patterns": [
+        "what is the name of The chairman of MIS?",
+        "who is the chairman of MIS?",
+        "MIS er chairman er nam ki?",
+        "MIS chairman name",
+        "MIS chairman",
+        "chairman name of MIS",
+        "chairman of MIS",
+        "MIS r chairman er nam ki?",
+        "MIS r chairman",
+        "MIS e chairman k"
+      ],
+      "responses": [
+        "Dr. Md. Ziaul Haque(Chairman & Associate Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of law",
+      "patterns": [
+        "what is the name of The chairman of law?",
+        "who is the chairman of law?",
+        "law er chairman er nam ki?",
+        "law chairman name",
+        "law chairman",
+        "chairman name of law",
+        "chairman of law",
+        "law r chairman er nam ki?",
+        "law r chairman",
+        "law e chairman k"
+      ],
+      "responses": [
+        "Shrabanti Dutta(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Education",
+      "patterns": [
+        "what is the name of The chairman of Education?",
+        "who is the chairman of Education?",
+        "Education er chairman er nam ki?",
+        "Education chairman name",
+        "Education chairman",
+        "chairman name of Education",
+        "chairman of Education",
+        "Education r chairman er nam ki?",
+        "Education r chairman",
+        "Education e chairman k"
+      ],
+      "responses": [
+        "Dr. Biplob Mallick(Chairman & Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Chairman of Educational Administration",
+      "patterns": [
+        "what is the name of The chairman of Educational Administration?",
+        "who is the chairman of Educational Administration?",
+        "Educational Administration er chairman er nam ki?",
+        "Educational Administration chairman name",
+        "Educational Administration chairman",
+        "chairman name of Educational Administration",
+        "chairman of Educational Administration",
+        "Educational Administration r chairman er nam ki?",
+        "Educational Administration r chairman",
+        "Educational Administration e chairman k"
+      ],
+      "responses": [
+        "G M Rakibul Islam(Chairman & Assistant Professor)."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "NSTU Hall",
+      "patterns": [
+        "How many halls are in Nstu?",
+        "total halls number in NSTU",
+        "nstu te total koita hall ache?",
+        "nstu hall",
+        "nstu halls",
+        "hall",
+        "halls",
+        "nstu te hall koita ache?",
+        "total halls in nstu",
+        "mot koita hall ache nstu te",
+        "hall facilities in nstu",
+        "students halls",
+        "students hall"
+      ],
+      "responses": [
+        "NSTU have total 5 halls. Two boys hall, these are: 1.Basha Shahid Abdus Salam Hall, 2.Bir Muktijuddha Abdul Malek Ukil Hall. Three girls hall, these are: 1.Hazrat Bibi Khadiza Hall, 2.Jatir Pita Bangabandhu Sheikh Mujibur Rahman Hall, 3.Bangamata Sheikh Fazilatunnessa Mujib Hall"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "NSTU Boys Hall",
+      "patterns": [
+        "How many boys halls are in Nstu?",
+        "total boys halls number in NSTU",
+        "nstu te total koita boys hall ache?",
+        "nstu boys hall",
+        "nstu boys halls",
+        "boys hall",
+        "boys halls",
+        "nstu te cheleder hall koita ache?",
+        "total boys halls in nstu",
+        "mot koita cheleder hall ache nstu te",
+        "cheleder hall",
+        "cheleder halls"
+      ],
+      "responses": [
+        "NSTU have total 2 boys halls.These are: 1.Basha Shahid Abdus Salam Hall, 2.Bir Muktijuddha Abdul Malek Ukil Hall"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "NSTU Girls Hall",
+      "patterns": [
+        "How many girls halls are in Nstu?",
+        "total girls halls number in NSTU",
+        "nstu te total koita girls hall ache?",
+        "nstu girls hall",
+        "nstu girls halls",
+        "girls hall",
+        "girls halls",
+        "nstu te meyeder hall koita ache?",
+        "total girls halls in nstu",
+        "mot koita meyeder hall ache nstu te",
+        "meyeder hall",
+        "meyeder halls"
+      ],
+      "responses": [
+        "NSTU have total 3 girls halls.These are: 1.Hazrat Bibi Khadiza Hall, 2.Jatir Pita Bangabandhu Sheikh Mujibur Rahman Hall, 3.Bangamata Sheikh Fazilatunnessa Mujib Hall"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Cafeteria",
+      "patterns": [
+        "nstu cafeteria niye jante chai","cafeteria","nstu cafeteria ta koi?","cafeteria kondike?","cafeteria er location","where nstu cafeteria located","nstu cafeteria","cafeteria direction"
+      ],
+      "responses": [
+        "Nstu Cafeteria is located behind Auditorium Building. Here is map: https://www.google.com/maps/place/NSTU+Cafetaria/@22.7940668,91.1029238,20z/data=!4m6!3m5!1s0x3754af7096f6447d:0x3eb5f66ce2483aac!8m2!3d22.7940271!4d91.1030254!16s%2Fg%2F11bbtb2r9m?entry=ttu"
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "Cafeteria food",
+      "patterns": [
+        "nstu cafeteria food niye jante chai","cafeteria food","cafeteria food facilities?","cafeteria food quality?","cafeteria er khabar kemon?","food quality of cafeteria","food quality kmn nstu cafeteria te?"
+      ],
+      "responses": [
+        "In Cafeteria, food quality is good. These foods cost value for money. At lunch time they serve rice,fishes,meats and vegetables which costs from 50 to 70 taka."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "hall canteen",
+      "patterns": [
+        "food facilities in hall","hall er khabar er man kemon?","hall er food facilities niye jante chai","hall food facililties kemon?","food facilities in hall"
+      ],
+      "responses": [
+        "In hall canteen, they maintain good quality of food. They serve rice, chicken,fish,various types of vorta and daal. It costs around 60-70 taka per head."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "admission",
+      "patterns": [
+	"nstu admission","nstu admission info","admission niye jante chai","tell me about nstu admission","i want to know nstu admission","nstu admission niye bolo"
+      ],
+      "responses": [
+        "For Details information visit this link: https://www.admission.nstu.edu.bd/"
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "Cyber center",
+      "patterns": [
+	"where nstu cyber center is located?","nstu cyber center er location","cyber center er direction","cyber center ta kondike?"
+      ],
+      "responses": [
+        "NSTU cyber center is located in 2nd floor of library building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "about Cyber center",
+      "patterns": [
+	"tell me about cyber center.","cyber center","nstu cyber center","cyber center niye jante chai","cyber center niye kichu bolen","cyber center somporke kichu bolen"
+      ],
+      "responses": [
+        "The Cyber Center (CC) of NSTU was established on 29th March, 2011 located in the ground floor of Academic building-1. Cyber Center of NSTU was inaugurated by the former Honourable State Minister (Presently Minister, Ministry of Science & Technology Division People’s Republic of Bangladesh) Architect Yeafesh Osman on 29 March, 2011. The main objective is to support academic, research and administrative functions of the University. There are 25 computers in the cyber center’s lab for the students."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "Cyber center services and supports",
+      "patterns": [
+	"cyber center er supprts gula ki?","cyber center er services gula ki?","tell me about services and supports of cyber center","what services and supports cyber center provides"
+      ],
+      "responses": [
+	"For Details information visit this link:https://nstu.edu.bd/cyber_center.html"
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "Hall Provost",
+      "patterns": [
+        "hall provost name",
+        "All hall Provost Name",
+        " hall provost er namgulo ki?",
+        "Hall provost der nam gulo jante chai",
+        "hall provosts",
+        "hall provost"
+      ],
+      "responses": [
+        "1.Basha Shahid Abdus Salam Hall(Dr. Md Anisuzzaman), 2. 2.Bir Muktijuddha Abdul Malek Ukil Hall(Dr. Mehede Hassan Rubel), 3.Hazrat Bibi Khadiza Hall(Dr. Md. Rafiqul Islam), 4.Jatir Pita Bangabandhu Sheikh Mujibur Rahman Hall(Md.Majnur Rahman), 5.Bangamata Sheikh Fazilatunnessa Mujib Hall(Dr. Mohammad. Mohinuzzaman)"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "bmb Lab facilities",
+      "patterns": [
+        "how many Labs are in bmb?",
+        "Number of Labs in bmb",
+        "bmb te koiti Lab ache?",
+        "Total lab Number in bmb",
+        "Total Lab Sonkha koto bmb te?",
+        "bmb te lab koita ache?",
+        "bmb te lab facilities kmn?",
+        "lab facilitites of bmb",
+        "bmb lab songkha",
+        "bmb lab",
+        "bmb labs",
+        "bmb te koita lab ache?",
+        "bmb lab facilities"
+      ],
+      "responses": [
+        "There are 1 Lab and 2 classrooms"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Provost",
+      "patterns": [
+        "Basha Shahid Abdus Salam Hall er provost name",
+        "salam hall provost",
+        "provost of salam hall",
+        "provost name of abdus salam hall",
+        "salam hall provost name",
+        "salam hall er provost er name ki?",
+        "salam hall er provost k?",
+        "what is the name of the provost of salam hall?",
+        "salam hall er provost er nam ta jante chai",
+        "ASH hall provost name",
+        "salam hall er provost k"
+      ],
+      "responses": [
+        "Dr. Md Anisuzzaman"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Provost",
+      "patterns": [
+        "Bir Muktijuddha Abdul Malek Ukil Hall er provost name",
+        "provost name of malek ukil hall",
+        "malek hall provost",
+        "provost of malek hall",
+        "malek hall provost name",
+        "malek hall er provost er name ki?",
+        ",malek hall er provost k?",
+        "what is the name of the provost of malek hall?",
+        "malek hall er provost er nam ta jante chai",
+        "MUH hall provost name",
+        "malek hall er provost k"
+      ],
+      "responses": [
+        ""
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Provost",
+      "patterns": [
+        "Hazrat Bibi Khadiza Hall provost name",
+        "provost name of khadiza hall",
+        "Khadiza hall provost name",
+        "khadiza hall er provost er name ki?",
+        "Khadiza hall er provost k?",
+        "what is the name of the provost of Khadiza hall?",
+        "Khadiza hall er provost er nam ta jante chai",
+        "BKH hall provost name"
+      ],
+      "responses": [
+        "Dr. Md. Rafiqul Islam"
+      ],
+      "context": [
+        "Dr. Mehede Hassan Rubel"
+      ]
+    },
+    {
+      "tag": "Provost",
+      "patterns": [
+        "Jatir Pita Bangabandhu Sheikh Mujibur Rahman Hall provost name",
+        "provost name of Bangabandhu hall",
+        "Bangabandhu hall provost name",
+        "Bangabandhu hall er provost er name ki?",
+        "Bangabandhu hall er provost k?",
+        "what is the name of the provost of Bangabandhu hall?",
+        "Bangabandhu hall er provost er nam ta jante chai",
+        "BBH hall provost name"
+      ],
+      "responses": [
+        "Md.Majnur Rahman"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Provost",
+      "patterns": [
+        "Bangamata Sheikh Fazilatunnessa Mujib Hall provost name",
+        "provost name of Bangamata hall",
+        "Bangamata hall provost name",
+        "Bangamata hall er provost er name ki?",
+        "Bangamata hall er provost k?",
+        "what is the name of the provost of Bangamata hall?",
+        "Bangamata hall er provost er nam ta jante chai",
+        "BFH hall provost name"
+      ],
+      "responses": [
+        "Dr. Mohammad. Mohinuzzaman"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Academic_Buildings",
+      "patterns": [
+        "how many academic buildings are in NSTU?",
+        "Total academic buildings in NSTU",
+        "Academic Buildings Number",
+        "Nstu te total koita academic bhobon ache?",
+        "total academic bhoboner sonkha koto?",
+        "academic buildings"
+      ],
+      "responses": [
+        "There are 2 established Academic Buildings, namely Academic Building-1 and Academic Building-2, in this University. One academic building is now under construction, the most significant academic building in Bangladesh."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Auditorium",
+      "patterns": [
+        "Auditorium name",
+        "what is the name of the auditorium,NSTU",
+        "auditorium er name ki?",
+        "NSTU Auditorium Name",
+        "nstu auditorium",
+        "auditorium",
+        "nstu er auditorium er nam ki",
+        "auditorium name of nstu"
+      ],
+      "responses": [
+        "In NSTU there is a five storied auditorium named “Bir Muktijuddha Haji Mohammad Idris Auditorim"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Auditorium Activities",
+      "patterns": [
+        "what is the activities of Auditorium?",
+        "I want to know about the auditorium of nstu?",
+        "auditorium niye jante chai",
+        "auditorium er kaj ki",
+        "auditorium er activities ki",
+        "what about nstu auditorium activities"
+      ],
+      "responses": [
+        "Auditorium all activities:1.Cultural Programs of different Institutes, departments. 2.Course day celebration programs of different departments. 3.National Day Celebration programs. 4.ICT Job and Other Job fair. 5.Programming Contest Programs."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Administration",
+      "patterns": [
+        "Who is the Chancellor of this university?",
+        "Chancellor Name",
+        "Chancellor",
+        "NSTU Chancellor"
+      ],
+      "responses": [
+        "His Excellency Mohammed Shahabuddin."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vc nstu",
+      "patterns": [
+        "Who is the Vice-Chancellor of this university?",
+        "Vice-Chancellor Name",
+        "vc sir",
+        "vc nstu",
+        "vc",
+        "vc k nstu r",
+        "vc name"
+      ],
+      "responses": [
+        "Professor Dr. Md. Didar-ul-Alam"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "pro vc",
+      "patterns": [
+        "Who is the Pro-Vice Chancellor of this university?",
+        "Pro-Vice Chancellor Name",
+        "pro vc",
+        "pro vc in nstu",
+        "pro vc nstu",
+        "pro vc k nstu er?",
+        "pro vc name"
+      ],
+      "responses": [
+        "Professor Dr. Mohammad Abdul Baki"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "CSTE_Location",
+      "patterns": [
+        "Direction of Computer Science & Telecommunication Engineering Department",
+        "In which academic Building CSTE department is located?",
+        "CSTE department ta kon Bhobon e ache?",
+        "CSTE department er actual direction ta kondike?",
+        "cste vobon",
+        "cste location"
+      ],
+      "responses": [
+        "CSTE Department is located in Academic building 1."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ICE Location",
+      "patterns": [
+        "Direction of Information of Communication Engineering(ICE)",
+        "In which academic Building ICE department is located?",
+        "ICE ta kon Bhobon e ache?",
+        "ICE er actual direction ta kondike?",
+        "ice vobon",
+        "ice location"
+      ],
+      "responses": [
+        "ICE Department is located in Academic building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Education Department",
+      "patterns": [
+        "Direction of Education Department",
+        "In which academic Building Education department is located?",
+        "Education Department ta kon Bhobon e ache?",
+        "Education Department er actual direction ta kondike?",
+        "education vobon",
+        "education location"
+      ],
+      "responses": [
+        "Education Department is located in 1st floor of Library Building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "LAW Department",
+      "patterns": [
+        "Direction of LAW Department",
+        "In which academic Building LAW Department is located?",
+        "LAW Department ta kon Bhobon e ache?",
+        "LAW Department er actual direction ta kondike?",
+        "law vobon",
+        "law location"
+      ],
+      "responses": [
+        "LAW Department is located in Auditorium building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Applied Mathematics Department",
+      "patterns": [
+        "Direction of Applied Mathematics Department",
+        "In which academic Building Applied Mathematics Department is located?",
+        "Applied Mathematics Department ta kon Bhobon e ache?",
+        "Applied Mathematics Department er actual direction ta kondike?",
+        "applied math vobon",
+        "applied math location"
+      ],
+      "responses": [
+        "Applied Mathematics Department is located in Academic building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BLWS",
+      "patterns": [
+        "Direction of Bangladesh and Muktijuddo Studies",
+        "In which academic Building BLWS is located?",
+        "BLWS ta kon Bhobon e ache?",
+        "BLWS er actual direction ta kondike?",
+        "blws vobon",
+        "blws location"
+      ],
+      "responses": [
+        "Bangladesh and Muktijuddo Studie Department is located in Auditorium building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Statistics Department",
+      "patterns": [
+        "Direction of Statistics Department",
+        "In which academic Building Statistics Department is located?",
+        "Statistics Department ta kon Bhobon e ache?",
+        "Statistics Department er actual direction ta kondike?",
+        "stat vobon",
+        "stat location",
+        "statistics vobon",
+        "statistics location"
+      ],
+      "responses": [
+        "Statistics Department is located in Auditorium building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "EEE Department",
+      "patterns": [
+        "Direction of EEE Department",
+        "In which academic Building EEE Department is located?",
+        "EEE Department ta kon Bhobon e ache?",
+        "EEE Department er actual direction ta kondike?",
+        "eee vobon",
+        "eee location"
+      ],
+      "responses": [
+        "EEE Department is located in Administrative building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BGE",
+      "patterns": [
+        "Direction of Biotechnology and Genetic Engineering Department",
+        "In which academic Building BGE is located?",
+        "BGE ta kon Bhobon e ache?",
+        "BGE er actual direction ta kondike?",
+        "bge vobon",
+        "bge location"
+      ],
+      "responses": [
+        "Biotechnology and Genetic Engineering Department Department is located in Academic building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "FTNS",
+      "patterns": [
+        "Direction of Food Technology and Nutrition Science",
+        "In which academic Building FTNS is located?",
+        "FTNS ta kon Bhobon e ache?",
+        "FTNS er actual direction ta kondike?",
+        "ftns vobon",
+        "ftns location"
+      ],
+      "responses": [
+        "Food Technology and Nutrition Science Department is located in Academic building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Pharmacy Department",
+      "patterns": [
+        "Direction of Pharmacy Department",
+        "In which academic Building Pharmacy Department is located?",
+        "Pharmacy Department ta kon Bhobon e ache?",
+        "Pharmacy Department er actual direction ta kondike?",
+        "pharmacy vobon",
+        "pharmacy location"
+      ],
+      "responses": [
+        "Pharmacy Department is located in Academic building 1."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "MIS Department",
+      "patterns": [
+        "Direction of Management Information System",
+        "In which academic Building MIS Department is located?",
+        "MIS Department ta kon Bhobon e ache?",
+        "MIS Department er actual direction ta kondike?",
+        "mis vobon",
+        "mis location"
+      ],
+      "responses": [
+        "Management Information System Department is located in Auditorium building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "DBA",
+      "patterns": [
+        "Direction of Department of Buisness Administration",
+        "In which academic Building DBA is located?",
+        "DBA ta kon Bhobon e ache?",
+        "DBA er actual direction ta kondike?",
+        "dba vobon",
+        "dba location"
+      ],
+      "responses": [
+        "Department of Buisness Administration is located in Academic building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "FIMS",
+      "patterns": [
+        "Direction of Fisheries and Marine Science Department",
+        "In which academic Building FIMS is located?",
+        "FIMS ta kon Bhobon e ache?",
+        "FIMS er actual direction ta kondike?",
+        "fims er vobon",
+        "fims location"
+      ],
+      "responses": [
+        "Fisheries and Marine Science Department is located in Academic building 1."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Department of Bangla",
+      "patterns": [
+        "Direction of Department of Bangla",
+        "In which academic Building Department of Bangla is located?",
+        "Department of Bangla ta kon Bhobon e ache?",
+        "Department of Bangla er actual direction ta kondike?",
+        "bangla er vobon",
+        "bangla er location"
+      ],
+      "responses": [
+        " Bangla Department is located in Administrative building"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "GST",
+      "patterns": [
+        "what is gst exam?",
+        "GST"
+      ],
+      "responses": [
+        "In the GST admission system, all the students from Science, Commerce, and Humanities will be able to sit for the GST Admission test. The GST admission will be held on the same day all around the country. The syllabus will be based on the HSC syllabus. Soon the GST Admission Circular 2022 will be published."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Department of English",
+      "patterns": [
+        "Direction of Department of English",
+        "In which academic Building Department of English is located?",
+        "Department of English ta kon Bhobon e ache?",
+        "Department of English er actual direction ta kondike?",
+        "english er vobon",
+        "english er location"
+      ],
+      "responses": [
+        "English Department is located in Academic Building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Department of Sociology",
+      "patterns": [
+        "Direction of Department of Sociology",
+        "In which academic Building Department of Sociology is located?",
+        "Department of Sociology ta kon Bhobon e ache?",
+        "Department of Sociology er actual direction ta kondike?",
+        "sociology er vobon",
+        "sociology er location"
+      ],
+      "responses": [
+        "Sociology Department is located in Auditorium Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Bot Tola",
+      "patterns": [
+        "Bot Tola Nstu",
+        "Where is Nstu Bot Tola located?",
+        "NSTU Bot TOLA ta kondike?",
+        "bot tola location"
+      ],
+      "responses": [
+        "Bot Tola NSTU is located besides Basha Shahid Abdus Salam Hall."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "NSTU BANK",
+      "patterns": [
+        "Where is NSTU Bank is Located?",
+        "Nstu Bank",
+        "Which Bank's branch is in NSTU?"
+      ],
+      "responses": [
+        "NSTU have Agrani Bank Branch which is located in the Ground Floor of Administrative Building. For more details contact in this number: +8801843444465."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "BMB",
+      "patterns": [
+        "Direction of Department of Biochemistry of Molecular Biology",
+        "In which academic Building Department of Biochemistry of Molecular Biology?",
+        "Department of Biochemistry of Molecular Biology ta kon Bhobon e ache?",
+        "BMB er actual direction ta kondike?",
+        "bmb er vobon",
+        "bmb location"
+      ],
+      "responses": [
+        "Biochemistry of Molecular Biology Department is allocated in Auditorium Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Zoology",
+      "patterns": [
+        "Direction of Department of Zoology",
+        "In which academic Building Department of Zoology is located?",
+        "Department of Zoology ta kon Bhobon e ache?",
+        "Department of Zoology er actual direction ta kondike?",
+        "zoology er vobon",
+        "zoology location"
+      ],
+      "responses": [
+        "Zoology Department is allocated in Auditorium Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "THM",
+      "patterns": [
+        "Direction of Department of Tourism and Hospitality Management",
+        "In which academic Building Department of Tourism and Hospitality Management is located?",
+        "Department of THM ta kon Bhobon e ache?",
+        "Department of Tourism and Hospitality Management er actual direction ta kondike?",
+        "thm er vobon",
+        "thm location"
+      ],
+      "responses": [
+        "Tourism and Hospitality Management is allocated in Auditorium Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "GST otp code",
+      "patterns": [
+        "I cannot find Verification code",
+        "Didn't get Verification code",
+        "I didn't receive the OTP",
+        "OTP ashtese nah phone e, log in korte partesi nah",
+        "OTP ASCHENA AMAR NUMBER A",
+        "Otp ase na keno",
+        "I didn't find otp",
+        "Didn't receive any otp for log in in my phone.",
+        "Opt pacchi na",
+        "mobile verification code asteche na",
+        "I cannot collect my OTP.The SMS doesnot come.",
+        "Otp code ashtece na",
+        "Ami otp paitechi na",
+        "Amake boltece OTP patano hoyece kintu aseni",
+        "I don't get any verification code in my phone number.",
+        "Didn't receive otp",
+        "OTP code",
+        "Verify code ashe ni",
+        "Didn't get any verification code",
+        "I couldn't get any verification code.",
+        "OTP not sent",
+        "Plz send otp and help to log in website",
+        "Not getting OTP",
+        "After Logging in, I didn't get any OTP to confirm my mobile number. But the website is telling me that they has sent an OTP to verify it.",
+        "Not getting OTP on mobile phone but Mobile number is valid",
+        "I didn't get a message with verification code.",
+        "Otp na aashle log in kibhabe korbo ami",
+        "OTP SMS paini",
+        "I can not get my otp",
+        "Couldn't get otp"
+      ],
+      "responses": [
+        "Please try again later or contact with GST helpline."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "ifti sir",
+      "patterns": [
+        "ifti sir",
+        "ifti sir k",
+        "what is the full name of ifti sir",
+        "who is ifti",
+        "iftekharul alam efat",
+        "who is iftekharul alam efat",
+        "Tell me about ifti sir"
+      ],
+      "responses": [
+        "Md. Iftekharul Alam Efat , Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Nuruzzaman sir",
+      "patterns": [
+        "Md. Nuruzzaman Bhuiyan",
+        "Nuruzzaman sir",
+        "who is Nuruzzaman",
+        "who is Md. Nuruzzaman Bhuiyan",
+        "Tell me about Nuruzzaman sir"
+      ],
+      "responses": [
+        "Md. Nuruzzaman Bhuiyan , Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Auhidur Rahaman sir",
+      "patterns": [
+        "Md. Auhidur Rahaman",
+        "Auhidur Rahaman sir",
+        "who is Auhidur Rahaman",
+        "who is Auhidur",
+        "Tell me about sumon sir"
+      ],
+      "responses": [
+        "Md. Auhidur Rahaman , Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Dipanita Saha mam",
+      "patterns": [
+        "Dipanita Saha",
+        "Dipanita Saha mam",
+        "who is Dipanita Saha",
+        "who is Dipanita",
+        "Dipanita mam",
+        "Tell me about dipannita mam",
+        "Tell me about dipannita saha"
+      ],
+      "responses": [
+        "Dipanita Saha , Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Falguni Roy mam",
+      "patterns": [
+        "Falguni Roy",
+        "Falguni Roy mam",
+        "who is Falguni Roy",
+        "who is falguni",
+        "falguni mam",
+        "Tell me about falguni mam"
+      ],
+      "responses": [
+        "Falguni Roy , Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Tasniya Ahmed mam",
+      "patterns": [
+        "Tasniya Ahmed",
+        "Tasniya Ahmed mam",
+        "who is Tasniya Ahmed mam",
+        "who is Tasniya mam",
+        "tasniya mam",
+        "Tell me about tasniya ahmed",
+        "Tell me about tasniya mam",
+        "Tell me about tasniya"
+      ],
+      "responses": [
+        "Tasniya Ahmed, Assistant Professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Dipok Chandra Das sir",
+      "patterns": [
+        "Dipok Chandra Das",
+        "Dipok Chandra Das sir",
+        "who is Dipok Chandra Das",
+        "who is Dipok sir",
+        "Dipok sir",
+        "Tell me about dipok chandra das",
+        "Tell me about dipok sir"
+      ],
+      "responses": [
+        "Dipok Chandra Das, Assistant professor- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Md. Eusha Kadir sir",
+      "patterns": [
+        "Md. Eusha Kadir",
+        "Md. Eusha Kadir sir",
+        "who is Md. Eusha Kadir",
+        "who is Eusha",
+        "Eusha sir"
+      ],
+      "responses": [
+        "Md. Eusha Kadir, Lecturer- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Rafid Mostafiz sir",
+      "patterns": [
+        "Rafid Mostafiz",
+        "Rafid Mostafiz sir",
+        "who is Rafid Mostafiz",
+        "who is rafid",
+        "rafid sir"
+      ],
+      "responses": [
+        "Rafid Mostafiz, Lecturer- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Md Hasan Imam sir",
+      "patterns": [
+        "Md Hasan Imam",
+        "Md Hasan Imam sir",
+        "who is Md Hasan Imam",
+        "who is hasan imam",
+        "hasan imam sir"
+      ],
+      "responses": [
+        "Md Hasan Imam, Lecturer- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Tasnim Rahman mam",
+      "patterns": [
+        "Tasnim Rahman",
+        "Tasnim Rahman mam",
+        "who is Tasnim Rahman",
+        "who is Tasnim Rahman",
+        "tasnim mam"
+      ],
+      "responses": [
+        "Tasnim Rahman, Lecturer- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Nazmun Nahar mam",
+      "patterns": [
+        "Nazmun Nahar",
+        "Nazmun Nahar mam",
+        "who is Nazmun Nahar",
+        "who is Nazmun Nahar",
+        "nazmun mam"
+      ],
+      "responses": [
+        "Nazmun Nahar, Lecturer- IIT, NSTU"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "GST SERVER",
+      "patterns": [
+        "Why does the server not load?",
+        "Why server is down?",
+        "server down dekhacche kno?",
+        "server load hocche na kno?",
+        "Server load nicche na kno?",
+        "why server is so slow?",
+        "admission server is down why?",
+        "server onkkhon off kno?",
+        "Why server get error?",
+        "server error dekhai kno?"
+      ],
+      "responses": [
+        "please wait and keep an eye on the admission page,it will be fixed shortly."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "GST Payment",
+      "patterns": [
+        "Ami nagad a payment korsi. Massage o asce.. payment successful bole.kinto profile a unpaid dekhai",
+        "Why webpage show unpaid in paid status?",
+        "taka joma diyechi kintu payment ekhono unpaid kno?",
+        " payment option shows unpaid but i pay the bill.",
+        "i have transaction id of payment but in my profile it shows unpaid.",
+        "payment invalid"
+      ],
+      "responses": [
+        "please wait and check it later.It will be updated soon, if your payment is successful."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Agriculture",
+      "patterns": [
+        "Direction of Department of Agriculture",
+        "In which academic Building Department of Agriculture is located?",
+        "Department of Agriculture ta kon Bhobon e ache?",
+        "Department of Agriculture er actual direction ta kondike?",
+        "agriculture location"
+      ],
+      "responses": [
+        "Agriculture Department is located in Academic Building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Economics",
+      "patterns": [
+        "Direction of Department of Economics",
+        "In which academic Building Department of Economics is located?",
+        "Department of Economics ta kon Bhobon e ache?",
+        "Department of Economics er actual direction ta kondike?",
+        "economics er loaction"
+      ],
+      "responses": [
+        "Economics Department is located in Academic Building 2."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "islm",
+      "patterns": [
+        "Direction of Department of Information Science and Library Management",
+        "In which academic Building Department of ISLM is located?",
+        "ISLM ta kon Bhobon e ache?",
+        "ISLM er actual direction ta kondike?",
+        "islm location"
+      ],
+      "responses": [
+        "Information Science and Library Management Department is located in Library Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "Education Administration",
+      "patterns": [
+        "Direction of Department of Education Administration ",
+        "In which academic Building Department of Education Administration is located?",
+        "Education Administration ta kon Bhobon e ache?",
+        "Education Administration er actual direction ta kondike?",
+        "education administration location"
+      ],
+      "responses": [
+        "Education Administration Department is located in Library Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "iit location",
+      "patterns": [
+        "Direction of IIT",
+        "where is IIT Building?",
+        "IIT ta kon Bhobon e ache?",
+        "IIT er actual direction ta kondike?",
+        "iit location",
+        "iit bhovon"
+      ],
+      "responses": [
+        "IIT is located in 2nd Floor of Library Building."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of esdm",
+      "patterns": [
+        "what is the mission of esdm department?",
+        "what is the mission of esdm dept?",
+        "mission of esdm?",
+        "esdm mission?",
+        "esdm lokkho?",
+        "esdm goal",
+        "esdm aim?",
+        "esdm er lokkho ki?",
+        "esdm er aim ki?",
+        "esdm er goal ki?",
+        "esdm er target ki?",
+        "esdm er mission ki?",
+        "esdm er mission niye bolen",
+        "esdm er aim niye bolen",
+        "esdm er lokkho niye bolen",
+        "esdm er goal niye bolen",
+        "esdm er mission niye jante chai",
+        "esdm er lokkho niye jante chai",
+        "esdm er aim niye jante chai",
+        "esdm er goal niye jante chai"
+      ],
+      "responses": [
+        "1. To create and effectively disseminate fundamental knowledge about Environment, its components and resources, and the processes by which it changes in a collaborative interdisciplinary setting. 2.To provide diverse learning experiences using state-of-the-art lab facilities and diverse field site. 3.To create an academic culture of mutual respect and intellectual collaboration this ensures environmental stewardship and service to humanity through expansion and dissemination of environmental science knowledge. 4.To conduct priority based research on contemporary environmental issues and producing scholarly works in the field environmental science with nationally and internationally recognized research grants."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of ice",
+      "patterns": [
+        "what is the mission of ice department?",
+        "what is the mission of ice dept?",
+        "mission of ice?",
+        "ice mission?",
+        "ice lokkho?",
+        "ice aim?",
+        "ice er lokkho ki?",
+        "ice er aim ki?",
+        "ice er goal ki?",
+        "ice er target ki?",
+        "ice er mission ki?",
+        "ice er mission niye bolen",
+        "ice er aim niye bolen",
+        "ice er lokkho niye bolen",
+        "ice er goal niye bolen",
+        "ice er mission niye jante chai",
+        "ice er lokkho niye jante chai",
+        "ice er aim niye jante chai",
+        "ice er goal niye jante chai"
+      ],
+      "responses": [
+        "We provide high quality education, research and services in information and Communication Technology in a culture of creativity and innovation."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of eee",
+      "patterns": [
+        "what is the mission of eee department?",
+        "what is the mission of eee dept?",
+        "mission of eee?",
+        "eee mission?",
+        "eee lokkho?",
+        "eee aim?",
+        "eee er lokkho ki?",
+        "eee er aim ki?",
+        "eee er goal ki?",
+        "eee er target ki?",
+        "eee er mission ki?",
+        "eee er mission niye bolen",
+        "eee er aim niye bolen",
+        "eee er lokkho niye bolen",
+        "eee er goal niye bolen",
+        "eee er mission niye jante chai",
+        "eee er lokkho niye jante chai",
+        "eee er aim niye jante chai",
+        "eee er goal niye jante chai"
+      ],
+      "responses": [
+        "1.To provide outstanding facilities to the students for gaining quality education in Electrical and Electronic Engineering.2.To keep the course curricula up-to-date with the latest trends in EEE technologies on a regular basis.3.To create facilities for conducting high quality research in the field of Electrical and Electronic Engineering.4.To spread the information and knowledge picked up from the researches to the stakeholders through scholarly publications."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of applied math",
+      "patterns": [
+        "what is the mission of applied math department?",
+        "what is the mission of applied math dept?",
+        "mission of applied math?",
+        "applied math mission?",
+        "applied math lokkho?",
+        "applied math goal",
+        "applied math aim?",
+        "applied math er lokkho ki?",
+        "applied math er aim ki?",
+        "applied math er goal ki?",
+        "applied math er target ki?",
+        "applied math er mission ki?",
+        "applied math er mission niye bolen",
+        "applied math er aim niye bolen",
+        "applied math er lokkho niye bolen",
+        "applied math er goal niye bolen",
+        "applied math er mission niye jante chai",
+        "applied math er lokkho niye jante chai",
+        "applied math er aim niye jante chai",
+        "applied math er goal niye jante chai"
+      ],
+      "responses": [
+        "The mission and vision of the Department of Applied Mathematics is to develop quality faculty members through diversified learning environment in the process of learing, teaching and research.Facilitate interdisciplinary faculty and students essentials.Enrich the academic quality of the students through practical, updated and competetative learning environment.Provide effective guidelines and pathways to the students so that they are able to build themselves for the upcoming challenges in the new and competetative job field."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of statistics",
+      "patterns": [
+        "what is the mission of statistics department?",
+        "what is the mission of statistics dept?",
+        "mission of statistics?",
+        "statistics mission?",
+        "statistics lokkho?",
+        "statistics goal",
+        "statistics aim?",
+        "statistics er lokkho ki?",
+        "statistics er aim ki?",
+        "statistics er goal ki?",
+        "statistics er target ki?",
+        "statistics er mission ki?",
+        "statistics er mission niye bolen",
+        "statistics er aim niye bolen",
+        "statistics er lokkho niye bolen",
+        "statistics er goal niye bolen",
+        "statistics er mission niye jante chai",
+        "statistics er lokkho niye jante chai",
+        "statistics er aim niye jante chai",
+        "statistics er goal niye jante chai"
+      ],
+      "responses": [
+        "Our mission is to create, develop and perform efficient and sustainable techniques that enhance statistical knowledge in innovative research. We begin with new ideas, new aspect of understanding, learning and knowing, students experience an unparalleled educational journey."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of Sociology",
+      "patterns": [
+        "what is the mission of Sociology department?",
+        "what is the mission of Sociology dept?",
+        "mission of Sociology?",
+        "Sociology mission?",
+        "Sociology lokkho?",
+        "Sociology goal",
+        "Sociology aim?",
+        "Sociology er lokkho ki?",
+        "Sociology er aim ki?",
+        "Sociology er goal ki?",
+        "Sociology er target ki?",
+        "Sociology er mission ki?",
+        "Sociology er mission niye bolen",
+        "Sociology er aim niye bolen",
+        "Sociology er lokkho niye bolen",
+        "Sociology er goal niye bolen",
+        "Sociology er mission niye jante chai",
+        "Sociology er lokkho niye jante chai",
+        "Sociology er aim niye jante chai",
+        "Sociology er goal niye jante chai"
+      ],
+      "responses": [
+        "To provide quality education in sociology with giving much emphasison theory and research.To generate sociologists, researchers and development practitioners in Bangladesh.To supply quality and smart teachers in sociology to the Govt. Colleges and other such educational institutions in Bangladesh."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of bms",
+      "patterns": [
+        "what is the mission of bms department?",
+        "what is the mission of bms dept?",
+        "mission of bms?",
+        "bms mission?",
+        "bms lokkho?",
+        "bms goal",
+        "bms aim?",
+        "bms er lokkho ki?",
+        "bms er aim ki?",
+        "bms er goal ki?",
+        "bms er target ki?",
+        "bms er mission ki?",
+        "bms er mission niye bolen",
+        "bms er aim niye bolen",
+        "bms er lokkho niye bolen",
+        "bms er goal niye bolen",
+        "bms er mission niye jante chai",
+        "bms er lokkho niye jante chai",
+        "bms er aim niye jante chai",
+        "bms er goal niye jante chai"
+      ],
+      "responses": [
+        "Creating highly skilled graduates, conducting high-quality research and expanding patriotism as well as internationalism."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of mis",
+      "patterns": [
+        "what is the mission of mis department?",
+        "what is the mission of mis dept?",
+        "mission of mis?",
+        "mis mission?",
+        "mis lokkho?",
+        "mis goal",
+        "mis aim?",
+        "mis er lokkho ki?",
+        "mis er aim ki?",
+        "mis er goal ki?",
+        "mis er target ki?",
+        "mis er mission ki?",
+        "mis er mission niye bolen",
+        "mis er aim niye bolen",
+        "mis er lokkho niye bolen",
+        "mis er goal niye bolen",
+        "mis er mission niye jante chai",
+        "mis er lokkho niye jante chai",
+        "mis er aim niye jante chai",
+        "mis er goal niye jante chai"
+      ],
+      "responses": [
+        "To be a comprehensive hub of scholastic superiority,specialized expertise, and relative research in Management Information Systems."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of iis",
+      "patterns": [
+        "what is the iission of iis department?",
+        "what is the iission of iis dept?",
+        "iission of iis?",
+        "iis iission?",
+        "iis lokkho?",
+        "iis goal",
+        "iis aim?",
+        "iis er lokkho ki?",
+        "iis er aim ki?",
+        "iis er goal ki?",
+        "iis er target ki?",
+        "iis er iission ki?",
+        "iis er iission niye bolen",
+        "iis er aim niye bolen",
+        "iis er lokkho niye bolen",
+        "iis er goal niye bolen",
+        "iis er iission niye jante chai",
+        "iis er lokkho niye jante chai",
+        "iis er aim niye jante chai",
+        "iis er goal niye jante chai"
+      ],
+      "responses": [
+        "To develop and come up with skilled human resources capable of contributing to the discipline of Information Studies in terms of research and teaching.To provide students with skill and creative mind for improved understanding and effective management of Information Studies issues."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission of iit",
+      "patterns": [
+        "what is the iitsion of iit department?",
+        "what is the iitsion of iit dept?",
+        "iitsion of iit?",
+        "iit iitsion?",
+        "iit lokkho?",
+        "iit goal",
+        "iit aim?",
+        "iit er lokkho ki?",
+        "iit er aim ki?",
+        "iit er goal ki?",
+        "iit er target ki?",
+        "iit er iitsion ki?",
+        "iit er iitsion niye bolen",
+        "iit er aim niye bolen",
+        "iit er lokkho niye bolen",
+        "iit er goal niye bolen",
+        "iit er iitsion niye jante chai",
+        "iit er lokkho niye jante chai",
+        "iit er aim niye jante chai",
+        "iit er goal niye jante chai"
+      ],
+      "responses": [
+        "Institute of Information Technology (IIT) is formed to bring forth competent IT Professionals in Bangladesh with a strong understanding of information technology bodies of knowledge and theories, who can apply sound technological principles and methods to the cost-effective creation, development, operation, and maintenance of high-quality information system and are prepared for lifelong learning.The specific mission of this institute is:M1. To uplift the rural communities of Bangladesh, specifically Noakhali region through advanced quality education in Information TechnologyM2. To disseminate IT knowledge to the university community, professional societies, local communities, the state, and the nation through advanced research and developmentM3. To provide students with the tools to become productive, participating global citizens and life-long learnersM4. To maintain relationship with the industry through effective and dynamic industry- academia collaborationM5. To provide an atmosphere for students and faculty for continuous learning to investigate, apply and transfer knowledgeM6. To provide diversity and professionalism in IT field along with the entrepreneurial, interdisciplinary, service oriented environment and curriculum"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission & vision of ftns",
+      "patterns": [
+        "what is the mission of ftns department?",
+        "what is the mission of ftns dept?",
+        "mission of ftns?",
+        "ftns mission?",
+        "ftns lokkho?",
+        "ftns goal",
+        "ftns aim?",
+        "ftns er lokkho ki?",
+        "ftns er aim ki?",
+        "ftns er goal ki?",
+        "ftns er target ki?",
+        "ftns er mission ki?",
+        "ftns er mission niye bolen",
+        "ftns er aim niye bolen",
+        "ftns er lokkho niye bolen",
+        "ftns er goal niye bolen",
+        "ftns er mission niye jante chai",
+        "ftns er lokkho niye jante chai",
+        "ftns er aim niye jante chai",
+        "ftns er goal niye jante chai",
+        "what is the vision of ftns department?",
+        "what is the vision of ftns dept?",
+        "vision of ftns?",
+        "ftns vision?",
+        "ftns er vision ki?",
+        "ftns er vision niye bolen",
+        "ftns er vision niye jante chai"
+      ],
+      "responses": [
+        "To be a centre of excellence in education, research & innovation, outreach and training in Food Technology and Nutrition science with emphasis on food technology, food safety & security and public health.To be a premier in the Discipline of Food Technology & Nutrition Science locally and globally for providing education, performing research and innovation through nutritional survey and surveillance, laboratory experiments and training.To provide high quality education, research and training in traditional and emerging field of Food Technology and Nutrition Science for addressing the present and future needs of the country.To provide high quality researcher, planners with high moral and ethical values.To play an important role in nutrition advocacy drawing attention to the urgency of the nutritional problems and recommending means to address it.To undertake research and consultancy services in industrial, educational and society based areas in line with policy implication"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission & vision of educational administration",
+      "patterns": [
+        "what is the mission of educational administration department?",
+        "what is the mission of educational administration dept?",
+        "mission of educational administration?",
+        "educational administration mission?",
+        "educational administration lokkho?",
+        "educational administration goal",
+        "educational administration aim?",
+        "educational administration er lokkho ki?",
+        "educational administration er aim ki?",
+        "educational administration er goal ki?",
+        "educational administration er target ki?",
+        "educational administration er mission ki?",
+        "educational administration er mission niye bolen",
+        "educational administration er aim niye bolen",
+        "educational administration er lokkho niye bolen",
+        "educational administration er goal niye bolen",
+        "educational administration er mission niye jante chai",
+        "educational administration er lokkho niye jante chai",
+        "educational administration er aim niye jante chai",
+        "educational administration er goal niye jante chai",
+        "what is the vision of educational administration department?",
+        "what is the vision of educational administration dept?",
+        "vision of educational administration?",
+        "educational administration vision?",
+        "educational administration er vision ki?",
+        "educational administration er vision niye bolen",
+        "educational administration er vision niye jante chai"
+      ],
+      "responses": [
+        "This mission and vision of this department is to offer a comprehensive undergraduate program particularly focusing Educational administration, management, leadership and educational policy analysis. In order to contribute to the fourth goal of sustainable development by 2030 the Department of Educational Administration will make effort to lead relevant policy talks and training activities along with reinforcing excellence in ongoing teaching learning practice."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission & vision of cste",
+      "patterns": [
+        "what is the mission of cste department?",
+        "what is the mission of cste dept?",
+        "mission of cste?",
+        "cste mission?",
+        "cste lokkho?",
+        "cste goal",
+        "cste aim?",
+        "cste er lokkho ki?",
+        "cste er aim ki?",
+        "cste er goal ki?",
+        "cste er target ki?",
+        "cste er mission ki?",
+        "cste er mission niye bolen",
+        "cste er aim niye bolen",
+        "cste er lokkho niye bolen",
+        "cste er goal niye bolen",
+        "cste er mission niye jante chai",
+        "cste er lokkho niye jante chai",
+        "cste er aim niye jante chai",
+        "cste er goal niye jante chai",
+        "what is the vision of cste department?",
+        "what is the vision of cste dept?",
+        "vision of cste?",
+        "cste vision?",
+        "cste er vision ki?",
+        "cste er vision niye bolen",
+        "cste er vision niye jante chai"
+      ],
+      "responses": [
+        "The mission and vision of the Department of Computer Science and Engineering (CSE) is to enable innovation through research, advance educational programs in CSE and ICT fields and facilitate enrichment of CSE human resources- the students, faculty and staff, thereby establishing itself as a center of excellence at the national and international level.1. To provide quality education primarily in the undergraduate level in CSE and allied fields and train the students to effectively apply this education to solve real-world problems, thereby contributing towards the benefit of our country and the humanity.2. To conduct high quality state of the art research primarily at the postgraduate level with an aim to advance knowledge of CSE and ICT fields and cultivate human talent for the welfare of mankind and apply this knowledge to support and influence national and international agenda.3. To guide the students develop themselves as human beings with high ethical and moral values. 4. To enrich our students’ potential, make them a life-long learner and finally equip and prepare them to face the complex challenges of the 21st century and beyond."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of applied math",
+      "patterns": [
+        "what is the vision of applied math department?",
+        "what is the vision of applied math dept?",
+        "vision of applied math?",
+        "applied math vision?",
+        "applied math er vision ki?",
+        "applied math er vision niye bolen",
+        "applied math er vision niye jante chai"
+      ],
+      "responses": [
+        "To bulid the quality graduates in the filed of Applied Mathematics through academic, research and practical knowledge."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of esdm",
+      "patterns": [
+        "what is the vision of esdm department?",
+        "what is the vision of esdm dept?",
+        "vision of esdm?",
+        "esdm vision?",
+        "esdm er vision ki?",
+        "esdm er vision niye bolen",
+        "esdm er vision niye jante chai"
+      ],
+      "responses": [
+        "The Department of Environmental Science and Disaster Management (ESDM) will develop the knowledge, talent and leadership among the students to help them understand the fundamentals of environmental processes, their changing patterns and global challenges; to contribute to innovative and transformative researches in environmental science discipline and to ensure clean, safe, secured and sustainable environment for human."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of statistics",
+      "patterns": [
+        "what is the vision of statistics department?",
+        "what is the vision of statistics dept?",
+        "vision of statistics?",
+        "statistics vision?",
+        "statistics er vision ki?",
+        "statistics er vision niye bolen",
+        "statistics er vision niye jante chai"
+      ],
+      "responses": [
+        "Our vision is to be provided world class facilities that support innovative research and enable students to experience an unparalleled educational journey."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of Sociology",
+      "patterns": [
+        "what is the vision of Sociology department?",
+        "what is the vision of Sociology dept?",
+        "vision of Sociology?",
+        "Sociology vision?",
+        "Sociology er vision ki?",
+        "Sociology er vision niye bolen",
+        "Sociology er vision niye jante chai"
+      ],
+      "responses": [
+        "To become a centre of excellence in sociological education and research in Bangladesh."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of bms",
+      "patterns": [
+        "what is the vision of bms department?",
+        "what is the vision of bms dept?",
+        "vision of bms?",
+        "bms vision?",
+        "bms er vision ki?",
+        "bms er vision niye bolen",
+        "bms er vision niye jante chai"
+      ],
+      "responses": [
+        "To become the most prestigious discipline in the studies of Bangladesh and the Liberation War."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of mis",
+      "patterns": [
+        "what is the vision of mis department?",
+        "what is the vision of mis dept?",
+        "vision of mis?",
+        "mis vision?",
+        "mis er vision ki?",
+        "mis er vision niye bolen",
+        "mis er vision niye jante chai"
+      ],
+      "responses": [
+        "Creating knowledge with a difference."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of iis",
+      "patterns": [
+        "what is the vision of iis department?",
+        "what is the vision of iis dept?",
+        "vision of iis?",
+        "iis vision?",
+        "iis er vision ki?",
+        "iis er vision niye bolen",
+        "iis er vision niye jante chai"
+      ],
+      "responses": [
+        "To produce skilled library professionals and support the declaration of the Prime Minster comes from an honest intention to ensure the quality of education in Bangladesh to meet the target of Digital Bangladesh within 2021."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of iit",
+      "patterns": [
+        "what is the vision of iit department?",
+        "what is the vision of iit dept?",
+        "vision of iit?",
+        "iit vision?",
+        "iit er vision ki?",
+        "iit er vision niye bolen",
+        "iit er vision niye jante chai"
+      ],
+      "responses": [
+        "To create competent and skilled intellectual IT professionals specifically for planning strategically, implementing and managing IT systems along with empowerment, enhancement and engagement of the academic, support and research activities."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of ice",
+      "patterns": [
+        "what is the vision of ice department?",
+        "what is the vision of ice dept?",
+        "vision of ice?",
+        "ice vision?",
+        "ice er vision ki?",
+        "ice er vision niye bolen",
+        "ice er vision niye jante chai"
+      ],
+      "responses": [
+        "To be a world-class Education-Center."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision of eee",
+      "patterns": [
+        "what is the vision of eee department?",
+        "what is the vision of eee dept?",
+        "vision of eee?",
+        "eee vision?",
+        "eee er vision ki?",
+        "eee er vision niye bolen",
+        "eee er vision niye jante chai"
+      ],
+      "responses": [
+        "To create technology leaders in EEE who will take the challenges to meet the technological needs of the country in EEE fields"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission acce"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission fims"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission pharmacy"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission bmb"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission agriculture"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission oceanography"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission chemistry"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission physics"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission zoology"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission swe"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission dba"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission thm"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission english"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission social work"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission education"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "mission to be provided",
+      "patterns": [
+        "mission economics"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision pharmacy"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision bmb"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision agriculture"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision oceanography"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision chemistry"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision physics"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision zoology"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision swe"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision dba"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision thm"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision english"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision social work"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision education"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+{
+      "tag": "vision to be provided",
+      "patterns": [
+        "vision economics"
+      ],
+      "responses": [
+        "To be provided soon....."
+      ],
+      "context": [
+        ""
+      ]
+    },
+      {"tag": "OTP",
+         "patterns": ["NSTU te apply korar jonno registration korar somoy onek ber try korar por ekber OTP number paisi..kintu seita kaje lagate pari nai..tarpor onek bar try korar por o otp number ashe nai","I didn't receive the OTP",
+        "OTP ASCHENA AMAR NUMBER A",
+        "Otp ase na keno",
+        "I didn't find otp",
+        "Didn't receive any otp for log in in my phone",
+        "Opt pacchi na",
+        "mobile verification code asteche na",
+        "I cannot collect my OTP.The SMS doesnot come",
+        "OTP ase nai phone.",
+        "Amake boltece OTP patano hoyece kintu aseni",
+        "OTP code",
+        "Verify code ashe ni",
+        "OTP not sent",
+        "i cannot get my otp..",
+        "Otp problem.",
+        "Amr phone ew OTP ASCI nh",
+        "Amr number ew kono verify code Ase nai",
+        "Phone number a OTP ashteche na",
+        "OTP Code not Found",
+        "otp","I'm trying to register but it said my OTP has been sent.Hopefully I don't get any OTP.what can i do now?","I can not get my OTP","I am having a problem with registration. I didn't get the OTP I was suppoosed to get on my mobile number. But the site is showing that they have already sent me the OTP. Hence, I am unable to complete registration. Please, Help me with it.","AMI BARBAR REGISTRATION KORER CHESTA KORLEO OTP PACHI NA. PLEASE HELP ME FOR GETTING OTP.","Registration ER somoy OTP amr 01864747051 number a Pai nai ( ase nai ) but akhne bole already pathano hoise , kintu Ami Pai nai , tai registration Korte partesi na , solve my problem assp ","I have submitted GST roll and phone number. It requires OTP to log in. BUT I didn't get any OTP via message. But the website shows it already send OTP. What should I do??","OTP astaca na","I have not received any OTP & Password from you. What should i do now ??? ","I don't get OTP. Please, provide me OTP.","Please check the sending OTP module or sms API","Ami otp paitechi na","Didn't receive any otp for log in in my phone.","Didn't receive otp","Plz send otp and help to log in website","I did not receive the otp","i cannot get my otp","I don't get otp code","I Don't found any otp","Can't get the otp.","Please resend otp","i can't get mobile number verification otp on my phone","I can't received my otp.","I can't get any otp","Can't get any otp at my mobile number","I couldn't get my otp number","I can't get any otp","cant find any otp","with otp, cant login nstu account for gst admission","I tried to login but didn’t get any otp. I tried twice but it’s of no use.","10 hours hoya gese kono otp ashe nai","Don’t get otp code","Due to not receive otp","Couldn't get otp","I didn't got any otp in my phone","OTP ekhono ase nai kintu dekhasse already send otp","I amnot getting otp","I don't get my otp number...Why does the problem show?","I didn't get my otp..while loging in..","Plz send mobile otp","I dont get any otp but showing there i got this  ,,, how can i solve this??","I haven’t received any otp! I have tried many times, but haven’t anymore.","Otp likla wrong otp show  kortece","Otp dile wrong otp lika ase","mobile je otp asce ta wrong dekhacce","Fast bar otp ascilo but page refesh hoia jawaya oto incorrect bolche..pore r otp asa nai...new. Otp dita bolci..jano login korla new otp asa","My otp is not working.i am typing the right otp that you sent but there is showing the wrong otp message.","Please send me otp ...","Assalamualaikum.. I didn’t get my otp yet.. I already tried several times as you said. Please give a solution. Thanks for your help in advance","Trying many times but otp asce na","Student login a correct application id & pass diye log in deyar por mobile number a otp ashche na, mobile number thik deya ache r amr kachei ache but otp ashche na","I am not getting my otp view sms to my number.My number is open and working still not getting. Thanks","otp is sent to the wrong number( previous number).I have changed it and gst website updated the number already","i am not getting the otp","Sir,assalamualaikum Amar phone number e kono otp code ashe na,tai amar profile e log in korte parchi na.","I change my phone number,, but stile show previous phone number,, for that i can not got my otp in my new phone number...","Kalk theke try kortesi.....otp ashe na Please help ,Onno shob jagai otp ashche kinto..nstu te ashe nai..","student loging dhuke gst application id dici password dici otp chaice but dite pari nai,2/3 bar try korci otp code deya hoynai..but akhon Login korteci otp code chacce but phone number a sms akhon r asce na,sms plm ta solve hole khub opokar hoito..Thank you.","OTP problem. Cant receive a message containing otp...","They are not giving me otp in right time.","Bar bar try korar por o otp asche na..Server error astese... (Kalk theke try kortesi) Kalk shokal porjonto...otp er page ta porjonto gese akkhon.to oitoko o jai na...server error ashe...","I don’t get otp code.what can i do??","sir,i can't login here because you are not sending my otp.please help me by sending my otp","gst website e amar phone no. Change korar por o NSTU login er otp amar age number e pathano hocche!!!Any solution?","I Don't get otp my mobile phone","Onk try korar por o otp asse na kno???tahole ami ki abedon korte parbo na???","Sir,pls help me.....Kno otp asse na...onk try korsi","I tried again but otp didn't coming","Amar otp number ta ase nai","Mobile phone e otp code asche nah,,kindly ektu dekhun","I am not receiving any otp.","Mobile number e kono otp ashche na..last koyek din dhore try krchi","I can’t found my otp","OTP code did not come. Please send a new otp.","Amar OTP ashtecena.  Ami koyekber try korechi but otp ashce na.  Plz help","Sir ami log in korar por amar number e otp patano hoyece bola hocce.But ami kono otp pai ni.Plz problem ta aktu somadan kore din.Ami kalke theke chesta korchi hocce na.sir plzz help me ou","I didn't get my otp for log in","otp problem","i can't get any otp from nstu website for completing application ","otp code passina","assalamualaykum...amar otp code asse nah phn a ....gotokal thea k try krsi....akbar sudhu assilo ...er por thea k r asse nah .....ami apply krte prsi nah ..plzz problem tah solve kre dn","not getting the otp sent on the mobile","Ei matro 3/4 bar try koreo otp pelam na.7 ta university application a emon problem hoyni.Please bisoyti guruttor sathe dekhen.Ekdin Baki ache apply korar!!!","I couldn't find the otp.it saying that it will send me otp by message.but still i have  no message otp . help me geting the otp","Dear sir I am not getting otp.Please solve this problem for me .","Sir I have got an otp but it is not working.","sending otp wrong thats why i cannt apply plz resent otp code","i am not receiving login otp through phone message.As it is the last day of application , i am kind of tensed of this situation. Hope you will give me a solution","Payment problem I cant getting any otp for my transaction... Plz help","Apply korbo but otp astese na mobile,  so please see this problem"],
+         "responses": ["Please try again Or call GST helpline"],
+         "context": [""]
+        },
+      {"tag": "ওটিপি",
+         "patterns": ["আমার ফোনে ওটিপি আসছেনা","ওটিপি","আমার ওটিপি আসে না কেন।।।।লগিন করলে ওটিপি আসে না।।দয়া করে বিষয়টা দেখবেন।","ওটিপি কোড আসতে অনেক সময় লাগছে।","ওটিপি আসতে সমস্যা","মোবাইল নাম্বার এ ওটিপি পাচ্ছি না। দয়া করে সমাধান দিন।","ওটিপি আসে না","ওটিপি আসতেছেনা","আমার ওটিপি আসতেছে না।","সাবমিট করার পর ওটিপি আসছে না","মোবাইলে ওটিপি আসতেছে না","আমার ভেরিফাই ওটিপি আসতাছে না।","আমার ওটিপি কোডটির এসএমএস তো আসে নাই।","আমার ফোন নাম্বারে ওটিপি কোড আসতেছেনা।","আমি আমার নাম্বারে ওটিপি পাচ্ছি না","ওয়েবসাইটে বলা হচ্ছে যে আমার মোবাইল নম্বরে ওটিপি পাঠানো হয়েছে কিন্তু আমার মোবাইল নম্বরে কোন ওটিপি আসছে না তাই স্টুডেন্ট লগইনও করতে পারছি না।","লগইন করতে পারছি না, ওটিপি আসেনা","আমার ফোনে ম্যাসেজে ওটিপি কোডটি আসছে না।","আমার ওটিপি কোড আসে না কেন","আমার ফোনে কোন ওটিপি কোড আসতেছে না. প্লিজ সমস্যা সমাধান চাই।","ওটিপি আসে না ফোনে। কিভাবে লগ ইন করবো আমি?","ফোন নাম্বারের ওটিপি মেসেজ আসছে না তাই এলিজিবল সাবজেক্ট দেখতে পারছি না","লগিন করার জন্য ওটিপি পাচ্ছি না","ওটিপি পাচ্ছি না আমার   উল্লিখিত নাম্বারে","আমি আমার মোবাইল নম্বরে কোনো ওটিপি নম্বর পাইনি। কিভাবে লগইন করবো?","আমি NSTU এর ওয়েবসাইটে লগইন করতে বললে বলা হচ্ছে যে ইতিমধ্যে আমার মোবাইল নাম্বারে ওটিপি পাঠানো হয়েছে কিন্তু মোবাইলে বার বার চেক করেও আমি কোনো ওটিপি পাইনি","আমাকে বলা হচ্ছে যে ওটিপি কোড সাবমিট করার জন্য।  কিন্তু আমার ফোনে কোন ওটিপি কোড আসতেছে না","আমার মোবাইল নাম্বারে ভেরিফাই ওটিপি আসতাছে না।","লগ ইন করা যাচ্ছে না। ওটিপি পাচ্ছি না।","আসসালামু আলাইকুম স্যার,, আমার ফোনে ওটিপি আসে নাই,, তাও বলছে যে ওটিপি আসছে,, ওটিপি না আসাতে পরবর্তী ধাপে যেতে পারছি না।","আমি আমার ওটিপি কোডটি পাইনি।","মোবাইল নাম্বার ভেরিফিকেশন করতে পারছি না এবং ওটিপি কোড পাচ্ছি না","ওয়েবসাইট এ লগ ইন করার সময় ফোনে ওটিপি কোড আসে না কেন?","ওটিপি পাই নাই","আমার ওটিপি আসেনি","ওটিপি একবার আসছে,কিন্তুু ভুল দেখাচ্ছে","ওটিপি কাজ করছেনা","আমার নাম্বারে ওটিপি আসছে না। আমি অনেকক্ষণ অপেক্ষা করেছি। দয়া করে একটু দেখুন।","মোবাইল নাম্বারে ওটিপি কোড আসতে না। ওটিপি ছাড়া লগ ইন করতে পারতেছি না। দয়া করে আমাকে সাহায্য করুন।","আমি আমার আইডিতে লগ ইন করতে চায়। আমাকে একবার ওটিপি কোড দেওয়া হয়েছে। কিন্তু আমি ঔ ওটিপি ব্যবহার করে ডুকতে পারছি না। এবং রং ওটিপি সো করে। দয়া করে আমাকে আমার আইডিতে ডুকতে সাহায্য করুন স্যার","আমার নাম্বারে ওটিপি আসছে না।  ১২ ঘন্টার মতো হয়ে গেছে।","নেটওয়ার্ক সমস্যা জনিত কারণে ওটিপি পাচ্ছি না","ওটিপি দিলে ভুল বলছে।","ওটিপি একটা আসেছিল গতকাল, কিন্তু সেটা টাইম চলে গেছে, মিলতেছে না, নতুন ভাবে কোন ওটিপি আসতেছে না, প্লিজ সমস্যা সমাধান দিলে অনেক কৃতজ্ঞ থাকিব।","মোবাইলের যান্ত্রিক ত্রুটির কারণে ওটিপি তৎক্ষণাৎ পাইনি। এই সমস্যা থেকে উত্তরণের জন্য নতুন একটি ওটিপি দিন, দয়া করে।","ওটপি আসছে না। গত দুই দিন ধরে চেষ্টা করছি। লগ ইন হওয়ার পর, মোবাইলে যে ওটিপি পাঠানো হয় সেটি আসছে না। দয়া করে দ্রুত সমাধান করবেন, ধন্যবাদ।","স্যার, ওটিপি আসে নাই, আবেদন করতে পারছি না, প্লিজ হেল্প করুন, পুনরায় ওটিপি আসে মতো সুযোগ করে দিন, ধন্যবাদ","ওটিপি ভেরিফিকেশন কোড পাই নাই।","আজ সারাদিন সার্ভার ডাউন, চট্টগ্রাম থেকে।এক বন্ধু ঢাকার, তাদের ওখানে ঠিক আছে সার্ভার, আমাদের চট্টগ্রাম থেকে ডুকতে পারছি না, সমস্যার সমাধান করলে উপকৃত হবো, আর আমার ওটিপি মিলছে না,  প্লিজ হেল্প","আমার মোবাইল নাম্বারে ওটিপি কোড আসে না। দয়া করে কোড টি দিয়ে আমাকে সাহায্য করুন। ধন্যবাদ","আগে ওটিপি আসতো না এখন আপনাদের ওয়েেবসাইটে ই প্রবেশ করতে পারছি না । অন্যান্য ফ্রেন্ডরা তাদের আইডি আর পাস দিয়ে সহজেই প্রবেশ করতে পারতেছে । কিন্তু আমার আইডি আর পাস দিলে সার্ভার ইরর দেখাচ্ছে । সমস্যাটা কি বুঝতেছি না । দয়া করে সমস্যাটি পুরোপুরি সমাধাণ করুন ।","কোনো এক কারনে অ্যাপ্লিকেশনের সময় যেই ফোন নাম্বার আমি দিয়েছি সেটা এখন পরিবর্তন করেছি,কিন্তু আমার সেই আগের নাম্বারেই ওটিপি যাচ্ছে এমন দেখাচ্ছে,পরিবর্তিত নাম্বারে ওটিপি আসতেছেনা,এখন আমি কি করতে পারি?","লগইন কারার পর আমার ফোনে কোন ওটিপি আসতেছে না","এসএমএস-এ ওটিপি পাঠানো হয় নি, তাই ভেরিফাই করা যাচ্ছে না। কিন্তু ওয়েবপেজে দেখায় যে, ইতিমধ্যে ওটিপি পাঠানো হয়েছে"],
+         "responses": ["আপনি  পুনরায় ওটিপি পাওয়ার জন্য চেষ্টা করুন"],
+         "context": [""]
+        }
+  ]
+}

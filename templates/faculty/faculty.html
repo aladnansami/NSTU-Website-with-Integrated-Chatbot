@@ -1,0 +1,86 @@
+{% include '/includes/header.html' %}
+
+{% if info %}
+<div class="container mt-5">
+  <div class="row justify-content-center align-items-center">
+      <div class="col-md-4 text-center">
+          <img src="{{ url_for('static',filename='images/teacher/'+ info[3]) }}" class="img-fluid rounded-circle"
+              style="height: 300px;width: 300px;" alt="Profile Photo">
+          <h2 class="mt-3">{{ info[0] }}</h2>
+          <h5 class="text-uppercase">{{ info[2] }}</h5>
+          <div class="social-icons">
+              <a href="{{ info[7] }}"><i class="fab fa-facebook"></i></a>
+              <a href="{{ info[9] }}"><i class="fab fa-twitter"></i></a>
+              <a href="{{ info[8] }}"><i class="fab fa-linkedin"></i></a>
+              <!-- Add more social media icons as needed -->
+          </div>
+
+      </div>
+      <div class="col-md-8 " style="margin-top: -76px;">
+          <h2>About</h2>
+          <p>{{ info[4] }}</p>
+          <ul class="list-unstyled">
+              <li><strong>Email:</strong> {{ info[5] }}</li>
+              {% if info[1]=="professor" %}
+              <li><strong>Designation:</strong>Professor</li>
+              {% elif info[1]=="assistantprofessor" %}
+              <li><strong>Designation:</strong>Assistant Professor</li>
+              {% elif info[1]=="professor_director" %}
+              <li><strong>Designation:</strong>Professor And Director</li>
+              {% elif info[1]=="professor_chairman" %}
+              <li><strong>Designation:</strong>Professor & Chairman</li>
+              {% elif info[1]=="associateprofessor" %}
+              <li><strong>Designation:</strong>Associate Proffessor</li>
+              {% elif info[1]=="lecturer" %}
+              <li><strong>Designation:</strong>Lecturer</li>
+              {% else %}
+              <li><strong>Designation:</strong>info[1]</li>
+              {% endif %}
+              <li><strong>Phone:</strong> {{ info[6] }}</li>
+          </ul>
+      </div>
+  </div>
+
+  {% if degree_list %}
+  <h2 class="mt-5">Educational Qualifications</h2>
+  <div class="row">
+    {% for item in degree_list %}
+      {% if item[0] and item[1] and item[2] and item[3] %}
+      <div class="col-md-6 mt-2 mb-3">
+          <div class="education-item">
+              <h4>{{ item[0] }}</h4>
+              <h5>{{ item[1] }}</h5>
+              <p>{{ item[3] }}</p>
+              <p>{{ item[2] }}</p>
+          </div>
+      </div>
+      {% endif%}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if journal_list %}
+<div class="journal-publications container">
+  <h2>Journal Publications</h2>
+  {% for item in journal_list %}
+    {% if item[0] and item[1] and item[2] and item[3] and item[4] %}
+    <div class="publication-item mt-2 mb-3">
+        <h4>{{ item[0] }}</h4>
+        <p>Authors: {{ item[1] }}</p>
+        <p>Journal: {{ item[2] }}</p>
+        <p>Year: {{ item[4] }}</p>
+        <a href="{{ item[3] }}">Visit</a>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+
+
+{% endif %}
+
+
+{% include 'chatbot.html' %}
+{% include '/includes/footer.html' %}

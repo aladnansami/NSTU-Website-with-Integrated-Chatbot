@@ -1,0 +1,484 @@
+{% include 'includes/header.html' %}
+
+      <!-- =================== MODAL FOR COMPARE COURSES =================== -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 style="background-color: cornsilk;" class="modal-title" id="exampleModalLabel">Choose Courses for Comparing</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="container comp-container">
+                    <div class="box">
+                        <select id="inp1">
+                        <option value="BScIT">BSSE</option>
+                        <option value="BScCS">CSTE</option>
+                        <option value="ME">ICE</option>
+                        </select>
+                        <select id="inp2">
+                        <option value="BScIT">BSSE</option>
+                        <option value="BScCS">CSTE</option>
+                        <option value="ME">ICE</option>
+                        </select>
+                        <button  id="but_compare">Compare</button>
+                    </div>
+
+                    <!-- table -->
+                    <span style="font-size: 0.9rem;" id="table_span">
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+  <!-- =================== HOME - TITLE & IMAGE BOX =================== -->
+  <div class="img-container">
+    <img src="{{ url_for('static',filename='./images/home.jpg') }}" alt="">
+    <div class="text-box">
+      <h1 class="text-uppercase d-flex justify-content-center" >Follow Your Dreams</h1>
+      <h1 class="d-flex justify-content-center">@ NSTU</h1>
+    </div>
+    <!-- =================== HOME - ICON BOX =================== -->
+    <div class="container-fluid-sm d-flex justify-content-center icon-box">
+      <div class="row w-75">
+        <div class="col-3 border bg-black text-center rounded py-3">
+          <i class=" fas fa-university fa-4x"></i>
+          <h1 class="text-white">10+</h1>
+          <h4 class="m-0 text-white">Buildings</h4>
+        </div>
+        <div class="col-3 border bg-black text-center rounded py-3">
+          <i class=" fa fa-user fa-4x"></i>
+          <h1 class="text-white">7000+</h1>
+          <h4 class="m-0 text-white">Student</h4>
+        </div>
+        <div class="col-3 border bg-black text-center rounded py-3">
+          <i class=" fa fa-male fa-4x"></i>
+          <h1 class="text-white">500+</h1>
+          <h4 class="m-0 text-white">Teachers</h4>
+        </div>
+        <div class="col-3 border bg-black text-center rounded py-3">
+          <i class=" fa fa-book fa-4x"></i>
+          <h1 class="text-white">30+</h1>
+          <h4 class="m-0 text-white">Departments</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== ABOUT SECTION =================== -->
+  <div class="container-fluid-sm my-5 about">
+    <div class="row" style="width: 90%;margin: auto;">
+      <div class="col-md-12 col-xl-7">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="text-uppercase">About NSTU</h2>
+            <p class="text-justify text-secondary">{{ about_info }}...</p>
+            <a href="/about_nstu" class="btn btn-dark">Read More</a>
+          </div>
+          <div class="col-12 col-md-6 video-container">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item mt-3 mt-md-0 video"  src="https://www.youtube.com/embed/pk-o2neqgrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-xl-5">
+        <div class="row">
+          <div class="col-12 col-sm-5 vc-img-container text-center">
+            <img src="{{ url_for('static', filename='images/vc/' + vc_image) }}" class="vc-image" style="height: 220px;width: 225px;border-radius: 5px;" >
+          </div>
+          <div class="col-12 col-sm-7 vc-text-container">
+            <h2 class="text-uppercase">VC's Corner</h2>
+            <b><small>{{ vc_name }}</small></b>
+            <p class="text-justify text-secondary">{{ vc_speech }}...</p>
+            <a href="/vicechancellor" class="btn btn-dark">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <ul class="nav nav-tabs" style="width: 87%;margin: auto;">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#news">News</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#notices">Notices</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#events">Events</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" style="width: 87%;margin: auto;">
+    <div id="news" class="tab-pane fade active show">
+      <ul class="list-group">
+        {% for item in news %}
+        <li class="list-group-item py-3 d-flex justify-content-between">
+            <h6 class="m-0">{{ item[1] }}</h6>
+            <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[4] }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/news" class="btn btn-secondary mt-3">View All</a>
+    </div>
+    <div id="notices" class="tab-pane fade">
+      <ul class="list-group">
+        {% for item in notices %}
+          <li class="list-group-item py-3 d-flex justify-content-between">
+              <h6 class="m-0">{{ item[1] }}</h6>
+              <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[4] }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="/notices" class="btn btn-secondary mt-3">View All</a>
+    </div>
+    <div id="events" class="tab-pane fade">
+      <ul class="list-group">
+        {% for item in events %}
+          <li class="list-group-item py-3 d-flex justify-content-between">
+              <h6 class="m-0">{{ item[1] }}</h6>
+              <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[3] }}</small>
+          </li>
+          {% endfor %}
+      </ul>
+      <a href="/events" class="btn btn-secondary mt-3">View All</a>
+    </div>
+  </div>
+
+  
+
+    <!-- <div class="my-5 pb-5" >
+        <nav class="nav nav-pills nav-fill flex-column flex-sm-row border">
+            <a class="flex-sm-fill text-sm-center nav-link active py-2" data-bs-toggle="tab" href="#notices"
+                id="notices-tab">Notices</a>
+            <a class="flex-sm-fill text-sm-center nav-link py-2" data-bs-toggle="tab" href="#news"
+                id="news-tab">News</a>
+            <a class="flex-sm-fill text-sm-center nav-link py-2" data-bs-toggle="tab" href="#events" id="tenders-tab">Tenders</a>
+        </nav>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="notices">
+                <ul class="list-group">
+                  {% for item in notices %}
+                    <li class="list-group-item py-3 d-flex justify-content-between">
+                        <h6 class="m-0">{{ item[1] }}</h6>
+                        <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[4] }}</small>
+                    </li>
+                  {% endfor %}
+                </ul>
+                <a href="/notices" class="btn btn-secondary mt-3">View All</a>
+            </div>
+            <div class="tab-pane fade" id="news">
+                <ul class="list-group">
+                    {% for item in news %}
+                    <li class="list-group-item py-3 d-flex justify-content-between">
+                        <h6 class="m-0">{{ item[1] }}</h6>
+                        <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[4] }}</small>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="/news" class="btn btn-secondary mt-3">View All</a>
+            </div>
+            <div class="tab-pane fade" id="events">
+                <ul class="list-group">
+                  {% for item in events %}
+                    <li class="list-group-item py-3 d-flex justify-content-between">
+                        <h6 class="m-0">{{ item[1] }}</h6>
+                        <small class="text-muted"><i class="fa fa-clock me-2"></i>{{ item[3] }}</small>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="/events" class="btn btn-secondary mt-3">View All</a>
+            </div>
+        </div>
+    </div> -->
+
+
+  <!-- <div class="container">
+    <h1>Events</h1>
+    <div class="row">
+      {% for item in events %}
+      <div class="col-lg-12 col-md-6 col-sm-12 col-xs-6">
+        <div class="card">
+          <div style="width: 50%">
+            <img src="{{ url_for('static', filename='event/' + item[4]) }}" alt="event" class="img-responsive" width="100" >
+          </div>
+          <div style="width: 50%">
+            <h3>{{ item[1] }}</h3>
+            <p>{{ item[3] }}</p>
+            <p>{{ item[2] }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h1>News</h1>
+    {% for item in news %}
+    <div class="card m-4 p-4">
+      <img src="{{ url_for('static', filename='news/' + item[3]) }}" alt="" width="150" height="100">
+      <h1>{{ item[1] }}</h1>
+      <p><small>Posted: {{ item[4] }}</small></p>
+      <p>{{ item[2] }}</p>
+    </div>
+    {% endfor %}
+
+    <h1>Notices</h1>
+    {% for item in notices %}
+    <div class="col-3 m-2">
+      <div class="card">
+        <img src="{{ url_for('static', filename='images/notices/' + item[3]) }}" alt="">
+        <h1>{{ item[1] }}</h1>
+        <p><small>Uploaded Time: {{ item[4] }}</small></p>
+        <a href="{{ url_for('static', filename='notices/' + item[2]) }}">Download</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div> -->
+
+
+
+
+
+  <div class="container-fluid-sm my-5">
+    <div class="row" style="width: 90%;margin: auto;">
+     <!-- =================== FREQUENTLY ASKED QUESTIONS =================== -->
+      <div class="col-12 col-md-5">
+        <h2 class="d-inline">FAQ<small>s</small> <i class="fa fa-question-circle"></i></h2>
+        <!-- <button class="view_all" type="button">View All</button> -->
+        <small class="text-secondary d-block mt-1">FREQUENTLY ASKED QUESTIONS</small>
+        <div class="accordion-container">
+          <details>
+            <summary>
+              Where is the NSTU Central Temple located?
+            </summary>
+            <div>
+              The central temple of  NSTU is located on the way to the Bibi Khadija Hall or Monoshoroni Uddyan.
+            </div>
+          </details>
+          <details >
+            <summary>
+             How many halls are in Nstu?
+            </summary>
+            <div>
+              NSTU have total 5 halls. Two boys hall, these are: 1.Basha Shahid Abdus Salam Hall, 2.Bir Muktijuddha Abdul Malek Ukil Hall. Three girls hall, these are: 1.Hazrat Bibi Khadiza Hall, 2.Jatir Pita Bangabandhu Sheikh Mujibur Rahman Hall, 3.Bangamata Sheikh Fazilatunnessa Mujib Hall","Applications for vacant seats will be accepted from the hall subject to availability of seats.
+            </div>
+          </details>
+          <details>
+            <summary>
+              when NSTU register office get open and close?
+            </summary>
+            <div>
+              (Office Hour: 9:00 AM to 5:00 PM, Days: Sunday to Thursday, Closed weekend day: Friday and Saturday)
+            </div>
+          </details>
+          <details>
+            <summary>
+              Tell me about some facilities provided by medical center
+            </summary>
+            <div>
+              The medical center of Noakhali science and technology university (NSTU) offers free experienced general practitioner and emergency medical care services to all members (students, teachers, officers, staff, also family members of the teachers, officers, staff) of the university community. The center provides service usually 8.30 am to 5.00 pm in working days but provide emergency services 24 hours. All members of the university get medicine from the medical center at free of cost .The center also has an ambulance, for 24 hours service.
+            </div>
+          </details>
+          <details>
+            <summary>
+              How many academic buildings are in NSTU?
+            </summary>
+            <div>
+              There are 2 established Academic Buildings, namely Academic Building-1 and Academic Building-2, in this University. One academic building is now under construction, the most significant academic building in Bangladesh.
+            </div>
+          </details>
+          <details>
+            <summary>
+              What is the name of the auditorium,NSTU
+            </summary>
+            <div>
+              In NSTU there is a five storied auditorium named “Bir Muktijuddha Haji Mohammad Idris Auditorim
+            </div>
+          </details>
+        </div> 
+      </div>
+      <!-- =================== IMAGE SLIDER =================== -->
+      <div class="col-12 col-md-7">
+        <h2>Photo Gallery <i class="fa-solid fa-image ml-1"></i></h2>
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_11.jpg')}}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_21.jpg')}}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_31.jpg')}}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_41.jpg')}}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_51.jpg')}}" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="{{ url_for('static',filename='./images/slide_61.jpg')}}" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row" style="width: 105%;">
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_12.jpg')}}" style="width:100%" onclick="currentSlide(1)" alt="Fazilatunnesa Mujib Hall">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_22.jpg')}}" style="width:100%" onclick="currentSlide(2)" alt="Nil Dighi">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_32.jpg')}}" style="width:100%" onclick="currentSlide(3)" alt="Teachers Dormitory">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_42.jpg')}}" style="width:100%" onclick="currentSlide(4)" alt="Shaheed Minar">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_52.jpg')}}" style="width:100%" onclick="currentSlide(5)" alt="Night View Of Administrative Building">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="{{ url_for('static',filename='./images/slide_62.jpg')}}" style="width:100%" onclick="currentSlide(6)" alt="Administrative Building">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 style="color:#A020F0;text-align: center;"><b>Memorandum of Understanding (MoU)</b></h2>
+  <div class="mou_container">
+    <div class="mou_item">
+      <a href="https://www.gedik.edu.tr/en/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/Gedik University Turkey.png" alt="İstanbul Gedik University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.sivas.edu.tr/?lang=en-us" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/SUST-Turkey New.png" alt="Sivas University of Science and Technology">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://aybu.edu.tr/aybu/en" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/Ankara_University.png" alt="Ankara Yıldırım Beyazıt University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.du.ac.bd/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/DU.png" alt="Dhaka University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.utsunomiya-u.ac.jp/en/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/Utsunomiya.png" alt="Utsunomiya University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.unwe.bg/en" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/UNWE_Sofia.png" alt="University of National and World Economy">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://ait.ac.th/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/AIT.jpg" alt="The Asian Institute of Technology (AIT)">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.shou.edu.cn/eng/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/SOU.jpg" alt="Shanghai Ocean University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.itu.edu.tr/en" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/ITU.png" alt="Istanbul Technical University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://rmstu.ac.bd/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/RMSTU.png" alt="Rangamati Science and Technology University (RMSTU)">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www5.usp.br/#english" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/USP.png" alt="University of São Paulo">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="https://www.hiroshima-u.ac.jp/en" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/Hiroshima_University.jpg" alt="Hiroshima University">
+      </a> 
+   </div>
+   <div class="mou_item">
+      <a href="http://untz.ba/" target="_blank">
+      <img src="https://nstu.edu.bd/assets/images/partner/University_of_Tuzla.png" alt="University of Tuzla">
+      </a> 
+   </div>
+
+  </div>
+  
+
+  <div class="mou_parent_container">
+    <section class="mou_container">
+    </section>
+ </div>
+
+
+
+
+
+
+  {% include 'chatbot.html' %}
+
+
+<script>
+    /* =================== PHOTO GALLERY SLIDER =================== */
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  {% include '/includes/footer.html' %}

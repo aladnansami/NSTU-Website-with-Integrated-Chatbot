@@ -1,0 +1,39 @@
+{% include 'includes/header.html' %}
+
+<div class="container my-5">
+  <div class="row my-3 align-items-center">
+    <!-- =================== USER REGISTRATION IMAGE =================== -->
+    <div class="d-none col-12 d-lg-block col-lg-7">
+      <img src="{{ url_for('static',filename='images/registration.jpg') }}" width="500" alt="">
+    </div>
+    <!-- =================== USER REGISTRATION FORM =================== -->
+    <div class="col-12 col-sm-9 mx-sm-auto mx-0 col-lg-5">
+      <form  method="post" action="/registration_validation" class="border rounded px-3 pt-3">
+        <div class="form-group">
+          <label for="fname"><i class="fa fa-user"></i> First Name</label>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name">
+        </div>
+        <div class="form-group">
+          <label for="lname"><i class="fa fa-user"></i> Last Name</label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Last Name">
+        </div>
+        <div class="form-group">
+          <label for="email"> <i class="fa fa-envelope"></i> Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="pwd"><i class="fa fa-unlock-alt"></i> Password</label>
+          <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter a Strong Password">
+          <small class="form-text text-muted">Strong password always perform better for security issue</small>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-outline-info btn-block" value="Submit">
+        </div>
+        <p>Already Have an Account ? <a href="./login">Log In</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% include 'includes/footer.html' %}

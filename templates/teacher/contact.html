@@ -1,0 +1,50 @@
+{% include 'teacher/includes/header.html' %}
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Change Contact</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container my-5">
+      <form action="/teacher/change_contact" method="post">
+        <h1>Contact Information</h1>
+        <div class="mt-4">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" value="{{ info[0] }}" readonly required>
+        </div>
+        <div class="mt-4">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="number" name="phone" id="phone" class="form-control" value="{{ info[1] }}" required>
+        </div>
+        <div class="mt-4">
+          <label for="linkedin" class="form-label">Linkedin</label>
+          <input type="url" name="linkedin" id="linkedin" class="form-control" value="{{ info[2] }}" required>
+        </div>
+        <div class="mt-4">
+          <label for="facebook" class="form-label">Facebook</label>
+          <input type="url" name="facebook" id="facebook" class="form-control" value="{{ info[3] }}" required>
+        </div>
+        <div class="mt-4">
+          <label for="twitter" class="form-label">Twitter</label>
+          <input type="url" name="twitter" id="twitter" class="form-control" value="{{ info[4] }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary my-4" >Change</button>
+      </form>
+    </div>
+  </section>
+
+
+{% include 'teacher/includes/footer.html' %}

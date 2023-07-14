@@ -1,0 +1,78 @@
+{% include 'teacher/includes/header.html' %}
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Add Journal</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6">
+          <form action="/teacher/add_journal" method="post">
+            <h1>Journal Publications</h1>
+            <div class="mt-4">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" name="title" id="title" class="form-control" />
+            </div>
+            <div class="mt-4">
+              <label for="author" class="form-label">Author</label>
+              <input type="text" name="author" id="author" class="form-control" />
+            </div>
+            <div class="mt-4">
+              <label for="journal_name" class="form-label">Journal Name</label>
+              <input type="text" name="journal_name" id="journal_name" class="form-control" />
+            </div>
+            <div class="mt-4">
+              <label for="url" class="form-label">Journal URL</label>
+              <input type="url" name="url" id="url" class="form-control" />
+            </div>
+            <div class="mt-4">
+              <label for="date" class="form-label">Publication Date</label>
+              <input type="date" name="date" id="date" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary my-4" >Add</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="container-fluid">
+            <div class="row">
+                {% if journal_list %}
+                  {% for item in journal_list %}
+                    {% if item[0] and item[1] and item[2] and item[3] and item[4] %}
+                    <div class="col-12 my-3 card p-4">
+                        <h4><span style="float: left;width: 90%;">{{ item[0] }}</span>
+                          <form action="/teacher/delete_teacher_journal" method="POST" style="float: right;" >
+                            <input type="hidden" name="journal_id" value="{{ loop.index }}" >
+                            <button type="submit" style="border: none; outline: none; background: transparent;" ><i class="fa-solid fa-trash" style=" color: red;"></i></button>
+                          </form>
+                        </h4>
+                        <p class="m-0">Authors: {{ item[1] }}</p>
+                        <p class="m-0">Journal: {{ item[2] }}</p>
+                        <p class="m-0">Year: {{ item[4] }}</p>
+                        <a href="{{ item[3] }}">Visit</a>
+                    </div>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% include 'teacher/includes/footer.html' %}

@@ -1,0 +1,25 @@
+<script>
+
+const edit_btn=document.querySelectorAll(".edit_btn");
+    edit_btn.forEach((item)=>{
+      item.addEventListener("click",(e)=>{
+        const target_element=e.target.parentElement.parentElement.parentElement;
+        const patterns = target_element.children[0].textContent
+        const responses = target_element.children[2].textContent
+        const feed_back_id = target_element.children[3].children[1].children[0].value
+        
+        const editable_patterns=document.getElementsByName("patterns")[0]
+        const editable_responses=document.getElementsByName("responses")[0]
+        const query_id=document.getElementsByName("query_id")[0]
+
+        edit_feedback_box.style.display='block'
+
+        editable_patterns.value=patterns
+        editable_responses.value=responses
+        query_id.value=feed_back_id 
+      })
+    })
+      
+</script>
+</body>
+</html>

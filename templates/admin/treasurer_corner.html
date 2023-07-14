@@ -1,0 +1,44 @@
+{% include 'admin/includes/header.html' %}
+
+<div class="content-wrapper" style="min-height: 92vh;">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+            <li class="breadcrumb-item active">Treasurer Corner</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form action="/admin/upload_treasurer_corner" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="treasurerName" class="form-label">Treasurer Name</label>
+              <input type="text" name="treasurerNameInput" id="treasurerName" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <input type="button" value="Select Image" class="btn btn-outline-secondary" id="uploadImage" onclick="document.getElementById('fileInput').click()" />
+              <input type="file" class="form-control d-none" id="fileInput" name="file">
+            </div>
+            <div class="mb-3">
+              <label for="treasurerSpeech" class="form-label">Treasurer Speech</label>
+              <textarea name="treasurerSpeechInput" id="treasurerSpeech" style="display: block;resize: vertical;outline: none;width: 100%;border: 1px solid #ced4da;height: 100px;" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% include 'admin/includes/footer.html' %}

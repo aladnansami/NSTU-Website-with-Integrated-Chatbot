@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!--Fontawesome CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!--MUI CSS-->
+  <!-- <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" /> -->
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="{{ url_for('static',filename='./css/common.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='./css/index.css') }}">
+
+  <title>Noakhali Science and Technology University</title>
+</head>
+<body>
+
+  <!-- =================== HEADER =================== -->
+  <header class=" my-3">
+    <div class="header-box">
+      <a href=""><img src="{{ url_for('static',filename='./images/nstu_logo.png') }}" alt=""></a>
+      <div class="header-title">
+        <h3>নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়</h3>
+        <h3>Noakhali Science and Technology University</h3>
+        <small>নোয়াখালী ৩৮১৪, বাংলাদেশ।</small>
+      </div>
+      <div class="header-contact">
+        <i class="fa fa-phone"></i>
+        <b>Phone: 02334496522</b>
+        </br>
+        <i class="fa fa-envelope"></i>
+        <b> registrar@office.nstu.edu.bd</b>
+        </br>
+        <i class="fa fa-fax"></i>
+        <b>Fax: 02334496523</b>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================== NAVIGATION BAR =================== -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/home" class="nav-link text-white">Home</a>
+        </li>
+        <li class="nav-item hover-list-container">
+          <!-- <span class="nav-link text-white">About</span> -->
+          <a href="#" class="nav-link text-white">About</a>
+           <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="/about_nstu" class="nav-link text-dark">About NSTU</a>
+            </li>
+            <li class="nav-item">
+              <a href="/mission_vission" class="nav-link text-dark">Vision & Mission</a>
+            </li>
+             <li class="nav-item">
+              <a href="/location" class="nav-link text-dark">Location, Maps and Direction</a>
+            </li>
+            <li class="nav-item">
+              <a href="/visit_nstu" class="nav-link text-dark">Visit NSTU</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--              <a href="/central_library" class="nav-link text-dark">Central Library</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="/info_window" class="nav-link text-dark">Info Window</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="/acts_and_facts" class="nav-link text-dark">Acts and Facts</a>-->
+<!--            </li>-->
+          </ul>
+        </li>
+        <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Administration</span>
+          <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="/chancellor" class="nav-link text-dark">Chancellor</a>
+            </li>
+            <li class="nav-item">
+              <a href="/vicechancellor" class="nav-link text-dark">Vice Chancellor</a>
+            </li>
+            <li class="nav-item">
+              <a href="/provicechancellor" class="nav-link text-dark">Pro Vice Chancellor</a>
+            </li>
+            <li class="nav-item">
+              <a href="/treasurer" class="nav-link text-dark">Treasurer</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="/regentboard" class="nav-link text-dark">Regent Board</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="/register" class="nav-link text-dark">Register</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Academic</span>
+          <ul class="hover-list-item">
+            <li class="nav-item hover-list-container">
+              <!-- <span class="nav-link text-dark">Faculty</span> -->
+              <a href="/faculties" class="nav-link text-dark">Faculty</a>
+              <!-- <ul class="hover-list-item">
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Engineering and Technology</a>
+                 </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Science</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Social Science and Humanities</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Buisness Administration</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Education Sciences</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-dark">Faculty of Law</a>
+                </li>
+              </ul> -->
+            </li>
+            <li class="nav-item hover-list-container">
+              <a href="/institutes" class="nav-link text-dark">Institute</a>
+              <!-- <span class="nav-link text-dark">Institute</span> -->
+              <ul class="hover-list-item">
+                <li class="nav-item">
+                  <a href="/iit/faculties" class="nav-link text-dark">Institute of Information Technology</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/iis/faculties" class="nav-link text-dark">Institute of Information Sciences</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item hover-list-container">
+              <a href="/academic_program" class="nav-link text-dark">Academic Programs</a>
+            </li> -->
+          </ul>
+        </li>
+        <!-- <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Offices</span>
+          <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="/accounts_office" class="nav-link text-dark">Accounts Office</a>
+            </li>
+            <li class="nav-item">
+              <a href="/audit_cell" class="nav-link text-dark">Audit Cell</a>
+            </li>
+            <li class="nav-item">
+              <a href="/deans" class="nav-link text-dark">Deans</a>
+            </li>
+            <li class="nav-item">
+              <a href="/dpdw" class="nav-link text-dark">DPDW</a>
+            </li>
+            <li class="nav-item">
+              <a href="/exam_controller" class="nav-link text-dark">Exam Controller</a>
+            </li>
+            <li class="nav-item">
+              <a href="/physical_education" class="nav-link text-dark">Physical Education</a>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item hover-list-container">
+          <!-- <span class="nav-link text-white">Admission</span> -->
+          <a href="https://www.admission.nstu.edu.bd/" class="nav-link text-white">Admission</a>
+          <!-- <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="https://www.admission.nstu.edu.bd/" class="nav-link text-dark">How to Apply</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Bachelor(Honors) Admission</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Masters Admission</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Post Graduate Diploma Admission</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Admission of Foreign Students</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Cost and Aid</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Scholarships and Financial Aids</a>
+            </li>
+          </ul> -->
+        </li>
+        <!-- <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Hall of Residence</span>
+          <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Bhasha Shohid Abdus Salam Hall</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Hazrat Bibi Khadiza Hall</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">MuktiJuddha Abdul Malek Ukil Hall</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Jatr Pita Bangabandhu Sheikh Mujib Hall</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Residence for Teachers</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Residence for Officers</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Residence for staffs</a>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Notice Board</span>
+          <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="/notices" class="nav-link text-dark">General notice</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--              <a href="" class="nav-link text-dark">NOC and GO</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="" class="nav-link text-dark">Procurements Notice</a>-->
+<!--            </li>-->
+            <li class="nav-item">
+              <a href="/jobs" class="nav-link text-dark">Job Circulars</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">News and Events</span>
+          <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="/events" class="nav-link text-dark">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="/news" class="nav-link text-dark">News</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item hover-list-container">
+          <!-- <span class="nav-link text-white">Research</span> -->
+          <a href="/publications" class="nav-link text-white">Publications</a>
+          <!-- <ul class="hover-list-item">
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">Publication</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">International Conference</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-dark">e-journal</a>
+            </li>
+          </ul> -->
+        </li>
+         <li class="nav-item hover-list-container">
+          <span class="nav-link text-white">Misellaneous</span>
+          <ul class="hover-list-item">
+<!--            <li class="nav-item">-->
+<!--              <a href="/auditorium" class="nav-link text-dark">Auditorium</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="/academic_buildings" class="nav-link text-dark">Academic Building</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="/noc_and_go" class="nav-link text-dark">NOC and GO</a>-->
+<!--            </li>-->
+            <!-- <li class="nav-item">
+              <a href="/halls" class="nav-link text-dark">Hall of Residence</a>
+            </li> -->
+<!--            <li class="nav-item">-->
+<!--              <a href="/forms_and_downloads" class="nav-link text-dark">Forms and Downloads</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              <a href="/emergency" class="nav-link text-dark">Emergency</a>-->
+<!--            </li>-->
+            <li class="nav-item">
+              <a href="/officers_association" class="nav-link text-dark">Officers Association</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--              <a href="/sexual_harassment_prevention_committee" class="nav-link text-dark">Sexual Harassment Prevention Committee</a>-->
+<!--            </li>-->
+            <li class="nav-item">
+              <a href="/teachers_association" class="nav-link text-dark">Teachers Association</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--              <a href="/welfare" class="nav-link text-dark">Welfare</a>-->
+<!--            </li>-->
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- =================== DISPLAYING ALERT MESSAGE BASED ON SUCCESSFUL REGISTRATION AND LOGIN =================== -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+       {% for message in messages %}
+           <div  class="alert alert-warning alert-dismissible fade show " role="alert">
+               <span> {{ message }}</span>
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <!-- =================== DISPLAYING LOGOUT LINK BASED ON USER LOGGED IN OR NOT =================== -->
+    {% with user_id=session.get("user_id"), teacher_id=session.get("teacher_id"), student_id=session.get("student_id"), admin_id=session.get("admin_id")  %}
+    {% if user_id!=None or teacher_id!=None or student_id!=None or admin_id!=None %}
+        <a href="./user_logout" class="nav-link text-white">Log Out</a>
+      {% endif %}
+    {% endwith %}
+
+  </nav>

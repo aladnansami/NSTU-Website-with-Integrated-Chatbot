@@ -1,0 +1,30 @@
+{% include 'includes/header.html' %}
+
+<div class="container" style="min-height: 80vh;">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Serial</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in data %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td><a href="{{ item[3] }}">{{ item[1] }}</a></td>
+          <td>{{ item[2] }}</td>
+          <td>{{ item[4] }}</td>
+          <td>{{ item[5] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% include 'chatbot.html' %}
+{% include 'includes/footer.html' %}

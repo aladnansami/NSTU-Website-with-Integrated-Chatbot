@@ -1,0 +1,19 @@
+{% include 'includes/header.html' %}
+
+<div class="container" style="min-height: 80vh;">
+  <div class="row">
+    {% for item in data %}
+    <div class="col-6 m-2">
+      <div class="card p-3">
+        <img src="{{ url_for('static', filename='images/notices/' + item[3]) }}" alt="">
+        <h1>{{ item[1] }}</h1>
+        <p><small>Uploaded Time: {{ item[4] }}</small></p>
+        <a href="{{ url_for('static', filename='notices/' + item[2]) }}">Download</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% include 'chatbot.html' %}
+{% include 'includes/footer.html' %}
