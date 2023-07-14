@@ -1,5 +1,5 @@
 # University-Website-with-Integrated-Chatbot
-"NSTU Dynamic Website with Integrated Chatbot" created a modern online platform that embodies the vibrant spirit and endless possibilities offered by our renown university. 
+"NSTU Dynamic Website with Integrated Chatbot" created a modern university website with chatbot . I used python and for web i used flask framework.
 # INTRODUCTION 
 
 
