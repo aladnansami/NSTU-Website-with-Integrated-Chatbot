@@ -7,3 +7,19 @@ The first chapter gives an overview of the online application "NSTU Dynamic Webs
 
 NSTU Dynamic Website with Integrated Chatbot will help to know any information related with NSTU. It can provide quick and accessible support to students, rather than chatbot give the answers to their frequently asked questions. This website gives every update about Cyber centeristration, academic, admission, notice, news and events and also research. If users need any answers by asking questions so they can ask questions in chatbot, it will provide proper answer. Here Cyber center panel can edit and update everything they want, Cyber center also give a email and password for teachers log in such that they can join as a moderator. Edit and updated section will handle by the Cyber center panel. The website and chatbot are available 24/7, you just need to visit the site and access the site. This section tries to familiarize readers with the project's overview, purpose and scope.
 
+## Language 
+Python
+## Framwework
+Python flask
+
+## Full Document
+https://github.com/aladnansami/University-Website-with-Integrated-Chatbot/blob/main/Report-Final.docx
+
+
+## Presemtation File 
+
+https://github.com/aladnansami/University-Website-with-Integrated-Chatbot/blob/main/MUH1825008M.pptx
+
+## Data File 
+
+https://github.com/aladnansami/University-Website-with-Integrated-Chatbot/blob/main/chatbot_application.sql
